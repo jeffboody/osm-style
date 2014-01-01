@@ -168,11 +168,6 @@
     <PolygonSymbolizer fill="#b5e3b5" />
   </Rule>
   <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <Filter>([feature] = 'natural_scrub')</Filter>
-    <PolygonPatternSymbolizer file="symbols/scrub.png" />
-  </Rule>
-  <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <Filter>([feature] = 'power_generator')</Filter>
     <PolygonSymbolizer fill="#bbbbbb" />
@@ -215,20 +210,10 @@
     <PolygonSymbolizer fill="#8dc56c" />
   </Rule>
   <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <Filter>([feature] = 'landuse_forest')</Filter>
-    <PolygonPatternSymbolizer file="symbols/forest.png" />
-  </Rule>
-  <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([feature] = 'landuse_allotments')</Filter>
     <PolygonSymbolizer fill="#e5c7ab" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <Filter>([feature] = 'landuse_allotments')</Filter>
-    <PolygonPatternSymbolizer file="symbols/allotments.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>1500000</MaxScaleDenominator>
@@ -237,11 +222,6 @@
     <PolygonSymbolizer fill="#ffc0cb" fill-opacity="0.3" />
   </Rule>
   <Rule>
-    <MaxScaleDenominator>400000</MaxScaleDenominator>
-    <Filter>([feature] = 'military_danger_area')</Filter>
-    <PolygonPatternSymbolizer file="symbols/danger.png" />
-  </Rule>
-  <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'landuse_field')</Filter>
     <PolygonSymbolizer fill="#666600" fill-opacity="0.2" />
@@ -266,20 +246,10 @@
     <PolygonSymbolizer fill="#666600" fill-opacity="0.2" />
   </Rule>
   <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <Filter>([feature] = 'landuse_cemetery') and ([religion] = 'INT-generic')</Filter>
-    <PolygonPatternSymbolizer file="symbols/grave_yard_generic.png" />
-  </Rule>
-  <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([feature] = 'landuse_cemetery') and ([religion] = 'INT-generic')</Filter>
     <PolygonSymbolizer fill="#aacbaf" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <Filter>([feature] = 'landuse_grave_yard') and ([religion] = 'INT-generic')</Filter>
-    <PolygonPatternSymbolizer file="symbols/grave_yard_generic.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
@@ -288,20 +258,10 @@
     <PolygonSymbolizer fill="#aacbaf" />
   </Rule>
   <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <Filter>([feature] = 'amenity_grave_yard') and ([religion] = 'INT-generic')</Filter>
-    <PolygonPatternSymbolizer file="symbols/grave_yard_generic.png" />
-  </Rule>
-  <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([feature] = 'amenity_grave_yard') and ([religion] = 'INT-generic')</Filter>
     <PolygonSymbolizer fill="#aacbaf" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <Filter>([feature] = 'landuse_cemetery') and ([religion] = 'christian')</Filter>
-    <PolygonPatternSymbolizer file="symbols/grave_yard.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
@@ -310,20 +270,10 @@
     <PolygonSymbolizer fill="#aacbaf" />
   </Rule>
   <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <Filter>([feature] = 'landuse_grave_yard') and ([religion] = 'christian')</Filter>
-    <PolygonPatternSymbolizer file="symbols/grave_yard.png" />
-  </Rule>
-  <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([feature] = 'landuse_grave_yard') and ([religion] = 'christian')</Filter>
     <PolygonSymbolizer fill="#aacbaf" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <Filter>([feature] = 'amenity_grave_yard') and ([religion] = 'christian')</Filter>
-    <PolygonPatternSymbolizer file="symbols/grave_yard.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
@@ -332,31 +282,16 @@
     <PolygonSymbolizer fill="#aacbaf" />
   </Rule>
   <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <Filter>([feature] = 'landuse_cemetery') and ([religion] = 'jewish')</Filter>
-    <PolygonPatternSymbolizer file="symbols/cemetery_jewish.18.png" />
-  </Rule>
-  <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([feature] = 'landuse_cemetery') and ([religion] = 'jewish')</Filter>
     <PolygonSymbolizer fill="#aacbaf" />
   </Rule>
   <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <Filter>([feature] = 'landuse_grave_yard') and ([religion] = 'jewish')</Filter>
-    <PolygonPatternSymbolizer file="symbols/cemetery_jewish.18.png" />
-  </Rule>
-  <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([feature] = 'landuse_grave_yard') and ([religion] = 'jewish')</Filter>
     <PolygonSymbolizer fill="#aacbaf" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <Filter>([feature] = 'amenity_grave_yard') and ([religion] = 'jewish')</Filter>
-    <PolygonPatternSymbolizer file="symbols/cemetery_jewish.18.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
@@ -389,11 +324,6 @@
     <PolygonSymbolizer fill="#abdf96" />
   </Rule>
   <Rule>
-    <MaxScaleDenominator>100000</MaxScaleDenominator>
-    <Filter>([feature] = 'landuse_vineyard')</Filter>
-    <PolygonPatternSymbolizer file="symbols/vineyard.png" />
-  </Rule>
-  <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_rest_area')</Filter>
     <PolygonSymbolizer fill="#efc8c8" />
@@ -402,11 +332,6 @@
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_services')</Filter>
     <PolygonSymbolizer fill="#efc8c8" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>100000</MaxScaleDenominator>
-    <Filter>([feature] = 'natural_beach')</Filter>
-    <PolygonPatternSymbolizer file="symbols/beach.png" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
@@ -532,11 +457,6 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
-    <Filter>([feature] = 'tourism_zoo')</Filter>
-    <PolygonPatternSymbolizer file="symbols/zoo.png" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>750000</MaxScaleDenominator>
     <Filter>([feature] = 'leisure_recreation_ground')</Filter>
     <PolygonSymbolizer fill="#b6fdb6" fill-opacity="0.6" />
   </Rule>
@@ -569,17 +489,6 @@
     <MaxScaleDenominator>750000</MaxScaleDenominator>
     <Filter>([feature] = 'landuse_residential')</Filter>
     <PolygonSymbolizer fill="#dddddd" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>750000</MaxScaleDenominator>
-    <Filter>([feature] = 'landuse_orchard')</Filter>
-    <PolygonPatternSymbolizer file="symbols/orchard.png" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>400000</MaxScaleDenominator>
-    <Filter>([feature] = 'landuse_quarry')</Filter>
-    <PolygonPatternSymbolizer file="symbols/quarry2.png" />
-    <LineSymbolizer stroke-width="0.5" stroke="#808080" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
@@ -845,24 +754,6 @@ case when leisure='pitch' then 2
 </Style>
 <Style name="water-areas-natural" filter-mode="first">
   <Rule>
-    <MaxScaleDenominator>3000000</MaxScaleDenominator>
-    <Filter>([natural] = 'glacier')</Filter>
-    <LineSymbolizer stroke-dasharray="4, 2" stroke-width="1.5" stroke="#99ccff" />
-    <PolygonPatternSymbolizer file="symbols/glacier2.png" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500000</MaxScaleDenominator>
-    <MinScaleDenominator>3000000</MinScaleDenominator>
-    <Filter>([natural] = 'glacier')</Filter>
-    <LineSymbolizer stroke-dasharray="4, 2" stroke-width="1.5" stroke="#99ccff" />
-    <PolygonPatternSymbolizer file="symbols/glacier.png" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>100000</MaxScaleDenominator>
-    <Filter>([natural] = 'mud')</Filter>
-    <PolygonPatternSymbolizer file="symbols/mud.png" />
-  </Rule>
-  <Rule>
     <MaxScaleDenominator>12500000</MaxScaleDenominator>
     <Filter>([natural] = 'lake')</Filter>
     <PolygonSymbolizer fill="#b5d0d0" gamma="0.75" />
@@ -887,35 +778,6 @@ case when leisure='pitch' then 2
          or landuse in ('reservoir','water','basin')
          or "natural" in ('lake','water','land','glacier','mud'))
          and building is null
-      order by z_order,way_area desc
-      ) as water_areas]]></Parameter>
-       <Parameter name="extent"><![CDATA[-20037508,-19929239,20037508,19929239]]></Parameter>
-       <Parameter name="key_field"><![CDATA[]]></Parameter>
-       <Parameter name="geometry_field"><![CDATA[way]]></Parameter>
-       <Parameter name="dbname"><![CDATA[gis]]></Parameter>
-    </Datasource>
-  </Layer>
-
-<Style name="water-areas-overlay" filter-mode="first">
-  <Rule>
-    <MaxScaleDenominator>100000</MaxScaleDenominator>
-    <Filter>([natural] = 'marsh')</Filter>
-    <PolygonPatternSymbolizer file="symbols/marsh.png" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>100000</MaxScaleDenominator>
-    <Filter>([natural] = 'wetland')</Filter>
-    <PolygonPatternSymbolizer file="symbols/marsh.png" />
-  </Rule>
-</Style>
-<Layer name="water-areas-overlay"
-  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
-    <StyleName>water-areas-overlay</StyleName>
-    <Datasource>
-       <Parameter name="type"><![CDATA[postgis]]></Parameter>
-       <Parameter name="table"><![CDATA[      (select way,"natural"
-      from planet_osm_polygon
-      where "natural" in ('marsh','wetland') and building is null
       order by z_order,way_area desc
       ) as water_areas]]></Parameter>
        <Parameter name="extent"><![CDATA[-20037508,-19929239,20037508,19929239]]></Parameter>
@@ -2246,46 +2108,6 @@ case when leisure='pitch' then 2
     <Datasource>
        <Parameter name="type"><![CDATA[postgis]]></Parameter>
        <Parameter name="table"><![CDATA[(select way from planet_osm_polygon where "historic"='castle_walls') as castle_walls]]></Parameter>
-       <Parameter name="extent"><![CDATA[-20037508,-19929239,20037508,19929239]]></Parameter>
-       <Parameter name="key_field"><![CDATA[]]></Parameter>
-       <Parameter name="geometry_field"><![CDATA[way]]></Parameter>
-       <Parameter name="dbname"><![CDATA[gis]]></Parameter>
-    </Datasource>
-  </Layer>
-
-<Style name="landuse-overlay" filter-mode="first">
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <Filter>([leisure] = 'nature_reserve')</Filter>
-    <LineSymbolizer stroke-width="1" stroke="#66cc33" />
-    <PolygonPatternSymbolizer file="symbols/nature_reserve6.png" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>750000</MaxScaleDenominator>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([leisure] = 'nature_reserve')</Filter>
-    <PolygonPatternSymbolizer file="symbols/nature_reserve5.png" />
-    <LineSymbolizer stroke="#66cc33" stroke-width="0.5" />
-  </Rule>
-</Style>
-<Style name="landuse-overlay-landuse" filter-mode="first">
-  <Rule>
-    <MaxScaleDenominator>750000</MaxScaleDenominator>
-    <Filter>([landuse] = 'military')</Filter>
-    <PolygonPatternSymbolizer file="symbols/military_red_hatch.png" alignment="global" />
-    <LineSymbolizer stroke="#ff5555" stroke-width="3" stroke-opacity="0.329" />
-  </Rule>
-</Style>
-<Layer name="landuse-overlay"
-  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
-    <StyleName>landuse-overlay-landuse</StyleName>
-    <StyleName>landuse-overlay</StyleName>
-    <Datasource>
-       <Parameter name="type"><![CDATA[postgis]]></Parameter>
-       <Parameter name="table"><![CDATA[(select way,landuse,leisure
-       from planet_osm_polygon
-       where (landuse = 'military' or leisure='nature_reserve') and building is null
-      ) as landuse_overlay]]></Parameter>
        <Parameter name="extent"><![CDATA[-20037508,-19929239,20037508,19929239]]></Parameter>
        <Parameter name="key_field"><![CDATA[]]></Parameter>
        <Parameter name="geometry_field"><![CDATA[way]]></Parameter>
