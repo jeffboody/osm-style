@@ -13735,19 +13735,19 @@ case when leisure='pitch' then 2
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
     <Filter>([highway] = 'secondary')</Filter>
-    <ShieldSymbolizer size="10" fill="#ffffff" placement="line" file="symbols/sec_shield[length].png" spacing="750" minimum-distance="30" fontset-name="fontset-2" ><![CDATA[[ref]]]></ShieldSymbolizer>
+    <ShieldSymbolizer size="10" fill="#ffffff" placement="line" file="symbols/mot_shield[length].png" spacing="750" minimum-distance="30" fontset-name="fontset-2" ><![CDATA[[ref]]]></ShieldSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>400000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
     <Filter>([highway] = 'primary')</Filter>
-    <ShieldSymbolizer size="10" fill="#ffffff" placement="line" file="symbols/pri_shield[length].png" spacing="750" minimum-distance="30" fontset-name="fontset-2" ><![CDATA[[ref]]]></ShieldSymbolizer>
+    <ShieldSymbolizer size="10" fill="#ffffff" placement="line" file="symbols/mot_shield[length].png" spacing="750" minimum-distance="30" fontset-name="fontset-2" ><![CDATA[[ref]]]></ShieldSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>400000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
     <Filter>([highway] = 'trunk')</Filter>
-    <ShieldSymbolizer size="10" fill="#ffffff" placement="line" file="symbols/tru_shield[length].png" spacing="750" minimum-distance="30" fontset-name="fontset-2" ><![CDATA[[ref]]]></ShieldSymbolizer>
+    <ShieldSymbolizer size="10" fill="#ffffff" placement="line" file="symbols/mot_shield[length].png" spacing="750" minimum-distance="30" fontset-name="fontset-2" ><![CDATA[[ref]]]></ShieldSymbolizer>
   </Rule>
 </Style>
 <Layer name="roads-text-ref-low-zoom"
@@ -13836,12 +13836,12 @@ case when leisure='pitch' then 2
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([highway] = 'tertiary') and ([bridge] = 'no')</Filter>
-    <ShieldSymbolizer size="10" fill="#ffffff" placement="line" file="symbols/ter_shield[length].png" spacing="750" minimum-distance="30" fontset-name="fontset-2" avoid-edges="true" ><![CDATA[[ref]]]></ShieldSymbolizer>
+    <ShieldSymbolizer size="10" fill="#ffffff" placement="line" file="symbols/mot_shield[length].png" spacing="750" minimum-distance="30" fontset-name="fontset-2" avoid-edges="true" ><![CDATA[[ref]]]></ShieldSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([highway] = 'secondary') and ([bridge] = 'no')</Filter>
-    <ShieldSymbolizer size="10" fill="#ffffff" placement="line" file="symbols/sec_shield[length].png" spacing="750" minimum-distance="30" fontset-name="fontset-2" avoid-edges="true" ><![CDATA[[ref]]]></ShieldSymbolizer>
+    <ShieldSymbolizer size="10" fill="#ffffff" placement="line" file="symbols/mot_shield[length].png" spacing="750" minimum-distance="30" fontset-name="fontset-2" avoid-edges="true" ><![CDATA[[ref]]]></ShieldSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
@@ -13851,12 +13851,12 @@ case when leisure='pitch' then 2
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([highway] = 'primary')</Filter>
-    <ShieldSymbolizer size="10" fill="#ffffff" placement="line" file="symbols/pri_shield[length].png" spacing="750" minimum-distance="30" fontset-name="fontset-2" avoid-edges="true" ><![CDATA[[ref]]]></ShieldSymbolizer>
+    <ShieldSymbolizer size="10" fill="#ffffff" placement="line" file="symbols/mot_shield[length].png" spacing="750" minimum-distance="30" fontset-name="fontset-2" avoid-edges="true" ><![CDATA[[ref]]]></ShieldSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([highway] = 'trunk')</Filter>
-    <ShieldSymbolizer size="10" fill="#ffffff" placement="line" file="symbols/tru_shield[length].png" spacing="750" minimum-distance="30" fontset-name="fontset-2" avoid-edges="true" ><![CDATA[[ref]]]></ShieldSymbolizer>
+    <ShieldSymbolizer size="10" fill="#ffffff" placement="line" file="symbols/mot_shield[length].png" spacing="750" minimum-distance="30" fontset-name="fontset-2" avoid-edges="true" ><![CDATA[[ref]]]></ShieldSymbolizer>
   </Rule>
 </Style>
 <Layer name="roads-text-ref"
