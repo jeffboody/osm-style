@@ -929,17 +929,17 @@ case when leisure='pitch' then 2
   <Rule>
     <MaxScaleDenominator>400000</MaxScaleDenominator>
     <Filter>([way_area] &gt;= 5000000) and ([way_area] &lt; 10000000)</Filter>
-    <TextSymbolizer size="9" fill="#9999ff" fontset-name="fontset-0" halo-radius="1" wrap-width="20" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="14" fill="#9999ff" fontset-name="fontset-0" halo-radius="1" wrap-width="20" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <Filter>([way_area] &lt; 5000000)</Filter>
-    <TextSymbolizer size="9" fill="#9999ff" fontset-name="fontset-0" halo-radius="1" wrap-width="20" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="14" fill="#9999ff" fontset-name="fontset-0" halo-radius="1" wrap-width="20" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
     <Filter>([way_area] &gt;= 10000000)</Filter>
-    <TextSymbolizer size="9" fill="#9999ff" fontset-name="fontset-0" halo-radius="1" wrap-width="20" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="14" fill="#9999ff" fontset-name="fontset-0" halo-radius="1" wrap-width="20" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
 </Style>
 <Layer name="glaciers-text"
@@ -1254,7 +1254,7 @@ case when leisure='pitch' then 2
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <LineSymbolizer stroke-width="2" stroke="#444444" stroke-linejoin="round" stroke-linecap="round" />
-    <TextSymbolizer halo-radius="1" fill="#222222" size="8" fontset-name="fontset-0" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer halo-radius="1" fill="#222222" size="12" fontset-name="fontset-0" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
@@ -12286,13 +12286,13 @@ case when leisure='pitch' then 2
     <MaxScaleDenominator>100000000</MaxScaleDenominator>
     <MinScaleDenominator>25000000</MinScaleDenominator>
     <Filter>([SCALERANK] = 0)</Filter>
-    <TextSymbolizer size="8" fill="#808080" fontset-name="fontset-0" halo-radius="1" ><![CDATA[[NAME]]]></TextSymbolizer>
+    <TextSymbolizer size="12" fill="#808080" fontset-name="fontset-0" halo-radius="1" ><![CDATA[[NAME]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000000</MaxScaleDenominator>
     <MinScaleDenominator>25000000</MinScaleDenominator>
     <Filter>([SCALERANK] = 1)</Filter>
-    <TextSymbolizer size="8" fill="#808080" fontset-name="fontset-0" halo-radius="1" ><![CDATA[[NAME]]]></TextSymbolizer>
+    <TextSymbolizer size="12" fill="#808080" fontset-name="fontset-0" halo-radius="1" ><![CDATA[[NAME]]]></TextSymbolizer>
   </Rule>
 </Style>
 <Layer name="nepopulated"
@@ -12310,31 +12310,31 @@ case when leisure='pitch' then 2
     <MaxScaleDenominator>6500000</MaxScaleDenominator>
     <MinScaleDenominator>1500000</MinScaleDenominator>
     <Filter>([place] = 'state')</Filter>
-    <TextSymbolizer size="11" fill="#9d6c9d" fontset-name="fontset-1" halo-radius="1" wrap-width="0" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="17" fill="#9d6c9d" fontset-name="fontset-1" halo-radius="1" wrap-width="0" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000000</MaxScaleDenominator>
     <MinScaleDenominator>6500000</MinScaleDenominator>
     <Filter>([place] = 'state')</Filter>
-    <TextSymbolizer size="8" fill="#9d6c9d" fontset-name="fontset-1" halo-radius="1" wrap-width="0" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="12" fill="#9d6c9d" fontset-name="fontset-1" halo-radius="1" wrap-width="0" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000000</MaxScaleDenominator>
     <MinScaleDenominator>25000000</MinScaleDenominator>
     <Filter>([place] = 'state')</Filter>
-    <TextSymbolizer size="8" fill="#9d6c9d" fontset-name="fontset-1" halo-radius="1" wrap-width="0" ><![CDATA[[ref]]]></TextSymbolizer>
+    <TextSymbolizer size="12" fill="#9d6c9d" fontset-name="fontset-1" halo-radius="1" wrap-width="0" ><![CDATA[[ref]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000000</MaxScaleDenominator>
     <MinScaleDenominator>12500000</MinScaleDenominator>
     <Filter>([place] = 'country')</Filter>
-    <TextSymbolizer size="10" fill="#9d6c9d" fontset-name="fontset-0" halo-radius="1" wrap-width="20" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#9d6c9d" fontset-name="fontset-0" halo-radius="1" wrap-width="20" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000000</MaxScaleDenominator>
     <MinScaleDenominator>50000000</MinScaleDenominator>
     <Filter>([place] = 'country')</Filter>
-    <TextSymbolizer size="8" fill="#9d6c9d" fontset-name="fontset-0" halo-radius="1" wrap-width="20" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="12" fill="#9d6c9d" fontset-name="fontset-0" halo-radius="1" wrap-width="20" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
 </Style>
 <Layer name="placenames-large"
@@ -12357,17 +12357,17 @@ case when leisure='pitch' then 2
   <Rule>
     <MaxScaleDenominator>400000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
-    <TextSymbolizer size="14" fill="#000000" fontset-name="fontset-0" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="21" fill="#000000" fontset-name="fontset-0" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500000</MaxScaleDenominator>
     <MinScaleDenominator>400000</MinScaleDenominator>
-    <TextSymbolizer size="11" fill="#000000" fontset-name="fontset-0" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="17" fill="#000000" fontset-name="fontset-0" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000000</MaxScaleDenominator>
     <MinScaleDenominator>12500000</MinScaleDenominator>
-    <TextSymbolizer size="9" fill="#000000" fontset-name="fontset-0" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="14" fill="#000000" fontset-name="fontset-0" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
 </Style>
 <Layer name="placenames-capital"
@@ -12390,19 +12390,19 @@ case when leisure='pitch' then 2
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([place] = 'town')</Filter>
-    <TextSymbolizer size="14" fill="#777777" fontset-name="fontset-0" halo-radius="1" wrap-width="20" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="21" fill="#777777" fontset-name="fontset-0" halo-radius="1" wrap-width="20" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>400000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([place] = 'town')</Filter>
-    <TextSymbolizer size="10" fill="#000000" fontset-name="fontset-0" halo-radius="1" wrap-width="20" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#000000" fontset-name="fontset-0" halo-radius="1" wrap-width="20" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>1500000</MaxScaleDenominator>
     <MinScaleDenominator>400000</MinScaleDenominator>
     <Filter>([place] = 'town')</Filter>
-    <TextSymbolizer size="8" fill="#000000" fontset-name="fontset-0" halo-radius="1" wrap-width="20" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="12" fill="#000000" fontset-name="fontset-0" halo-radius="1" wrap-width="20" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
 </Style>
 <Style name="placenames-medium-city" filter-mode="first">
@@ -12410,19 +12410,19 @@ case when leisure='pitch' then 2
     <MaxScaleDenominator>400000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([place] = 'city')</Filter>
-    <TextSymbolizer size="14" fill="#000000" fontset-name="fontset-0" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="21" fill="#000000" fontset-name="fontset-0" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>1500000</MaxScaleDenominator>
     <MinScaleDenominator>400000</MinScaleDenominator>
     <Filter>([place] = 'city')</Filter>
-    <TextSymbolizer size="11" fill="#000000" fontset-name="fontset-0" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="17" fill="#000000" fontset-name="fontset-0" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500000</MaxScaleDenominator>
     <MinScaleDenominator>1500000</MinScaleDenominator>
     <Filter>([place] = 'city')</Filter>
-    <TextSymbolizer size="8" fill="#000000" fontset-name="fontset-0" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="14" fill="#000000" fontset-name="fontset-0" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
 </Style>
 <Layer name="placenames-medium"
@@ -12447,72 +12447,72 @@ case when leisure='pitch' then 2
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([place] = 'locality')</Filter>
-    <TextSymbolizer size="11" fill="#777777" fontset-name="fontset-0" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="17" fill="#777777" fontset-name="fontset-0" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([place] = 'locality')</Filter>
-    <TextSymbolizer size="8" fill="#000000" fontset-name="fontset-0" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="12" fill="#000000" fontset-name="fontset-0" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([place] = 'hamlet')</Filter>
-    <TextSymbolizer size="11" fill="#777777" fontset-name="fontset-0" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="17" fill="#777777" fontset-name="fontset-0" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([place] = 'hamlet')</Filter>
-    <TextSymbolizer size="8" fill="#000000" fontset-name="fontset-0" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="12" fill="#000000" fontset-name="fontset-0" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([place] = 'farm')</Filter>
-    <TextSymbolizer size="11" fill="#777777" fontset-name="fontset-0" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="17" fill="#777777" fontset-name="fontset-0" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([place] = 'farm')</Filter>
-    <TextSymbolizer size="8" fill="#000000" fontset-name="fontset-0" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="12" fill="#000000" fontset-name="fontset-0" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([place] = 'isolated_dwelling')</Filter>
-    <TextSymbolizer size="11" fill="#777777" fontset-name="fontset-0" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="17" fill="#777777" fontset-name="fontset-0" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([place] = 'isolated_dwelling')</Filter>
-    <TextSymbolizer size="8" fill="#000000" fontset-name="fontset-0" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="12" fill="#000000" fontset-name="fontset-0" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
 </Style>
 <Style name="placenames-small-village" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <Filter>([place] = 'village')</Filter>
-    <TextSymbolizer size="12" fill="#777777" fontset-name="fontset-0" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="18" fill="#777777" fontset-name="fontset-0" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([place] = 'village')</Filter>
-    <TextSymbolizer size="9" fill="#000000" fontset-name="fontset-0" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#000000" fontset-name="fontset-0" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
 </Style>
 <Style name="placenames-small-suburb" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([place] = 'suburb')</Filter>
-    <TextSymbolizer size="13" fill="#777777" fontset-name="fontset-0" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="20" fill="#777777" fontset-name="fontset-0" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([place] = 'suburb')</Filter>
-    <TextSymbolizer size="10" fill="#000000" fontset-name="fontset-0" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#000000" fontset-name="fontset-0" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
 </Style>
 <Layer name="placenames-small"
@@ -12538,14 +12538,14 @@ case when leisure='pitch' then 2
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <Filter>([aerialway] = 'station')</Filter>
     <PointSymbolizer file="symbols/station_small.png" />
-    <TextSymbolizer size="10" dy="-10" fontset-name="fontset-0" fill="#6666ff" halo-radius="1" wrap-width="0" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" dy="-10" fontset-name="fontset-0" fill="#6666ff" halo-radius="1" wrap-width="0" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([aerialway] = 'station')</Filter>
     <PointSymbolizer file="symbols/halt.png" />
-    <TextSymbolizer fontset-name="fontset-0" size="8" fill="#6666ff" dy="-8" halo-radius="1" wrap-width="0" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" size="12" fill="#6666ff" dy="-8" halo-radius="1" wrap-width="0" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
@@ -12559,14 +12559,14 @@ case when leisure='pitch' then 2
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <Filter>([railway] = 'tram_stop')</Filter>
     <PointSymbolizer file="symbols/station_small.png" />
-    <TextSymbolizer size="10" dy="-10" fontset-name="fontset-0" fill="#6666ff" halo-radius="1" wrap-width="0" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" dy="-10" fontset-name="fontset-0" fill="#6666ff" halo-radius="1" wrap-width="0" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([railway] = 'tram_stop')</Filter>
     <PointSymbolizer file="symbols/halt.png" />
-    <TextSymbolizer fontset-name="fontset-0" size="8" fill="#6666ff" dy="-8" halo-radius="1" wrap-width="0" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" size="12" fill="#6666ff" dy="-8" halo-radius="1" wrap-width="0" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
@@ -12578,14 +12578,14 @@ case when leisure='pitch' then 2
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <Filter>([railway] = 'halt')</Filter>
     <PointSymbolizer file="symbols/station_small.png" />
-    <TextSymbolizer size="10" dy="-10" fontset-name="fontset-0" fill="#6666ff" halo-radius="1" wrap-width="0" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" dy="-10" fontset-name="fontset-0" fill="#6666ff" halo-radius="1" wrap-width="0" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([railway] = 'halt')</Filter>
     <PointSymbolizer file="symbols/halt.png" />
-    <TextSymbolizer fontset-name="fontset-0" size="8" fill="#6666ff" dy="-8" halo-radius="1" wrap-width="0" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" size="12" fill="#6666ff" dy="-8" halo-radius="1" wrap-width="0" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
@@ -12597,14 +12597,14 @@ case when leisure='pitch' then 2
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <Filter>([railway] = 'station')</Filter>
     <PointSymbolizer file="symbols/station.png" placement="interior" />
-    <TextSymbolizer size="11" dy="-10" fontset-name="fontset-2" fill="#6666ff" halo-radius="1" wrap-width="0" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="17" dy="-10" fontset-name="fontset-2" fill="#6666ff" halo-radius="1" wrap-width="0" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([railway] = 'station')</Filter>
     <PointSymbolizer file="symbols/station_small.png" placement="interior" />
-    <TextSymbolizer fontset-name="fontset-2" size="9" fill="#6666ff" dy="-8" halo-radius="1" wrap-width="0" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-2" size="14" fill="#6666ff" dy="-8" halo-radius="1" wrap-width="0" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
@@ -12647,14 +12647,14 @@ case when leisure='pitch' then 2
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <Filter>([aerialway] = 'station')</Filter>
     <PointSymbolizer file="symbols/station_small.png" />
-    <TextSymbolizer size="10" dy="-10" fontset-name="fontset-0" fill="#6666ff" halo-radius="1" wrap-width="0" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" dy="-10" fontset-name="fontset-0" fill="#6666ff" halo-radius="1" wrap-width="0" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([aerialway] = 'station')</Filter>
     <PointSymbolizer file="symbols/halt.png" />
-    <TextSymbolizer fontset-name="fontset-0" size="8" fill="#6666ff" dy="-8" halo-radius="1" wrap-width="0" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" size="12" fill="#6666ff" dy="-8" halo-radius="1" wrap-width="0" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
@@ -12668,14 +12668,14 @@ case when leisure='pitch' then 2
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <Filter>([railway] = 'tram_stop')</Filter>
     <PointSymbolizer file="symbols/station_small.png" />
-    <TextSymbolizer size="10" dy="-10" fontset-name="fontset-0" fill="#6666ff" halo-radius="1" wrap-width="0" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" dy="-10" fontset-name="fontset-0" fill="#6666ff" halo-radius="1" wrap-width="0" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([railway] = 'tram_stop')</Filter>
     <PointSymbolizer file="symbols/halt.png" />
-    <TextSymbolizer fontset-name="fontset-0" size="8" fill="#6666ff" dy="-8" halo-radius="1" wrap-width="0" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" size="12" fill="#6666ff" dy="-8" halo-radius="1" wrap-width="0" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
@@ -12687,14 +12687,14 @@ case when leisure='pitch' then 2
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <Filter>([railway] = 'halt')</Filter>
     <PointSymbolizer file="symbols/station_small.png" />
-    <TextSymbolizer size="10" dy="-10" fontset-name="fontset-0" fill="#6666ff" halo-radius="1" wrap-width="0" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" dy="-10" fontset-name="fontset-0" fill="#6666ff" halo-radius="1" wrap-width="0" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([railway] = 'halt')</Filter>
     <PointSymbolizer file="symbols/halt.png" />
-    <TextSymbolizer fontset-name="fontset-0" size="8" fill="#6666ff" dy="-8" halo-radius="1" wrap-width="0" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" size="12" fill="#6666ff" dy="-8" halo-radius="1" wrap-width="0" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
@@ -12706,14 +12706,14 @@ case when leisure='pitch' then 2
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <Filter>([railway] = 'station')</Filter>
     <PointSymbolizer file="symbols/station.png" placement="interior" />
-    <TextSymbolizer size="11" dy="-10" fontset-name="fontset-2" fill="#6666ff" halo-radius="1" wrap-width="0" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="17" dy="-10" fontset-name="fontset-2" fill="#6666ff" halo-radius="1" wrap-width="0" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([railway] = 'station')</Filter>
     <PointSymbolizer file="symbols/station_small.png" placement="interior" />
-    <TextSymbolizer fontset-name="fontset-2" size="9" fill="#6666ff" dy="-8" halo-radius="1" wrap-width="0" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-2" size="14" fill="#6666ff" dy="-8" halo-radius="1" wrap-width="0" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
@@ -12895,32 +12895,32 @@ case when leisure='pitch' then 2
     <MinScaleDenominator>400000</MinScaleDenominator>
     <Filter>([aeroway] = 'aerodrome')</Filter>
     <PointSymbolizer file="symbols/aerodrome.p.16.png" />
-    <TextSymbolizer dy="-12" size="8" fill="#6692da" fontset-name="fontset-1" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer dy="-12" size="12" fill="#6692da" fontset-name="fontset-1" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>400000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
     <Filter>([aeroway] = 'aerodrome')</Filter>
-    <TextSymbolizer size="8" fill="#6692da" fontset-name="fontset-1" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="12" fill="#6692da" fontset-name="fontset-1" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>1500000</MaxScaleDenominator>
     <MinScaleDenominator>400000</MinScaleDenominator>
     <Filter>([aeroway] = 'airport')</Filter>
     <PointSymbolizer file="symbols/airport.p.16.png" />
-    <TextSymbolizer size="8" dy="-12" fill="#6692da" halo-radius="1" placement="interior" fontset-name="fontset-2" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="12" dy="-12" fill="#6692da" halo-radius="1" placement="interior" fontset-name="fontset-2" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>400000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
     <Filter>([aeroway] = 'airport')</Filter>
-    <TextSymbolizer size="9" fill="#6692da" halo-radius="1" placement="interior" fontset-name="fontset-2" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="14" fill="#6692da" halo-radius="1" placement="interior" fontset-name="fontset-2" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([aeroway] = 'helipad')</Filter>
     <PointSymbolizer file="symbols/helipad.p.16.png" />
-    <TextSymbolizer size="8" fill="#6692da" dy="-10" fontset-name="fontset-2" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="12" fill="#6692da" dy="-10" fontset-name="fontset-2" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
 </Style>
 <Layer name="amenity-symbols"
@@ -13096,32 +13096,32 @@ case when leisure='pitch' then 2
     <MinScaleDenominator>400000</MinScaleDenominator>
     <Filter>([aeroway] = 'aerodrome')</Filter>
     <PointSymbolizer file="symbols/aerodrome.p.16.png" />
-    <TextSymbolizer dy="-12" size="8" fill="#6692da" fontset-name="fontset-1" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer dy="-12" size="12" fill="#6692da" fontset-name="fontset-1" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>400000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
     <Filter>([aeroway] = 'aerodrome')</Filter>
-    <TextSymbolizer size="8" fill="#6692da" fontset-name="fontset-1" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="12" fill="#6692da" fontset-name="fontset-1" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>1500000</MaxScaleDenominator>
     <MinScaleDenominator>400000</MinScaleDenominator>
     <Filter>([aeroway] = 'airport')</Filter>
     <PointSymbolizer file="symbols/airport.p.16.png" />
-    <TextSymbolizer size="8" dy="-12" fill="#6692da" halo-radius="1" placement="interior" fontset-name="fontset-2" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="12" dy="-12" fill="#6692da" halo-radius="1" placement="interior" fontset-name="fontset-2" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>400000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
     <Filter>([aeroway] = 'airport')</Filter>
-    <TextSymbolizer size="9" fill="#6692da" halo-radius="1" placement="interior" fontset-name="fontset-2" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="14" fill="#6692da" halo-radius="1" placement="interior" fontset-name="fontset-2" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([aeroway] = 'helipad')</Filter>
     <PointSymbolizer file="symbols/helipad.p.16.png" />
-    <TextSymbolizer size="8" fill="#6692da" dy="-10" fontset-name="fontset-2" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="12" fill="#6692da" dy="-10" fontset-name="fontset-2" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
 </Style>
 <Layer name="amenity-symbols-poly"
@@ -14112,19 +14112,19 @@ case when leisure='pitch' then 2
 <Style name="highway-junctions" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <TextSymbolizer size="12" fill="#6666ff" minimum-distance="2" fontset-name="fontset-1" halo-radius="1" wrap-width="12" ><![CDATA[[ref]]]></TextSymbolizer>
-    <TextSymbolizer size="11" dy="-10" fill="#6666ff" fontset-name="fontset-1" halo-radius="1" wrap-character=";" wrap-width="2" minimum-distance="2" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="18" fill="#6666ff" minimum-distance="2" fontset-name="fontset-1" halo-radius="1" wrap-width="12" ><![CDATA[[ref]]]></TextSymbolizer>
+    <TextSymbolizer size="17" dy="-10" fill="#6666ff" fontset-name="fontset-1" halo-radius="1" wrap-character=";" wrap-width="2" minimum-distance="2" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
-    <TextSymbolizer size="9" fill="#6666ff" minimum-distance="2" fontset-name="fontset-1" halo-radius="1" wrap-width="12" ><![CDATA[[ref]]]></TextSymbolizer>
-    <TextSymbolizer size="8" fill="#6666ff" dy="-8" fontset-name="fontset-1" halo-radius="1" wrap-character=";" wrap-width="2" minimum-distance="2" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="14" fill="#6666ff" minimum-distance="2" fontset-name="fontset-1" halo-radius="1" wrap-width="12" ><![CDATA[[ref]]]></TextSymbolizer>
+    <TextSymbolizer size="12" fill="#6666ff" dy="-8" fontset-name="fontset-1" halo-radius="1" wrap-character=";" wrap-width="2" minimum-distance="2" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>400000</MaxScaleDenominator>
     <MinScaleDenominator>200000</MinScaleDenominator>
-    <TextSymbolizer size="9" fill="#6666ff" minimum-distance="2" fontset-name="fontset-1" halo-radius="1" wrap-width="12" ><![CDATA[[ref]]]></TextSymbolizer>
+    <TextSymbolizer size="14" fill="#6666ff" minimum-distance="2" fontset-name="fontset-1" halo-radius="1" wrap-width="12" ><![CDATA[[ref]]]></TextSymbolizer>
   </Rule>
 </Style>
 <Layer name="highway-junctions"
@@ -14157,22 +14157,22 @@ case when leisure='pitch' then 2
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <Filter>([highway] = 'runway') and ([bridge] = 'no')</Filter>
-    <TextSymbolizer size="10" fill="#333333" spacing="750" clip="false" placement="line" minimum-distance="18" fontset-name="fontset-0" halo-radius="1" ><![CDATA[[ref]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#333333" spacing="750" clip="false" placement="line" minimum-distance="18" fontset-name="fontset-0" halo-radius="1" ><![CDATA[[ref]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <Filter>([highway] = 'taxiway') and ([bridge] = 'no')</Filter>
-    <TextSymbolizer size="10" fill="#333333" spacing="750" clip="false" placement="line" minimum-distance="18" fontset-name="fontset-0" halo-radius="1" ><![CDATA[[ref]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#333333" spacing="750" clip="false" placement="line" minimum-distance="18" fontset-name="fontset-0" halo-radius="1" ><![CDATA[[ref]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <Filter>([highway] = 'unclassified') and ([bridge] = 'no')</Filter>
-    <TextSymbolizer size="10" fill="#000000" fontset-name="fontset-2" minimum-distance="18" halo-radius="1" spacing="750" clip="false" ><![CDATA[[ref]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#000000" fontset-name="fontset-2" minimum-distance="18" halo-radius="1" spacing="750" clip="false" ><![CDATA[[ref]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <Filter>([highway] = 'residential') and ([bridge] = 'no')</Filter>
-    <TextSymbolizer size="10" fill="#000000" fontset-name="fontset-2" minimum-distance="18" halo-radius="1" spacing="750" clip="false" ><![CDATA[[ref]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#000000" fontset-name="fontset-2" minimum-distance="18" halo-radius="1" spacing="750" clip="false" ><![CDATA[[ref]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
@@ -14223,129 +14223,129 @@ case when leisure='pitch' then 2
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([highway] = 'unclassified')</Filter>
-    <TextSymbolizer size="11" spacing="400" clip="false" placement="line" halo-radius="1" fontset-name="fontset-0" fill="#000000" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="17" spacing="400" clip="false" placement="line" halo-radius="1" fontset-name="fontset-0" fill="#000000" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([highway] = 'unclassified')</Filter>
-    <TextSymbolizer size="9" spacing="300" clip="false" placement="line" halo-radius="1" fontset-name="fontset-0" fill="#000000" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="14" spacing="300" clip="false" placement="line" halo-radius="1" fontset-name="fontset-0" fill="#000000" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([highway] = 'unclassified')</Filter>
-    <TextSymbolizer size="8" spacing="300" clip="false" placement="line" halo-radius="1" fontset-name="fontset-0" fill="#000000" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="12" spacing="300" clip="false" placement="line" halo-radius="1" fontset-name="fontset-0" fill="#000000" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([highway] = 'residential')</Filter>
-    <TextSymbolizer size="11" spacing="400" clip="false" placement="line" halo-radius="1" fontset-name="fontset-0" fill="#000000" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="17" spacing="400" clip="false" placement="line" halo-radius="1" fontset-name="fontset-0" fill="#000000" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([highway] = 'residential')</Filter>
-    <TextSymbolizer size="9" spacing="300" clip="false" placement="line" halo-radius="1" fontset-name="fontset-0" fill="#000000" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="14" spacing="300" clip="false" placement="line" halo-radius="1" fontset-name="fontset-0" fill="#000000" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([highway] = 'residential')</Filter>
-    <TextSymbolizer size="8" spacing="300" clip="false" placement="line" halo-radius="1" fontset-name="fontset-0" fill="#000000" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="12" spacing="300" clip="false" placement="line" halo-radius="1" fontset-name="fontset-0" fill="#000000" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([highway] = 'construction')</Filter>
-    <TextSymbolizer size="11" fill="#000000" spacing="300" clip="false" placement="line" fontset-name="fontset-0" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="17" fill="#000000" spacing="300" clip="false" placement="line" fontset-name="fontset-0" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([highway] = 'construction')</Filter>
-    <TextSymbolizer size="9" fill="#000000" spacing="300" clip="false" placement="line" fontset-name="fontset-0" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="14" fill="#000000" spacing="300" clip="false" placement="line" fontset-name="fontset-0" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([highway] = 'proposed')</Filter>
-    <TextSymbolizer size="11" fill="#000000" spacing="300" clip="false" placement="line" fontset-name="fontset-0" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="17" fill="#000000" spacing="300" clip="false" placement="line" fontset-name="fontset-0" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([highway] = 'proposed')</Filter>
-    <TextSymbolizer size="9" fill="#000000" spacing="300" clip="false" placement="line" fontset-name="fontset-0" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="14" fill="#000000" spacing="300" clip="false" placement="line" fontset-name="fontset-0" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([highway] = 'tertiary')</Filter>
-    <TextSymbolizer size="11" fill="#000000" spacing="300" clip="false" placement="line" fontset-name="fontset-0" halo-radius="0" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="17" fill="#000000" spacing="300" clip="false" placement="line" fontset-name="fontset-0" halo-radius="0" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([highway] = 'tertiary')</Filter>
-    <TextSymbolizer size="9" fill="#000000" spacing="300" clip="false" placement="line" fontset-name="fontset-0" halo-radius="0" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="14" fill="#000000" spacing="300" clip="false" placement="line" fontset-name="fontset-0" halo-radius="0" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <Filter>([highway] = 'secondary')</Filter>
-    <TextSymbolizer size="10" fill="#000000" spacing="300" clip="false" placement="line" fontset-name="fontset-0" halo-radius="0" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#000000" spacing="300" clip="false" placement="line" fontset-name="fontset-0" halo-radius="0" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([highway] = 'secondary')</Filter>
-    <TextSymbolizer size="9" fill="#000000" spacing="300" clip="false" placement="line" fontset-name="fontset-0" halo-radius="0" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="14" fill="#000000" spacing="300" clip="false" placement="line" fontset-name="fontset-0" halo-radius="0" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([highway] = 'secondary')</Filter>
-    <TextSymbolizer size="8" fill="#000000" spacing="300" clip="false" placement="line" fontset-name="fontset-0" halo-radius="0" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="12" fill="#000000" spacing="300" clip="false" placement="line" fontset-name="fontset-0" halo-radius="0" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <Filter>([highway] = 'trunk')</Filter>
-    <TextSymbolizer size="10" fill="#000000" spacing="300" clip="false" placement="line" fontset-name="fontset-0" halo-radius="0" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#000000" spacing="300" clip="false" placement="line" fontset-name="fontset-0" halo-radius="0" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([highway] = 'trunk')</Filter>
-    <TextSymbolizer size="9" fill="#000000" spacing="300" clip="false" placement="line" fontset-name="fontset-0" halo-radius="0" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="14" fill="#000000" spacing="300" clip="false" placement="line" fontset-name="fontset-0" halo-radius="0" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([highway] = 'trunk')</Filter>
-    <TextSymbolizer size="8" fill="#000000" spacing="300" clip="false" placement="line" fontset-name="fontset-0" halo-radius="0" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="12" fill="#000000" spacing="300" clip="false" placement="line" fontset-name="fontset-0" halo-radius="0" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <Filter>([highway] = 'primary')</Filter>
-    <TextSymbolizer size="10" fill="#000000" spacing="300" clip="false" placement="line" fontset-name="fontset-0" halo-radius="0" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#000000" spacing="300" clip="false" placement="line" fontset-name="fontset-0" halo-radius="0" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([highway] = 'primary')</Filter>
-    <TextSymbolizer size="9" fill="#000000" spacing="300" clip="false" placement="line" fontset-name="fontset-0" halo-radius="0" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="14" fill="#000000" spacing="300" clip="false" placement="line" fontset-name="fontset-0" halo-radius="0" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([highway] = 'primary')</Filter>
-    <TextSymbolizer size="8" fill="#000000" spacing="300" clip="false" placement="line" fontset-name="fontset-0" halo-radius="0" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="12" fill="#000000" spacing="300" clip="false" placement="line" fontset-name="fontset-0" halo-radius="0" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <TextSymbolizer size="11" fill="#000000" clip="false" placement="line" fontset-name="fontset-0" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="17" fill="#000000" clip="false" placement="line" fontset-name="fontset-0" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
-    <TextSymbolizer size="9" fill="#000000" clip="false" placement="line" fontset-name="fontset-0" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="14" fill="#000000" clip="false" placement="line" fontset-name="fontset-0" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
 </Style>
 <Layer name="roads-text-name"
@@ -14371,425 +14371,425 @@ case when leisure='pitch' then 2
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([aeroway] = 'gate')</Filter>
-    <TextSymbolizer size="10" fill="#aa66cc" fontset-name="fontset-0" halo-radius="1" wrap-width="10" placement="interior" ><![CDATA[[ref]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#aa66cc" fontset-name="fontset-0" halo-radius="1" wrap-width="10" placement="interior" ><![CDATA[[ref]]]></TextSymbolizer>
   </Rule>
 </Style>
 <Style name="text-military" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <Filter>([military] = 'danger_area')</Filter>
-    <TextSymbolizer size="9" fill="#ffc0cb" fontset-name="fontset-2" halo-radius="1" wrap-width="10" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="14" fill="#ffc0cb" fontset-name="fontset-2" halo-radius="1" wrap-width="10" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
 </Style>
 <Style name="text-shop" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([shop] = 'department_store')</Filter>
-    <TextSymbolizer size="9" dy="9" fill="#993399" fontset-name="fontset-0" halo-radius="1" wrap-width="20" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="14" dy="9" fill="#993399" fontset-name="fontset-0" halo-radius="1" wrap-width="20" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([shop] = 'supermarket')</Filter>
-    <TextSymbolizer size="9" dy="9" fill="#993399" fontset-name="fontset-0" halo-radius="1" wrap-width="20" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="14" dy="9" fill="#993399" fontset-name="fontset-0" halo-radius="1" wrap-width="20" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([shop] = 'hairdresser')</Filter>
-    <TextSymbolizer size="8" dy="10" fill="#993399" fontset-name="fontset-0" halo-radius="1" wrap-width="12" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="12" dy="10" fill="#993399" fontset-name="fontset-0" halo-radius="1" wrap-width="12" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([shop] = 'doityourself')</Filter>
-    <TextSymbolizer size="8" dy="10" fill="#993399" fontset-name="fontset-0" halo-radius="1" wrap-width="12" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="12" dy="10" fill="#993399" fontset-name="fontset-0" halo-radius="1" wrap-width="12" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([shop] = 'convenience')</Filter>
-    <TextSymbolizer size="8" dy="10" fill="#993399" fontset-name="fontset-0" halo-radius="1" wrap-width="12" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="12" dy="10" fill="#993399" fontset-name="fontset-0" halo-radius="1" wrap-width="12" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([shop] = 'fashion')</Filter>
-    <TextSymbolizer size="8" dy="10" fill="#993399" fontset-name="fontset-0" halo-radius="1" wrap-width="12" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="12" dy="10" fill="#993399" fontset-name="fontset-0" halo-radius="1" wrap-width="12" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([shop] = 'car_repair')</Filter>
-    <TextSymbolizer size="8" dy="10" fill="#993399" fontset-name="fontset-0" halo-radius="1" wrap-width="12" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="12" dy="10" fill="#993399" fontset-name="fontset-0" halo-radius="1" wrap-width="12" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([shop] = 'car')</Filter>
-    <TextSymbolizer size="8" dy="10" fill="#993399" fontset-name="fontset-0" halo-radius="1" wrap-width="12" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="12" dy="10" fill="#993399" fontset-name="fontset-0" halo-radius="1" wrap-width="12" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([shop] = 'bicycle')</Filter>
-    <TextSymbolizer size="8" dy="10" fill="#993399" fontset-name="fontset-0" halo-radius="1" wrap-width="12" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="12" dy="10" fill="#993399" fontset-name="fontset-0" halo-radius="1" wrap-width="12" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([shop] = 'bakery')</Filter>
-    <TextSymbolizer size="8" dy="10" fill="#993399" fontset-name="fontset-0" halo-radius="1" wrap-width="12" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="12" dy="10" fill="#993399" fontset-name="fontset-0" halo-radius="1" wrap-width="12" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([shop] = 'clothes')</Filter>
-    <TextSymbolizer size="8" dy="10" fill="#993399" fontset-name="fontset-0" halo-radius="1" wrap-width="12" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="12" dy="10" fill="#993399" fontset-name="fontset-0" halo-radius="1" wrap-width="12" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([shop] = 'butcher')</Filter>
-    <TextSymbolizer size="8" dy="10" fill="#993399" fontset-name="fontset-0" halo-radius="1" wrap-width="12" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="12" dy="10" fill="#993399" fontset-name="fontset-0" halo-radius="1" wrap-width="12" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([shop] = 'florist')</Filter>
-    <TextSymbolizer size="8" dy="10" fill="#993399" fontset-name="fontset-0" halo-radius="1" wrap-width="12" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="12" dy="10" fill="#993399" fontset-name="fontset-0" halo-radius="1" wrap-width="12" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
 </Style>
 <Style name="text-man_made" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([man_made] = 'windmill')</Filter>
-    <TextSymbolizer size="9" fill="#734a08" dy="12" fontset-name="fontset-0" halo-radius="1" wrap-width="20" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="14" fill="#734a08" dy="12" fontset-name="fontset-0" halo-radius="1" wrap-width="20" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <Filter>([man_made] = 'lighthouse')</Filter>
-    <TextSymbolizer size="9" fill="#000033" dy="16" fontset-name="fontset-0" halo-radius="2" wrap-width="12" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="14" fill="#000033" dy="16" fontset-name="fontset-0" halo-radius="2" wrap-width="12" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
 </Style>
 <Style name="text-leisure" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([leisure] = 'marina')</Filter>
-    <TextSymbolizer size="10" fill="#0000ff" fontset-name="fontset-0" halo-radius="1" wrap-width="30" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#0000ff" fontset-name="fontset-0" halo-radius="1" wrap-width="30" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([leisure] = 'marina')</Filter>
-    <TextSymbolizer size="8" fill="#0000ff" fontset-name="fontset-0" halo-radius="1" wrap-width="30" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="12" fill="#0000ff" fontset-name="fontset-0" halo-radius="1" wrap-width="30" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
 </Style>
 <Style name="text-waterway" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <Filter>([waterway] = 'lock')</Filter>
-    <TextSymbolizer size="9" dy="10" fill="#0066ff" fontset-name="fontset-0" halo-radius="1" wrap-width="70" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="14" dy="10" fill="#0066ff" fontset-name="fontset-0" halo-radius="1" wrap-width="70" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
 </Style>
 <Style name="text-tourism" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([tourism] = 'theme_park')</Filter>
-    <TextSymbolizer size="10" fill="#734a08" fontset-name="fontset-0" halo-radius="1" wrap-width="30" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#734a08" fontset-name="fontset-0" halo-radius="1" wrap-width="30" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([tourism] = 'theme_park')</Filter>
-    <TextSymbolizer size="8" fill="#734a08" fontset-name="fontset-0" halo-radius="1" wrap-width="30" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="12" fill="#734a08" fontset-name="fontset-0" halo-radius="1" wrap-width="30" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([tourism] = 'alpine_hut')</Filter>
-    <TextSymbolizer size="9" fill="#6699cc" dy="10" fontset-name="fontset-0" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
-    <TextSymbolizer size="8" fill="#6699cc" dy="22" fontset-name="fontset-1" halo-radius="1" placement="interior" ><![CDATA[[ele]]]></TextSymbolizer>
+    <TextSymbolizer size="14" fill="#6699cc" dy="10" fontset-name="fontset-0" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="12" fill="#6699cc" dy="22" fontset-name="fontset-1" halo-radius="1" placement="interior" ><![CDATA[[ele]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([tourism] = 'alpine_hut')</Filter>
-    <TextSymbolizer size="9" fill="#6699cc" dy="10" fontset-name="fontset-0" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="14" fill="#6699cc" dy="10" fontset-name="fontset-0" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([tourism] = 'attraction')</Filter>
-    <TextSymbolizer size="10" fill="#660033" fontset-name="fontset-0" halo-radius="2" wrap-width="10" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#660033" fontset-name="fontset-0" halo-radius="2" wrap-width="10" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([tourism] = 'museum')</Filter>
-    <TextSymbolizer size="10" dy="10" fill="#734a08" fontset-name="fontset-0" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" dy="10" fill="#734a08" fontset-name="fontset-0" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([tourism] = 'caravan_site')</Filter>
-    <TextSymbolizer size="10" fill="#0066ff" dy="19" fontset-name="fontset-0" halo-radius="1" wrap-width="70" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#0066ff" dy="19" fontset-name="fontset-0" halo-radius="1" wrap-width="70" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([tourism] = 'camp_site')</Filter>
-    <TextSymbolizer size="10" fill="#0066ff" dy="15" fontset-name="fontset-0" halo-radius="1" wrap-width="70" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#0066ff" dy="15" fontset-name="fontset-0" halo-radius="1" wrap-width="70" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([tourism] = 'bed_and_breakfast')</Filter>
-    <TextSymbolizer size="8" fill="#0066ff" dy="8" fontset-name="fontset-0" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="12" fill="#0066ff" dy="8" fontset-name="fontset-0" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([tourism] = 'guest_house')</Filter>
-    <TextSymbolizer size="8" fill="#0066ff" dy="10" fontset-name="fontset-0" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="12" fill="#0066ff" dy="10" fontset-name="fontset-0" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([tourism] = 'hotel')</Filter>
-    <TextSymbolizer size="10" fill="#0066ff" dy="11" fontset-name="fontset-0" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#0066ff" dy="11" fontset-name="fontset-0" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([tourism] = 'hostel')</Filter>
-    <TextSymbolizer size="10" fill="#0066ff" dy="11" fontset-name="fontset-0" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#0066ff" dy="11" fontset-name="fontset-0" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([tourism] = 'chalet')</Filter>
-    <TextSymbolizer size="10" fill="#0066ff" dy="11" fontset-name="fontset-0" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#0066ff" dy="11" fontset-name="fontset-0" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([tourism] = 'motel')</Filter>
-    <TextSymbolizer size="10" fill="#0066ff" dy="11" fontset-name="fontset-0" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#0066ff" dy="11" fontset-name="fontset-0" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
 </Style>
 <Style name="text-point" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <Filter>([point] = 'yes') and ([landuse] != '')</Filter>
-    <TextSymbolizer size="9" fill="#000000" fontset-name="fontset-0" halo-radius="2" wrap-width="10" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="14" fill="#000000" fontset-name="fontset-0" halo-radius="2" wrap-width="10" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <Filter>([point] = 'yes') and ([leisure] != '')</Filter>
-    <TextSymbolizer size="9" fill="#000000" fontset-name="fontset-0" halo-radius="2" wrap-width="10" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="14" fill="#000000" fontset-name="fontset-0" halo-radius="2" wrap-width="10" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
 </Style>
 <Style name="text-landuse" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <Filter>([landuse] = 'basin')</Filter>
-    <TextSymbolizer size="10" fill="#6699cc" fontset-name="fontset-0" halo-radius="1" wrap-width="20" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#6699cc" fontset-name="fontset-0" halo-radius="1" wrap-width="20" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <Filter>([landuse] = 'reservoir')</Filter>
-    <TextSymbolizer size="10" fill="#6699cc" fontset-name="fontset-0" halo-radius="1" wrap-width="20" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#6699cc" fontset-name="fontset-0" halo-radius="1" wrap-width="20" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
 </Style>
 <Style name="text-historic" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([historic] = 'archaeological_site')</Filter>
-    <TextSymbolizer size="9" fill="#a52a2a" dy="12" fontset-name="fontset-0" halo-radius="1" wrap-width="20" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="14" fill="#a52a2a" dy="12" fontset-name="fontset-0" halo-radius="1" wrap-width="20" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([historic] = 'memorial')</Filter>
-    <TextSymbolizer size="9" fill="#a52a2a" dy="12" fontset-name="fontset-0" halo-radius="1" wrap-width="20" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="14" fill="#a52a2a" dy="12" fontset-name="fontset-0" halo-radius="1" wrap-width="20" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
 </Style>
 <Style name="text-natural" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([natural] = 'volcano') and ([name] != '')</Filter>
-    <TextSymbolizer size="10" fill="#a52a2a" dy="5" fontset-name="fontset-0" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
-    <TextSymbolizer dy="18" size="9" fill="#a52a2a" fontset-name="fontset-1" halo-radius="1" placement="interior" ><![CDATA[[ele]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#a52a2a" dy="5" fontset-name="fontset-0" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer dy="18" size="14" fill="#a52a2a" fontset-name="fontset-1" halo-radius="1" placement="interior" ><![CDATA[[ele]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([natural] = 'peak') and ([name] != '')</Filter>
-    <TextSymbolizer size="10" fill="#a52a2a" dy="5" fontset-name="fontset-0" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
-    <TextSymbolizer dy="18" size="9" fill="#a52a2a" fontset-name="fontset-1" halo-radius="1" placement="interior" ><![CDATA[[ele]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#a52a2a" dy="5" fontset-name="fontset-0" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer dy="18" size="14" fill="#a52a2a" fontset-name="fontset-1" halo-radius="1" placement="interior" ><![CDATA[[ele]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([natural] = 'spring')</Filter>
-    <TextSymbolizer size="10" fill="#6699cc" fontset-name="fontset-0" halo-radius="1" wrap-width="20" placement="interior" dy="6" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#6699cc" fontset-name="fontset-0" halo-radius="1" wrap-width="20" placement="interior" dy="6" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([natural] = 'bay')</Filter>
-    <TextSymbolizer size="10" fill="#6699cc" fontset-name="fontset-0" halo-radius="1" wrap-width="20" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#6699cc" fontset-name="fontset-0" halo-radius="1" wrap-width="20" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <Filter>([natural] = 'water')</Filter>
-    <TextSymbolizer size="10" fill="#6699cc" fontset-name="fontset-0" halo-radius="1" wrap-width="20" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#6699cc" fontset-name="fontset-0" halo-radius="1" wrap-width="20" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <Filter>([natural] = 'lake')</Filter>
-    <TextSymbolizer size="10" fill="#6699cc" fontset-name="fontset-0" halo-radius="1" wrap-width="20" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#6699cc" fontset-name="fontset-0" halo-radius="1" wrap-width="20" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <Filter>([natural] = 'cave_entrance')</Filter>
-    <TextSymbolizer size="10" fill="#a52a2a" dy="9" fontset-name="fontset-0" halo-radius="1" wrap-width="20" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#a52a2a" dy="9" fontset-name="fontset-0" halo-radius="1" wrap-width="20" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([natural] = 'peak')</Filter>
-    <TextSymbolizer size="10" fill="#a52a2a" dy="5" fontset-name="fontset-0" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
-    <TextSymbolizer size="9" fill="#a52a2a" dy="6" fontset-name="fontset-1" halo-radius="1" placement="interior" ><![CDATA[[ele]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#a52a2a" dy="5" fontset-name="fontset-0" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="14" fill="#a52a2a" dy="6" fontset-name="fontset-1" halo-radius="1" placement="interior" ><![CDATA[[ele]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([natural] = 'volcano')</Filter>
-    <TextSymbolizer size="10" fill="#a52a2a" dy="5" fontset-name="fontset-0" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
-    <TextSymbolizer size="9" fill="#a52a2a" dy="6" fontset-name="fontset-1" halo-radius="1" placement="interior" ><![CDATA[[ele]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#a52a2a" dy="5" fontset-name="fontset-0" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="14" fill="#a52a2a" dy="6" fontset-name="fontset-1" halo-radius="1" placement="interior" ><![CDATA[[ele]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <Filter>([natural] = 'wood')</Filter>
-    <TextSymbolizer size="10" fill="#000000" fontset-name="fontset-0" halo-radius="2" wrap-width="10" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#000000" fontset-name="fontset-0" halo-radius="2" wrap-width="10" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
 </Style>
 <Style name="text-amenity" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([amenity] = 'parking') and ([access] != '') and ([access] != 'public') and ([access] != 'yes')</Filter>
-    <TextSymbolizer fill="#66ccaf" size="9" dy="9" fontset-name="fontset-0" halo-radius="1" wrap-width="34" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer fill="#66ccaf" size="14" dy="9" fontset-name="fontset-0" halo-radius="1" wrap-width="34" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([amenity] = 'pharmacy')</Filter>
-    <TextSymbolizer size="8" dy="10" fill="#da0092" fontset-name="fontset-0" halo-radius="1" wrap-width="12" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="12" dy="10" fill="#da0092" fontset-name="fontset-0" halo-radius="1" wrap-width="12" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([amenity] = 'hospital')</Filter>
-    <TextSymbolizer fill="#da0092" size="8" dy="10" fontset-name="fontset-0" halo-radius="2" wrap-width="24" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer fill="#da0092" size="12" dy="10" fontset-name="fontset-0" halo-radius="2" wrap-width="24" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([amenity] = 'kindergarten')</Filter>
-    <TextSymbolizer size="8" fill="#000033" fontset-name="fontset-0" halo-radius="1" wrap-width="14" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="12" fill="#000033" fontset-name="fontset-0" halo-radius="1" wrap-width="14" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <Filter>([amenity] = 'school')</Filter>
-    <TextSymbolizer size="9" fill="#000033" fontset-name="fontset-0" halo-radius="1" wrap-width="14" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="14" fill="#000033" fontset-name="fontset-0" halo-radius="1" wrap-width="14" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <Filter>([amenity] = 'college')</Filter>
-    <TextSymbolizer size="9" fill="#000033" fontset-name="fontset-0" halo-radius="1" wrap-width="14" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="14" fill="#000033" fontset-name="fontset-0" halo-radius="1" wrap-width="14" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <Filter>([amenity] = 'university')</Filter>
-    <TextSymbolizer size="9" fill="#000033" fontset-name="fontset-2" halo-radius="1" wrap-width="16" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="14" fill="#000033" fontset-name="fontset-2" halo-radius="1" wrap-width="16" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([amenity] = 'prison')</Filter>
-    <TextSymbolizer size="10" fill="#734a08" dy="16" fontset-name="fontset-0" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#734a08" dy="16" fontset-name="fontset-0" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([amenity] = 'bus_station')</Filter>
-    <TextSymbolizer size="9" fill="#0066ff" dy="9" fontset-name="fontset-0" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="14" fill="#0066ff" dy="9" fontset-name="fontset-0" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([amenity] = 'fuel')</Filter>
-    <TextSymbolizer size="9" fill="#0066ff" dy="9" fontset-name="fontset-0" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="14" fill="#0066ff" dy="9" fontset-name="fontset-0" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([amenity] = 'embassy')</Filter>
-    <TextSymbolizer size="9" fill="#0066ff" dy="8" fontset-name="fontset-0" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="14" fill="#0066ff" dy="8" fontset-name="fontset-0" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([amenity] = 'bank')</Filter>
-    <TextSymbolizer size="9" fill="#000000" dy="9" halo-radius="1" placement="interior" fontset-name="fontset-0" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="14" fill="#000000" dy="9" halo-radius="1" placement="interior" fontset-name="fontset-0" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([amenity] = 'shelter')</Filter>
-    <TextSymbolizer size="9" fill="#6699cc" dy="10" fontset-name="fontset-0" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
-    <TextSymbolizer size="8" fill="#6699cc" dy="22" fontset-name="fontset-1" halo-radius="1" placement="interior" ><![CDATA[[ele]]]></TextSymbolizer>
+    <TextSymbolizer size="14" fill="#6699cc" dy="10" fontset-name="fontset-0" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="12" fill="#6699cc" dy="22" fontset-name="fontset-1" halo-radius="1" placement="interior" ><![CDATA[[ele]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([amenity] = 'place_of_worship')</Filter>
-    <TextSymbolizer size="10" fill="#000033" dy="11" fontset-name="fontset-0" halo-radius="1" wrap-width="30" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#000033" dy="11" fontset-name="fontset-0" halo-radius="1" wrap-width="30" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([amenity] = 'fire_station')</Filter>
-    <TextSymbolizer size="10" fill="#734a08" dy="9" fontset-name="fontset-0" halo-radius="1" wrap-width="30" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#734a08" dy="9" fontset-name="fontset-0" halo-radius="1" wrap-width="30" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([amenity] = 'police')</Filter>
-    <TextSymbolizer size="10" fill="#734a08" dy="10" fontset-name="fontset-0" halo-radius="1" wrap-width="30" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#734a08" dy="10" fontset-name="fontset-0" halo-radius="1" wrap-width="30" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([amenity] = 'parking')</Filter>
-    <TextSymbolizer size="9" fill="#0066ff" dy="9" fontset-name="fontset-0" halo-radius="1" wrap-width="34" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="14" fill="#0066ff" dy="9" fontset-name="fontset-0" halo-radius="1" wrap-width="34" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([amenity] = 'cinema')</Filter>
-    <TextSymbolizer size="10" fill="#734a08" dy="14" fontset-name="fontset-2" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#734a08" dy="14" fontset-name="fontset-2" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([amenity] = 'courthouse')</Filter>
-    <TextSymbolizer size="10" fill="#734a08" dy="12" fontset-name="fontset-2" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#734a08" dy="12" fontset-name="fontset-2" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([amenity] = 'theatre')</Filter>
-    <TextSymbolizer size="10" fill="#734a08" dy="12" fontset-name="fontset-2" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#734a08" dy="12" fontset-name="fontset-2" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([amenity] = 'library')</Filter>
-    <TextSymbolizer size="10" fill="#734a08" dy="12" fontset-name="fontset-2" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#734a08" dy="12" fontset-name="fontset-2" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([amenity] = 'bar')</Filter>
-    <TextSymbolizer size="10" fill="#734a08" dy="11" fontset-name="fontset-2" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#734a08" dy="11" fontset-name="fontset-2" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([amenity] = 'biergarten')</Filter>
-    <TextSymbolizer fill="#734a08" size="10" dy="9" fontset-name="fontset-2" halo-radius="1" wrap-width="34" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer fill="#734a08" size="15" dy="9" fontset-name="fontset-2" halo-radius="1" wrap-width="34" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([amenity] = 'fast_food')</Filter>
-    <TextSymbolizer fill="#734a08" size="10" dy="9" fontset-name="fontset-2" halo-radius="1" wrap-width="34" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer fill="#734a08" size="15" dy="9" fontset-name="fontset-2" halo-radius="1" wrap-width="34" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([amenity] = 'cafe')</Filter>
-    <TextSymbolizer fill="#734a08" size="10" dy="9" fontset-name="fontset-2" halo-radius="1" wrap-width="34" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer fill="#734a08" size="15" dy="9" fontset-name="fontset-2" halo-radius="1" wrap-width="34" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([amenity] = 'pub')</Filter>
-    <TextSymbolizer fill="#734a08" size="10" dy="9" fontset-name="fontset-2" halo-radius="1" wrap-width="34" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer fill="#734a08" size="15" dy="9" fontset-name="fontset-2" halo-radius="1" wrap-width="34" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([amenity] = 'restaurant')</Filter>
-    <TextSymbolizer fill="#734a08" size="10" dy="9" fontset-name="fontset-2" halo-radius="1" wrap-width="34" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer fill="#734a08" size="15" dy="9" fontset-name="fontset-2" halo-radius="1" wrap-width="34" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
 </Style>
 <Style name="text-place" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <Filter>([place] = 'island')</Filter>
-    <TextSymbolizer fill="#000000" size="9" fontset-name="fontset-1" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer fill="#000000" size="14" fontset-name="fontset-1" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
 </Style>
 <Layer name="text"
@@ -14835,425 +14835,425 @@ case when leisure='pitch' then 2
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([aeroway] = 'gate')</Filter>
-    <TextSymbolizer size="10" fill="#aa66cc" fontset-name="fontset-0" halo-radius="1" wrap-width="10" placement="interior" ><![CDATA[[ref]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#aa66cc" fontset-name="fontset-0" halo-radius="1" wrap-width="10" placement="interior" ><![CDATA[[ref]]]></TextSymbolizer>
   </Rule>
 </Style>
 <Style name="text-poly-military" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <Filter>([military] = 'danger_area')</Filter>
-    <TextSymbolizer size="9" fill="#ffc0cb" fontset-name="fontset-2" halo-radius="1" wrap-width="10" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="14" fill="#ffc0cb" fontset-name="fontset-2" halo-radius="1" wrap-width="10" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
 </Style>
 <Style name="text-poly-shop" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([shop] = 'department_store')</Filter>
-    <TextSymbolizer size="9" dy="9" fill="#993399" fontset-name="fontset-0" halo-radius="1" wrap-width="20" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="14" dy="9" fill="#993399" fontset-name="fontset-0" halo-radius="1" wrap-width="20" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([shop] = 'supermarket')</Filter>
-    <TextSymbolizer size="9" dy="9" fill="#993399" fontset-name="fontset-0" halo-radius="1" wrap-width="20" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="14" dy="9" fill="#993399" fontset-name="fontset-0" halo-radius="1" wrap-width="20" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([shop] = 'hairdresser')</Filter>
-    <TextSymbolizer size="8" dy="10" fill="#993399" fontset-name="fontset-0" halo-radius="1" wrap-width="12" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="12" dy="10" fill="#993399" fontset-name="fontset-0" halo-radius="1" wrap-width="12" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([shop] = 'doityourself')</Filter>
-    <TextSymbolizer size="8" dy="10" fill="#993399" fontset-name="fontset-0" halo-radius="1" wrap-width="12" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="12" dy="10" fill="#993399" fontset-name="fontset-0" halo-radius="1" wrap-width="12" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([shop] = 'convenience')</Filter>
-    <TextSymbolizer size="8" dy="10" fill="#993399" fontset-name="fontset-0" halo-radius="1" wrap-width="12" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="12" dy="10" fill="#993399" fontset-name="fontset-0" halo-radius="1" wrap-width="12" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([shop] = 'fashion')</Filter>
-    <TextSymbolizer size="8" dy="10" fill="#993399" fontset-name="fontset-0" halo-radius="1" wrap-width="12" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="12" dy="10" fill="#993399" fontset-name="fontset-0" halo-radius="1" wrap-width="12" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([shop] = 'car_repair')</Filter>
-    <TextSymbolizer size="8" dy="10" fill="#993399" fontset-name="fontset-0" halo-radius="1" wrap-width="12" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="12" dy="10" fill="#993399" fontset-name="fontset-0" halo-radius="1" wrap-width="12" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([shop] = 'car')</Filter>
-    <TextSymbolizer size="8" dy="10" fill="#993399" fontset-name="fontset-0" halo-radius="1" wrap-width="12" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="12" dy="10" fill="#993399" fontset-name="fontset-0" halo-radius="1" wrap-width="12" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([shop] = 'bicycle')</Filter>
-    <TextSymbolizer size="8" dy="10" fill="#993399" fontset-name="fontset-0" halo-radius="1" wrap-width="12" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="12" dy="10" fill="#993399" fontset-name="fontset-0" halo-radius="1" wrap-width="12" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([shop] = 'bakery')</Filter>
-    <TextSymbolizer size="8" dy="10" fill="#993399" fontset-name="fontset-0" halo-radius="1" wrap-width="12" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="12" dy="10" fill="#993399" fontset-name="fontset-0" halo-radius="1" wrap-width="12" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([shop] = 'clothes')</Filter>
-    <TextSymbolizer size="8" dy="10" fill="#993399" fontset-name="fontset-0" halo-radius="1" wrap-width="12" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="12" dy="10" fill="#993399" fontset-name="fontset-0" halo-radius="1" wrap-width="12" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([shop] = 'butcher')</Filter>
-    <TextSymbolizer size="8" dy="10" fill="#993399" fontset-name="fontset-0" halo-radius="1" wrap-width="12" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="12" dy="10" fill="#993399" fontset-name="fontset-0" halo-radius="1" wrap-width="12" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([shop] = 'florist')</Filter>
-    <TextSymbolizer size="8" dy="10" fill="#993399" fontset-name="fontset-0" halo-radius="1" wrap-width="12" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="12" dy="10" fill="#993399" fontset-name="fontset-0" halo-radius="1" wrap-width="12" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
 </Style>
 <Style name="text-poly-man_made" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([man_made] = 'windmill')</Filter>
-    <TextSymbolizer size="9" fill="#734a08" dy="12" fontset-name="fontset-0" halo-radius="1" wrap-width="20" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="14" fill="#734a08" dy="12" fontset-name="fontset-0" halo-radius="1" wrap-width="20" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <Filter>([man_made] = 'lighthouse')</Filter>
-    <TextSymbolizer size="9" fill="#000033" dy="16" fontset-name="fontset-0" halo-radius="2" wrap-width="12" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="14" fill="#000033" dy="16" fontset-name="fontset-0" halo-radius="2" wrap-width="12" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
 </Style>
 <Style name="text-poly-leisure" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([leisure] = 'marina')</Filter>
-    <TextSymbolizer size="10" fill="#0000ff" fontset-name="fontset-0" halo-radius="1" wrap-width="30" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#0000ff" fontset-name="fontset-0" halo-radius="1" wrap-width="30" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([leisure] = 'marina')</Filter>
-    <TextSymbolizer size="8" fill="#0000ff" fontset-name="fontset-0" halo-radius="1" wrap-width="30" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="12" fill="#0000ff" fontset-name="fontset-0" halo-radius="1" wrap-width="30" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
 </Style>
 <Style name="text-poly-waterway" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <Filter>([waterway] = 'lock')</Filter>
-    <TextSymbolizer size="9" dy="10" fill="#0066ff" fontset-name="fontset-0" halo-radius="1" wrap-width="70" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="14" dy="10" fill="#0066ff" fontset-name="fontset-0" halo-radius="1" wrap-width="70" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
 </Style>
 <Style name="text-poly-tourism" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([tourism] = 'theme_park')</Filter>
-    <TextSymbolizer size="10" fill="#734a08" fontset-name="fontset-0" halo-radius="1" wrap-width="30" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#734a08" fontset-name="fontset-0" halo-radius="1" wrap-width="30" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([tourism] = 'theme_park')</Filter>
-    <TextSymbolizer size="8" fill="#734a08" fontset-name="fontset-0" halo-radius="1" wrap-width="30" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="12" fill="#734a08" fontset-name="fontset-0" halo-radius="1" wrap-width="30" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([tourism] = 'alpine_hut')</Filter>
-    <TextSymbolizer size="9" fill="#6699cc" dy="10" fontset-name="fontset-0" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
-    <TextSymbolizer size="8" fill="#6699cc" dy="22" fontset-name="fontset-1" halo-radius="1" placement="interior" ><![CDATA[[ele]]]></TextSymbolizer>
+    <TextSymbolizer size="14" fill="#6699cc" dy="10" fontset-name="fontset-0" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="12" fill="#6699cc" dy="22" fontset-name="fontset-1" halo-radius="1" placement="interior" ><![CDATA[[ele]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([tourism] = 'alpine_hut')</Filter>
-    <TextSymbolizer size="9" fill="#6699cc" dy="10" fontset-name="fontset-0" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="14" fill="#6699cc" dy="10" fontset-name="fontset-0" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([tourism] = 'attraction')</Filter>
-    <TextSymbolizer size="10" fill="#660033" fontset-name="fontset-0" halo-radius="2" wrap-width="10" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#660033" fontset-name="fontset-0" halo-radius="2" wrap-width="10" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([tourism] = 'museum')</Filter>
-    <TextSymbolizer size="10" dy="10" fill="#734a08" fontset-name="fontset-0" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" dy="10" fill="#734a08" fontset-name="fontset-0" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([tourism] = 'caravan_site')</Filter>
-    <TextSymbolizer size="10" fill="#0066ff" dy="19" fontset-name="fontset-0" halo-radius="1" wrap-width="70" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#0066ff" dy="19" fontset-name="fontset-0" halo-radius="1" wrap-width="70" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([tourism] = 'camp_site')</Filter>
-    <TextSymbolizer size="10" fill="#0066ff" dy="15" fontset-name="fontset-0" halo-radius="1" wrap-width="70" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#0066ff" dy="15" fontset-name="fontset-0" halo-radius="1" wrap-width="70" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([tourism] = 'bed_and_breakfast')</Filter>
-    <TextSymbolizer size="8" fill="#0066ff" dy="8" fontset-name="fontset-0" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="12" fill="#0066ff" dy="8" fontset-name="fontset-0" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([tourism] = 'guest_house')</Filter>
-    <TextSymbolizer size="8" fill="#0066ff" dy="10" fontset-name="fontset-0" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="12" fill="#0066ff" dy="10" fontset-name="fontset-0" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([tourism] = 'hotel')</Filter>
-    <TextSymbolizer size="10" fill="#0066ff" dy="11" fontset-name="fontset-0" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#0066ff" dy="11" fontset-name="fontset-0" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([tourism] = 'hostel')</Filter>
-    <TextSymbolizer size="10" fill="#0066ff" dy="11" fontset-name="fontset-0" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#0066ff" dy="11" fontset-name="fontset-0" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([tourism] = 'chalet')</Filter>
-    <TextSymbolizer size="10" fill="#0066ff" dy="11" fontset-name="fontset-0" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#0066ff" dy="11" fontset-name="fontset-0" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([tourism] = 'motel')</Filter>
-    <TextSymbolizer size="10" fill="#0066ff" dy="11" fontset-name="fontset-0" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#0066ff" dy="11" fontset-name="fontset-0" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
 </Style>
 <Style name="text-poly-point" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <Filter>([point] = 'yes') and ([landuse] != '')</Filter>
-    <TextSymbolizer size="9" fill="#000000" fontset-name="fontset-0" halo-radius="2" wrap-width="10" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="14" fill="#000000" fontset-name="fontset-0" halo-radius="2" wrap-width="10" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <Filter>([point] = 'yes') and ([leisure] != '')</Filter>
-    <TextSymbolizer size="9" fill="#000000" fontset-name="fontset-0" halo-radius="2" wrap-width="10" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="14" fill="#000000" fontset-name="fontset-0" halo-radius="2" wrap-width="10" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
 </Style>
 <Style name="text-poly-landuse" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <Filter>([landuse] = 'basin')</Filter>
-    <TextSymbolizer size="10" fill="#6699cc" fontset-name="fontset-0" halo-radius="1" wrap-width="20" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#6699cc" fontset-name="fontset-0" halo-radius="1" wrap-width="20" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <Filter>([landuse] = 'reservoir')</Filter>
-    <TextSymbolizer size="10" fill="#6699cc" fontset-name="fontset-0" halo-radius="1" wrap-width="20" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#6699cc" fontset-name="fontset-0" halo-radius="1" wrap-width="20" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
 </Style>
 <Style name="text-poly-historic" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([historic] = 'archaeological_site')</Filter>
-    <TextSymbolizer size="9" fill="#a52a2a" dy="12" fontset-name="fontset-0" halo-radius="1" wrap-width="20" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="14" fill="#a52a2a" dy="12" fontset-name="fontset-0" halo-radius="1" wrap-width="20" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([historic] = 'memorial')</Filter>
-    <TextSymbolizer size="9" fill="#a52a2a" dy="12" fontset-name="fontset-0" halo-radius="1" wrap-width="20" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="14" fill="#a52a2a" dy="12" fontset-name="fontset-0" halo-radius="1" wrap-width="20" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
 </Style>
 <Style name="text-poly-natural" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([natural] = 'volcano') and ([name] != '')</Filter>
-    <TextSymbolizer size="10" fill="#a52a2a" dy="5" fontset-name="fontset-0" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
-    <TextSymbolizer dy="18" size="9" fill="#a52a2a" fontset-name="fontset-1" halo-radius="1" placement="interior" ><![CDATA[[ele]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#a52a2a" dy="5" fontset-name="fontset-0" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer dy="18" size="14" fill="#a52a2a" fontset-name="fontset-1" halo-radius="1" placement="interior" ><![CDATA[[ele]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([natural] = 'peak') and ([name] != '')</Filter>
-    <TextSymbolizer size="10" fill="#a52a2a" dy="5" fontset-name="fontset-0" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
-    <TextSymbolizer dy="18" size="9" fill="#a52a2a" fontset-name="fontset-1" halo-radius="1" placement="interior" ><![CDATA[[ele]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#a52a2a" dy="5" fontset-name="fontset-0" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer dy="18" size="14" fill="#a52a2a" fontset-name="fontset-1" halo-radius="1" placement="interior" ><![CDATA[[ele]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([natural] = 'spring')</Filter>
-    <TextSymbolizer size="10" fill="#6699cc" fontset-name="fontset-0" halo-radius="1" wrap-width="20" placement="interior" dy="6" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#6699cc" fontset-name="fontset-0" halo-radius="1" wrap-width="20" placement="interior" dy="6" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([natural] = 'bay')</Filter>
-    <TextSymbolizer size="10" fill="#6699cc" fontset-name="fontset-0" halo-radius="1" wrap-width="20" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#6699cc" fontset-name="fontset-0" halo-radius="1" wrap-width="20" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <Filter>([natural] = 'water')</Filter>
-    <TextSymbolizer size="10" fill="#6699cc" fontset-name="fontset-0" halo-radius="1" wrap-width="20" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#6699cc" fontset-name="fontset-0" halo-radius="1" wrap-width="20" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <Filter>([natural] = 'lake')</Filter>
-    <TextSymbolizer size="10" fill="#6699cc" fontset-name="fontset-0" halo-radius="1" wrap-width="20" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#6699cc" fontset-name="fontset-0" halo-radius="1" wrap-width="20" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <Filter>([natural] = 'cave_entrance')</Filter>
-    <TextSymbolizer size="10" fill="#a52a2a" dy="9" fontset-name="fontset-0" halo-radius="1" wrap-width="20" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#a52a2a" dy="9" fontset-name="fontset-0" halo-radius="1" wrap-width="20" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([natural] = 'peak')</Filter>
-    <TextSymbolizer size="10" fill="#a52a2a" dy="5" fontset-name="fontset-0" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
-    <TextSymbolizer size="9" fill="#a52a2a" dy="6" fontset-name="fontset-1" halo-radius="1" placement="interior" ><![CDATA[[ele]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#a52a2a" dy="5" fontset-name="fontset-0" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="14" fill="#a52a2a" dy="6" fontset-name="fontset-1" halo-radius="1" placement="interior" ><![CDATA[[ele]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([natural] = 'volcano')</Filter>
-    <TextSymbolizer size="10" fill="#a52a2a" dy="5" fontset-name="fontset-0" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
-    <TextSymbolizer size="9" fill="#a52a2a" dy="6" fontset-name="fontset-1" halo-radius="1" placement="interior" ><![CDATA[[ele]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#a52a2a" dy="5" fontset-name="fontset-0" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="14" fill="#a52a2a" dy="6" fontset-name="fontset-1" halo-radius="1" placement="interior" ><![CDATA[[ele]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <Filter>([natural] = 'wood')</Filter>
-    <TextSymbolizer size="10" fill="#000000" fontset-name="fontset-0" halo-radius="2" wrap-width="10" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#000000" fontset-name="fontset-0" halo-radius="2" wrap-width="10" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
 </Style>
 <Style name="text-poly-amenity" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([amenity] = 'parking') and ([access] != '') and ([access] != 'public') and ([access] != 'yes')</Filter>
-    <TextSymbolizer fill="#66ccaf" size="9" dy="9" fontset-name="fontset-0" halo-radius="1" wrap-width="34" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer fill="#66ccaf" size="14" dy="9" fontset-name="fontset-0" halo-radius="1" wrap-width="34" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([amenity] = 'pharmacy')</Filter>
-    <TextSymbolizer size="8" dy="10" fill="#da0092" fontset-name="fontset-0" halo-radius="1" wrap-width="12" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="12" dy="10" fill="#da0092" fontset-name="fontset-0" halo-radius="1" wrap-width="12" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([amenity] = 'hospital')</Filter>
-    <TextSymbolizer fill="#da0092" size="8" dy="10" fontset-name="fontset-0" halo-radius="2" wrap-width="24" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer fill="#da0092" size="12" dy="10" fontset-name="fontset-0" halo-radius="2" wrap-width="24" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([amenity] = 'kindergarten')</Filter>
-    <TextSymbolizer size="8" fill="#000033" fontset-name="fontset-0" halo-radius="1" wrap-width="14" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="12" fill="#000033" fontset-name="fontset-0" halo-radius="1" wrap-width="14" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <Filter>([amenity] = 'school')</Filter>
-    <TextSymbolizer size="9" fill="#000033" fontset-name="fontset-0" halo-radius="1" wrap-width="14" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="14" fill="#000033" fontset-name="fontset-0" halo-radius="1" wrap-width="14" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <Filter>([amenity] = 'college')</Filter>
-    <TextSymbolizer size="9" fill="#000033" fontset-name="fontset-0" halo-radius="1" wrap-width="14" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="14" fill="#000033" fontset-name="fontset-0" halo-radius="1" wrap-width="14" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <Filter>([amenity] = 'university')</Filter>
-    <TextSymbolizer size="9" fill="#000033" fontset-name="fontset-2" halo-radius="1" wrap-width="16" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="14" fill="#000033" fontset-name="fontset-2" halo-radius="1" wrap-width="16" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([amenity] = 'prison')</Filter>
-    <TextSymbolizer size="10" fill="#734a08" dy="16" fontset-name="fontset-0" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#734a08" dy="16" fontset-name="fontset-0" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([amenity] = 'bus_station')</Filter>
-    <TextSymbolizer size="9" fill="#0066ff" dy="9" fontset-name="fontset-0" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="14" fill="#0066ff" dy="9" fontset-name="fontset-0" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([amenity] = 'fuel')</Filter>
-    <TextSymbolizer size="9" fill="#0066ff" dy="9" fontset-name="fontset-0" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="14" fill="#0066ff" dy="9" fontset-name="fontset-0" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([amenity] = 'embassy')</Filter>
-    <TextSymbolizer size="9" fill="#0066ff" dy="8" fontset-name="fontset-0" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="14" fill="#0066ff" dy="8" fontset-name="fontset-0" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([amenity] = 'bank')</Filter>
-    <TextSymbolizer size="9" fill="#000000" dy="9" halo-radius="1" placement="interior" fontset-name="fontset-0" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="14" fill="#000000" dy="9" halo-radius="1" placement="interior" fontset-name="fontset-0" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([amenity] = 'shelter')</Filter>
-    <TextSymbolizer size="9" fill="#6699cc" dy="10" fontset-name="fontset-0" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
-    <TextSymbolizer size="8" fill="#6699cc" dy="22" fontset-name="fontset-1" halo-radius="1" placement="interior" ><![CDATA[[ele]]]></TextSymbolizer>
+    <TextSymbolizer size="14" fill="#6699cc" dy="10" fontset-name="fontset-0" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="12" fill="#6699cc" dy="22" fontset-name="fontset-1" halo-radius="1" placement="interior" ><![CDATA[[ele]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([amenity] = 'place_of_worship')</Filter>
-    <TextSymbolizer size="10" fill="#000033" dy="11" fontset-name="fontset-0" halo-radius="1" wrap-width="30" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#000033" dy="11" fontset-name="fontset-0" halo-radius="1" wrap-width="30" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([amenity] = 'fire_station')</Filter>
-    <TextSymbolizer size="10" fill="#734a08" dy="9" fontset-name="fontset-0" halo-radius="1" wrap-width="30" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#734a08" dy="9" fontset-name="fontset-0" halo-radius="1" wrap-width="30" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([amenity] = 'police')</Filter>
-    <TextSymbolizer size="10" fill="#734a08" dy="10" fontset-name="fontset-0" halo-radius="1" wrap-width="30" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#734a08" dy="10" fontset-name="fontset-0" halo-radius="1" wrap-width="30" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([amenity] = 'parking')</Filter>
-    <TextSymbolizer size="9" fill="#0066ff" dy="9" fontset-name="fontset-0" halo-radius="1" wrap-width="34" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="14" fill="#0066ff" dy="9" fontset-name="fontset-0" halo-radius="1" wrap-width="34" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([amenity] = 'cinema')</Filter>
-    <TextSymbolizer size="10" fill="#734a08" dy="14" fontset-name="fontset-2" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#734a08" dy="14" fontset-name="fontset-2" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([amenity] = 'courthouse')</Filter>
-    <TextSymbolizer size="10" fill="#734a08" dy="12" fontset-name="fontset-2" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#734a08" dy="12" fontset-name="fontset-2" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([amenity] = 'theatre')</Filter>
-    <TextSymbolizer size="10" fill="#734a08" dy="12" fontset-name="fontset-2" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#734a08" dy="12" fontset-name="fontset-2" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([amenity] = 'library')</Filter>
-    <TextSymbolizer size="10" fill="#734a08" dy="12" fontset-name="fontset-2" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#734a08" dy="12" fontset-name="fontset-2" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([amenity] = 'bar')</Filter>
-    <TextSymbolizer size="10" fill="#734a08" dy="11" fontset-name="fontset-2" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#734a08" dy="11" fontset-name="fontset-2" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([amenity] = 'biergarten')</Filter>
-    <TextSymbolizer fill="#734a08" size="10" dy="9" fontset-name="fontset-2" halo-radius="1" wrap-width="34" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer fill="#734a08" size="15" dy="9" fontset-name="fontset-2" halo-radius="1" wrap-width="34" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([amenity] = 'fast_food')</Filter>
-    <TextSymbolizer fill="#734a08" size="10" dy="9" fontset-name="fontset-2" halo-radius="1" wrap-width="34" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer fill="#734a08" size="15" dy="9" fontset-name="fontset-2" halo-radius="1" wrap-width="34" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([amenity] = 'cafe')</Filter>
-    <TextSymbolizer fill="#734a08" size="10" dy="9" fontset-name="fontset-2" halo-radius="1" wrap-width="34" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer fill="#734a08" size="15" dy="9" fontset-name="fontset-2" halo-radius="1" wrap-width="34" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([amenity] = 'pub')</Filter>
-    <TextSymbolizer fill="#734a08" size="10" dy="9" fontset-name="fontset-2" halo-radius="1" wrap-width="34" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer fill="#734a08" size="15" dy="9" fontset-name="fontset-2" halo-radius="1" wrap-width="34" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([amenity] = 'restaurant')</Filter>
-    <TextSymbolizer fill="#734a08" size="10" dy="9" fontset-name="fontset-2" halo-radius="1" wrap-width="34" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer fill="#734a08" size="15" dy="9" fontset-name="fontset-2" halo-radius="1" wrap-width="34" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
 </Style>
 <Style name="text-poly-place" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <Filter>([place] = 'island')</Filter>
-    <TextSymbolizer fill="#000000" size="9" fontset-name="fontset-1" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer fill="#000000" size="14" fontset-name="fontset-1" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
 </Style>
 <Layer name="text-poly"
@@ -15297,21 +15297,21 @@ case when leisure='pitch' then 2
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([way_area] &gt;= 150000)</Filter>
-    <TextSymbolizer size="10" fill="#000033" fontset-name="fontset-0" halo-radius="1" wrap-width="20" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#000033" fontset-name="fontset-0" halo-radius="1" wrap-width="20" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <Filter>([way_area] &gt;= 80000)</Filter>
-    <TextSymbolizer size="10" fill="#000033" fontset-name="fontset-0" halo-radius="1" wrap-width="20" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#000033" fontset-name="fontset-0" halo-radius="1" wrap-width="20" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([way_area] &gt;= 20000)</Filter>
-    <TextSymbolizer size="10" fill="#000033" fontset-name="fontset-0" halo-radius="1" wrap-width="20" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#000033" fontset-name="fontset-0" halo-radius="1" wrap-width="20" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <TextSymbolizer size="10" fill="#000033" fontset-name="fontset-0" halo-radius="1" wrap-width="20" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#000033" fontset-name="fontset-0" halo-radius="1" wrap-width="20" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
 </Style>
 <Layer name="area-text"
@@ -15355,7 +15355,7 @@ case when leisure='pitch' then 2
 <Style name="housenumbers" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
-    <TextSymbolizer placement="interior" minimum-distance="1" wrap-width="0" fontset-name="fontset-0" fill="#444444" size="9" ><![CDATA[[addr:housenumber]]]></TextSymbolizer>
+    <TextSymbolizer placement="interior" minimum-distance="1" wrap-width="0" fontset-name="fontset-0" fill="#444444" size="14" ><![CDATA[[addr:housenumber]]]></TextSymbolizer>
   </Rule>
 </Style>
 <Layer name="housenumbers"
@@ -15377,12 +15377,12 @@ case when leisure='pitch' then 2
 <Style name="housenames" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
-    <TextSymbolizer size="9" placement="interior" wrap-width="20" fontset-name="fontset-0" fill="#444444" ><![CDATA[[addr:housename]]]></TextSymbolizer>
+    <TextSymbolizer size="14" placement="interior" wrap-width="20" fontset-name="fontset-0" fill="#444444" ><![CDATA[[addr:housename]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <MinScaleDenominator>2500</MinScaleDenominator>
-    <TextSymbolizer placement="interior" wrap-width="20" fontset-name="fontset-0" size="8" fill="#444444" ><![CDATA[[addr:housename]]]></TextSymbolizer>
+    <TextSymbolizer placement="interior" wrap-width="20" fontset-name="fontset-0" size="12" fill="#444444" ><![CDATA[[addr:housename]]]></TextSymbolizer>
   </Rule>
 </Style>
 <Layer name="housenames"
@@ -15405,106 +15405,106 @@ case when leisure='pitch' then 2
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([waterway] = 'canal') and ([lock] = 'yes') and ([disused] = 'yes')</Filter>
-    <TextSymbolizer placement="point" wrap-width="20" size="10" fill="#80d1ae" fontset-name="fontset-0" spacing="600" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer placement="point" wrap-width="20" size="15" fill="#80d1ae" fontset-name="fontset-0" spacing="600" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([waterway] = 'canal') and ([lock] = 'yes') and ([disused] = 'yes')</Filter>
-    <TextSymbolizer size="10" fill="#80d1ae" fontset-name="fontset-0" placement="line" spacing="600" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#80d1ae" fontset-name="fontset-0" placement="line" spacing="600" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([waterway] = 'canal') and ([lock] = 'yes') and ([disused] = 'yes')</Filter>
-    <TextSymbolizer size="9" fill="#80d1ae" fontset-name="fontset-0" placement="line" spacing="600" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="14" fill="#80d1ae" fontset-name="fontset-0" placement="line" spacing="600" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([waterway] = 'canal') and ([lock] = 'yes')</Filter>
-    <TextSymbolizer placement="point" wrap-width="20" size="9" fill="#6699cc" fontset-name="fontset-0" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer placement="point" wrap-width="20" size="14" fill="#6699cc" fontset-name="fontset-0" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([waterway] = 'canal') and ([lock] = 'yes')</Filter>
-    <TextSymbolizer fontset-name="fontset-0" halo-radius="1" size="8" placement="line" fill="#6699cc" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" halo-radius="1" size="12" placement="line" fill="#6699cc" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([waterway] = 'canal') and ([lock] = 'yes')</Filter>
-    <TextSymbolizer size="9" fill="#6699cc" placement="line" fontset-name="fontset-0" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="14" fill="#6699cc" placement="line" fontset-name="fontset-0" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([waterway] = 'canal') and ([disused] = 'yes')</Filter>
-    <TextSymbolizer size="10" fill="#80d1ae" fontset-name="fontset-0" placement="line" spacing="600" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#80d1ae" fontset-name="fontset-0" placement="line" spacing="600" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([waterway] = 'canal') and ([disused] = 'yes')</Filter>
-    <TextSymbolizer size="9" fill="#80d1ae" fontset-name="fontset-0" placement="line" spacing="600" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="14" fill="#80d1ae" fontset-name="fontset-0" placement="line" spacing="600" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([waterway] = 'canal')</Filter>
-    <TextSymbolizer fontset-name="fontset-0" halo-radius="1" size="8" placement="line" fill="#6699cc" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" halo-radius="1" size="12" placement="line" fill="#6699cc" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([waterway] = 'canal')</Filter>
-    <TextSymbolizer size="9" fill="#6699cc" placement="line" fontset-name="fontset-0" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="14" fill="#6699cc" placement="line" fontset-name="fontset-0" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([waterway] = 'river') and ([tunnel] = 'yes')</Filter>
-    <TextSymbolizer minimum-distance="200" size="10" fontset-name="fontset-0" placement="line" fill="#6699cc" spacing="400" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer minimum-distance="200" size="15" fontset-name="fontset-0" placement="line" fill="#6699cc" spacing="400" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([waterway] = 'river') and ([tunnel] = 'yes')</Filter>
-    <TextSymbolizer minimum-distance="200" fontset-name="fontset-0" placement="line" fill="#6699cc" spacing="400" size="9" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer minimum-distance="200" fontset-name="fontset-0" placement="line" fill="#6699cc" spacing="400" size="14" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([waterway] = 'river')</Filter>
-    <TextSymbolizer size="10" fontset-name="fontset-0" placement="line" fill="#6699cc" spacing="400" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fontset-name="fontset-0" placement="line" fill="#6699cc" spacing="400" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([waterway] = 'river')</Filter>
-    <TextSymbolizer fontset-name="fontset-0" placement="line" fill="#6699cc" spacing="400" size="9" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" placement="line" fill="#6699cc" spacing="400" size="14" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([waterway] = 'derelict_canal')</Filter>
-    <TextSymbolizer size="10" fill="#80d1ae" fontset-name="fontset-0" placement="line" spacing="600" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#80d1ae" fontset-name="fontset-0" placement="line" spacing="600" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([waterway] = 'derelict_canal')</Filter>
-    <TextSymbolizer size="9" fill="#80d1ae" fontset-name="fontset-0" placement="line" spacing="600" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="14" fill="#80d1ae" fontset-name="fontset-0" placement="line" spacing="600" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <Filter>([waterway] = 'ditch')</Filter>
-    <TextSymbolizer fontset-name="fontset-0" size="8" fill="#6699cc" spacing="600" placement="line" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" size="12" fill="#6699cc" spacing="600" placement="line" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <Filter>([waterway] = 'drain')</Filter>
-    <TextSymbolizer fontset-name="fontset-0" size="8" fill="#6699cc" spacing="600" placement="line" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" size="12" fill="#6699cc" spacing="600" placement="line" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <Filter>([waterway] = 'stream')</Filter>
-    <TextSymbolizer size="8" fontset-name="fontset-0" fill="#6699cc" halo-radius="1" spacing="600" placement="line" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="12" fontset-name="fontset-0" fill="#6699cc" halo-radius="1" spacing="600" placement="line" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
 </Style>
 <Layer name="water-lines-text"
@@ -15530,18 +15530,18 @@ case when leisure='pitch' then 2
     <MaxScaleDenominator>400000</MaxScaleDenominator>
     <MinScaleDenominator>200000</MinScaleDenominator>
     <Filter>([way_area] &gt; 200000000)</Filter>
-    <TextSymbolizer size="11" fill="#99cc99" fontset-name="fontset-2" halo-radius="1" wrap-width="14" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="17" fill="#99cc99" fontset-name="fontset-2" halo-radius="1" wrap-width="14" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>3000000</MaxScaleDenominator>
     <MinScaleDenominator>400000</MinScaleDenominator>
     <Filter>([way_area] &gt; 200000000)</Filter>
-    <TextSymbolizer size="8" fill="#99cc99" fontset-name="fontset-2" halo-radius="1" wrap-width="14" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="12" fill="#99cc99" fontset-name="fontset-2" halo-radius="1" wrap-width="14" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>400000</MaxScaleDenominator>
     <MinScaleDenominator>200000</MinScaleDenominator>
-    <TextSymbolizer size="11" fill="#99cc99" fontset-name="fontset-2" halo-radius="1" wrap-width="14" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="17" fill="#99cc99" fontset-name="fontset-2" halo-radius="1" wrap-width="14" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
 </Style>
 <Style name="national-park-boundaries-line" filter-mode="first" opacity="0.15">
