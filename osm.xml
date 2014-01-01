@@ -162,12 +162,6 @@
     <PolygonSymbolizer fill="#f0f0d8" />
   </Rule>
   <Rule>
-    <MaxScaleDenominator>750000</MaxScaleDenominator>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([feature] = 'natural_scrub')</Filter>
-    <PolygonSymbolizer fill="#b5e3b5" />
-  </Rule>
-  <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <Filter>([feature] = 'power_generator')</Filter>
     <PolygonSymbolizer fill="#bbbbbb" />
@@ -202,48 +196,6 @@
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([feature] = 'landuse_retail')</Filter>
     <PolygonSymbolizer fill="#f1dada" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>3000000</MaxScaleDenominator>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([feature] = 'landuse_forest')</Filter>
-    <PolygonSymbolizer fill="#8dc56c" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>750000</MaxScaleDenominator>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([feature] = 'landuse_allotments')</Filter>
-    <PolygonSymbolizer fill="#e5c7ab" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>1500000</MaxScaleDenominator>
-    <MinScaleDenominator>400000</MinScaleDenominator>
-    <Filter>([feature] = 'military_danger_area')</Filter>
-    <PolygonSymbolizer fill="#ffc0cb" fill-opacity="0.3" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <Filter>([feature] = 'landuse_field')</Filter>
-    <PolygonSymbolizer fill="#666600" fill-opacity="0.2" />
-    <LineSymbolizer stroke-width="0.3" stroke-opacity="0.4" stroke="#666600" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>750000</MaxScaleDenominator>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([feature] = 'landuse_field')</Filter>
-    <PolygonSymbolizer fill="#666600" fill-opacity="0.2" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>50000</MaxScaleDenominator>
-    <Filter>([feature] = 'natural_field')</Filter>
-    <PolygonSymbolizer fill="#666600" fill-opacity="0.2" />
-    <LineSymbolizer stroke-width="0.3" stroke-opacity="0.4" stroke="#666600" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>750000</MaxScaleDenominator>
-    <MinScaleDenominator>50000</MinScaleDenominator>
-    <Filter>([feature] = 'natural_field')</Filter>
-    <PolygonSymbolizer fill="#666600" fill-opacity="0.2" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
@@ -346,42 +298,12 @@
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
-    <Filter>([feature] = 'natural_grassland')</Filter>
-    <PolygonSymbolizer fill="#c6e4b4" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>750000</MaxScaleDenominator>
-    <Filter>([feature] = 'natural_heath')</Filter>
-    <PolygonSymbolizer fill="#d6d99f" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>750000</MaxScaleDenominator>
-    <Filter>([feature] = 'natural_sand')</Filter>
-    <PolygonSymbolizer fill="#ffdf88" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>3000000</MaxScaleDenominator>
-    <Filter>([feature] = 'natural_desert')</Filter>
-    <PolygonSymbolizer fill="#e3b57a" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>3000000</MaxScaleDenominator>
-    <Filter>([feature] = 'natural_wood')</Filter>
-    <PolygonSymbolizer fill="#aed1a0" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>750000</MaxScaleDenominator>
     <Filter>([feature] = 'landuse_brownfield')</Filter>
     <PolygonSymbolizer fill="#9d9d6c" fill-opacity="0.7" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
     <Filter>([feature] = 'landuse_landfill')</Filter>
-    <PolygonSymbolizer fill="#9d9d6c" fill-opacity="0.7" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>750000</MaxScaleDenominator>
-    <Filter>([feature] = 'landuse_greenfield')</Filter>
     <PolygonSymbolizer fill="#9d9d6c" fill-opacity="0.7" />
   </Rule>
   <Rule>
@@ -411,76 +333,6 @@
     <PolygonSymbolizer fill="#dfd1d6" />
   </Rule>
   <Rule>
-    <MaxScaleDenominator>400000</MaxScaleDenominator>
-    <Filter>([feature] = 'landuse_village_green')</Filter>
-    <PolygonSymbolizer fill="#cfeca8" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>750000</MaxScaleDenominator>
-    <Filter>([feature] = 'landuse_recreation_ground')</Filter>
-    <PolygonSymbolizer fill="#cfeca8" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>750000</MaxScaleDenominator>
-    <Filter>([feature] = 'landuse_conservation')</Filter>
-    <PolygonSymbolizer fill="#cfeca8" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>1500000</MaxScaleDenominator>
-    <Filter>([feature] = 'landuse_farm')</Filter>
-    <PolygonSymbolizer fill="#ead8bd" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>1500000</MaxScaleDenominator>
-    <Filter>([feature] = 'landuse_farmland')</Filter>
-    <PolygonSymbolizer fill="#ead8bd" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>1500000</MaxScaleDenominator>
-    <Filter>([feature] = 'landuse_farmyard')</Filter>
-    <PolygonSymbolizer fill="#ddbf92" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>750000</MaxScaleDenominator>
-    <Filter>([feature] = 'leisure_golf_course')</Filter>
-    <PolygonSymbolizer fill="#b5e3b5" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>750000</MaxScaleDenominator>
-    <Filter>([feature] = 'leisure_garden')</Filter>
-    <PolygonSymbolizer fill="#cfeca8" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>750000</MaxScaleDenominator>
-    <Filter>([feature] = 'leisure_common')</Filter>
-    <PolygonSymbolizer fill="#cfeca8" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>750000</MaxScaleDenominator>
-    <Filter>([feature] = 'leisure_recreation_ground')</Filter>
-    <PolygonSymbolizer fill="#b6fdb6" fill-opacity="0.6" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>750000</MaxScaleDenominator>
-    <Filter>([feature] = 'leisure_park')</Filter>
-    <PolygonSymbolizer fill="#b6fdb6" fill-opacity="0.6" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>750000</MaxScaleDenominator>
-    <Filter>([feature] = 'landuse_grass')</Filter>
-    <PolygonSymbolizer fill="#cfeca8" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>750000</MaxScaleDenominator>
-    <Filter>([feature] = 'landuse_meadow')</Filter>
-    <PolygonSymbolizer fill="#cfeca8" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>750000</MaxScaleDenominator>
-    <Filter>([feature] = 'military_barracks')</Filter>
-    <PolygonSymbolizer fill="#ff8f8f" />
-  </Rule>
-  <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <Filter>([feature] = 'landuse_garages')</Filter>
     <PolygonSymbolizer fill="#999966" fill-opacity="0.2" />
@@ -489,29 +341,6 @@
     <MaxScaleDenominator>750000</MaxScaleDenominator>
     <Filter>([feature] = 'landuse_residential')</Filter>
     <PolygonSymbolizer fill="#dddddd" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>750000</MaxScaleDenominator>
-    <Filter>([feature] = 'tourism_attraction')</Filter>
-    <PolygonSymbolizer fill="#f2caea" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>100000</MaxScaleDenominator>
-    <Filter>([feature] = 'tourism_camp_site')</Filter>
-    <PolygonSymbolizer fill="#ccff99" fill-opacity="0.5" />
-    <LineSymbolizer stroke="#666666" stroke-width="0.3" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>100000</MaxScaleDenominator>
-    <Filter>([feature] = 'tourism_picnic_site')</Filter>
-    <PolygonSymbolizer fill="#ccff99" fill-opacity="0.5" />
-    <LineSymbolizer stroke="#666666" stroke-width="0.3" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>100000</MaxScaleDenominator>
-    <Filter>([feature] = 'tourism_caravan_site')</Filter>
-    <PolygonSymbolizer fill="#ccff99" fill-opacity="0.5" />
-    <LineSymbolizer stroke="#666666" stroke-width="0.3" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
@@ -15380,7 +15209,7 @@ case when leisure='pitch' then 2
 <Style name="national-park-boundaries-fill" filter-mode="first" opacity="0.05">
   <Rule>
     <MaxScaleDenominator>6500000</MaxScaleDenominator>
-    <MinScaleDenominator>100000</MinScaleDenominator>
+    <MinScaleDenominator>1000000</MinScaleDenominator>
     <PolygonSymbolizer fill="#008000" />
   </Rule>
 </Style>
