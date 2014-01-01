@@ -13295,11 +13295,6 @@ case when leisure='pitch' then 2
 </Style>
 <Style name="amenity-points-amenity" filter-mode="first">
   <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <Filter>([amenity] = 'parking') and ([access] != '') and ([access] != 'public') and ([access] != 'yes')</Filter>
-    <PointSymbolizer file="symbols/parking_private.p.16.png" placement="interior" />
-  </Rule>
-  <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([amenity] = 'place_of_worship') and ([religion] = 'jewish')</Filter>
     <PointSymbolizer file="symbols/jewish3.p.16.png" placement="interior" />
@@ -13403,11 +13398,6 @@ case when leisure='pitch' then 2
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([amenity] = 'pharmacy')</Filter>
     <PointSymbolizer file="symbols/pharmacy.p.16.png" placement="interior" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <Filter>([amenity] = 'parking')</Filter>
-    <PointSymbolizer file="symbols/parking.p.16.png" placement="interior" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
@@ -13732,11 +13722,6 @@ case when leisure='pitch' then 2
 </Style>
 <Style name="amenity-points-poly-amenity" filter-mode="first">
   <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <Filter>([amenity] = 'parking') and ([access] != '') and ([access] != 'public') and ([access] != 'yes')</Filter>
-    <PointSymbolizer file="symbols/parking_private.p.16.png" placement="interior" />
-  </Rule>
-  <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([amenity] = 'place_of_worship') and ([religion] = 'jewish')</Filter>
     <PointSymbolizer file="symbols/jewish3.p.16.png" placement="interior" />
@@ -13840,11 +13825,6 @@ case when leisure='pitch' then 2
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([amenity] = 'pharmacy')</Filter>
     <PointSymbolizer file="symbols/pharmacy.p.16.png" placement="interior" />
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <Filter>([amenity] = 'parking')</Filter>
-    <PointSymbolizer file="symbols/parking.p.16.png" placement="interior" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>2500</MaxScaleDenominator>
