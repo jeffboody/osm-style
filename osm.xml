@@ -13570,37 +13570,37 @@ case when leisure='pitch' then 2
     <MaxScaleDenominator>750000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
     <Filter>([highway] = 'motorway') and ([length] = 8)</Filter>
-    <ShieldSymbolizer file="symbols/tertiary_shield7.png" size="10" fill="#010101" placement="line" spacing="750" minimum-distance="120" fontset-name="fontset-2" ><![CDATA[[ref]]]></ShieldSymbolizer>
+    <ShieldSymbolizer file="symbols/tertiary_shield7.png" size="13" fill="#010101" placement="line" spacing="750" minimum-distance="120" fontset-name="fontset-2" ><![CDATA[[ref]]]></ShieldSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
     <Filter>([highway] = 'motorway') and ([length] = 7)</Filter>
-    <ShieldSymbolizer file="symbols/tertiary_shield6.png" size="10" fill="#010101" placement="line" spacing="750" minimum-distance="120" fontset-name="fontset-2" ><![CDATA[[ref]]]></ShieldSymbolizer>
+    <ShieldSymbolizer file="symbols/tertiary_shield6.png" size="13" fill="#010101" placement="line" spacing="750" minimum-distance="120" fontset-name="fontset-2" ><![CDATA[[ref]]]></ShieldSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
     <Filter>([highway] = 'motorway') and ([length] &lt; 9)</Filter>
-    <ShieldSymbolizer size="10" fill="#010101" placement="line" file="symbols/tertiary_shield[length].png" spacing="750" minimum-distance="120" fontset-name="fontset-2" ><![CDATA[[ref]]]></ShieldSymbolizer>
+    <ShieldSymbolizer size="13" fill="#010101" placement="line" file="symbols/tertiary_shield[length].png" spacing="750" minimum-distance="120" fontset-name="fontset-2" ><![CDATA[[ref]]]></ShieldSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
     <Filter>([highway] = 'secondary')</Filter>
-    <ShieldSymbolizer size="10" fill="#010101" placement="line" file="symbols/tertiary_shield[length].png" spacing="750" minimum-distance="120" fontset-name="fontset-2" ><![CDATA[[ref]]]></ShieldSymbolizer>
+    <ShieldSymbolizer size="13" fill="#010101" placement="line" file="symbols/tertiary_shield[length].png" spacing="750" minimum-distance="120" fontset-name="fontset-2" ><![CDATA[[ref]]]></ShieldSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>400000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
     <Filter>([highway] = 'primary')</Filter>
-    <ShieldSymbolizer size="10" fill="#010101" placement="line" file="symbols/tertiary_shield[length].png" spacing="750" minimum-distance="120" fontset-name="fontset-2" ><![CDATA[[ref]]]></ShieldSymbolizer>
+    <ShieldSymbolizer size="13" fill="#010101" placement="line" file="symbols/tertiary_shield[length].png" spacing="750" minimum-distance="120" fontset-name="fontset-2" ><![CDATA[[ref]]]></ShieldSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>400000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
     <Filter>([highway] = 'trunk')</Filter>
-    <ShieldSymbolizer size="10" fill="#010101" placement="line" file="symbols/tertiary_shield[length].png" spacing="750" minimum-distance="120" fontset-name="fontset-2" ><![CDATA[[ref]]]></ShieldSymbolizer>
+    <ShieldSymbolizer size="13" fill="#010101" placement="line" file="symbols/tertiary_shield[length].png" spacing="750" minimum-distance="120" fontset-name="fontset-2" ><![CDATA[[ref]]]></ShieldSymbolizer>
   </Rule>
 </Style>
 <Layer name="roads-text-ref-low-zoom"
@@ -13648,12 +13648,12 @@ case when leisure='pitch' then 2
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([highway] = 'motorway') and ([length] = 8)</Filter>
-    <ShieldSymbolizer file="symbols/tertiary_shield7.png" size="10" fill="#010101" placement="line" spacing="750" minimum-distance="120" fontset-name="fontset-2" avoid-edges="true" ><![CDATA[[ref]]]></ShieldSymbolizer>
+    <ShieldSymbolizer file="symbols/tertiary_shield7.png" size="13" fill="#010101" placement="line" spacing="750" minimum-distance="120" fontset-name="fontset-2" avoid-edges="true" ><![CDATA[[ref]]]></ShieldSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([highway] = 'motorway') and ([length] = 7)</Filter>
-    <ShieldSymbolizer file="symbols/tertiary_shield6.png" size="10" fill="#010101" placement="line" spacing="750" minimum-distance="120" fontset-name="fontset-2" avoid-edges="true" ><![CDATA[[ref]]]></ShieldSymbolizer>
+    <ShieldSymbolizer file="symbols/tertiary_shield6.png" size="13" fill="#010101" placement="line" spacing="750" minimum-distance="120" fontset-name="fontset-2" avoid-edges="true" ><![CDATA[[ref]]]></ShieldSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
@@ -13678,27 +13678,27 @@ case when leisure='pitch' then 2
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([highway] = 'tertiary') and ([bridge] = 'no')</Filter>
-    <ShieldSymbolizer size="10" fill="#010101" placement="line" file="symbols/tertiary_shield[length].png" spacing="750" minimum-distance="120" fontset-name="fontset-2" avoid-edges="true" ><![CDATA[[ref]]]></ShieldSymbolizer>
+    <ShieldSymbolizer size="13" fill="#010101" placement="line" file="symbols/tertiary_shield[length].png" spacing="750" minimum-distance="120" fontset-name="fontset-2" avoid-edges="true" ><![CDATA[[ref]]]></ShieldSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([highway] = 'secondary') and ([bridge] = 'no')</Filter>
-    <ShieldSymbolizer size="10" fill="#010101" placement="line" file="symbols/tertiary_shield[length].png" spacing="750" minimum-distance="120" fontset-name="fontset-2" avoid-edges="true" ><![CDATA[[ref]]]></ShieldSymbolizer>
+    <ShieldSymbolizer size="13" fill="#010101" placement="line" file="symbols/tertiary_shield[length].png" spacing="750" minimum-distance="120" fontset-name="fontset-2" avoid-edges="true" ><![CDATA[[ref]]]></ShieldSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([highway] = 'motorway') and ([length] &lt; 9)</Filter>
-    <ShieldSymbolizer size="10" fill="#010101" placement="line" file="symbols/tertiary_shield[length].png" spacing="750" minimum-distance="120" fontset-name="fontset-2" avoid-edges="true" ><![CDATA[[ref]]]></ShieldSymbolizer>
+    <ShieldSymbolizer size="13" fill="#010101" placement="line" file="symbols/tertiary_shield[length].png" spacing="750" minimum-distance="120" fontset-name="fontset-2" avoid-edges="true" ><![CDATA[[ref]]]></ShieldSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([highway] = 'primary')</Filter>
-    <ShieldSymbolizer size="10" fill="#010101" placement="line" file="symbols/tertiary_shield[length].png" spacing="750" minimum-distance="120" fontset-name="fontset-2" avoid-edges="true" ><![CDATA[[ref]]]></ShieldSymbolizer>
+    <ShieldSymbolizer size="13" fill="#010101" placement="line" file="symbols/tertiary_shield[length].png" spacing="750" minimum-distance="120" fontset-name="fontset-2" avoid-edges="true" ><![CDATA[[ref]]]></ShieldSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([highway] = 'trunk')</Filter>
-    <ShieldSymbolizer size="10" fill="#010101" placement="line" file="symbols/tertiary_shield[length].png" spacing="750" minimum-distance="120" fontset-name="fontset-2" avoid-edges="true" ><![CDATA[[ref]]]></ShieldSymbolizer>
+    <ShieldSymbolizer size="13" fill="#010101" placement="line" file="symbols/tertiary_shield[length].png" spacing="750" minimum-distance="120" fontset-name="fontset-2" avoid-edges="true" ><![CDATA[[ref]]]></ShieldSymbolizer>
   </Rule>
 </Style>
 <Layer name="roads-text-ref"
