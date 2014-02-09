@@ -12545,40 +12545,6 @@ case when leisure='pitch' then 2
     <PointSymbolizer file="symbols/level_crossing.png" placement="interior" />
   </Rule>
 </Style>
-<Style name="amenity-symbols-aeroway" filter-mode="first">
-  <Rule>
-    <MaxScaleDenominator>750000</MaxScaleDenominator>
-    <MinScaleDenominator>400000</MinScaleDenominator>
-    <Filter>([aeroway] = 'aerodrome')</Filter>
-    <PointSymbolizer file="symbols/aerodrome.p.16.png" />
-    <TextSymbolizer dy="-12" size="12" fill="#6692da" fontset-name="fontset-1" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>400000</MaxScaleDenominator>
-    <MinScaleDenominator>100000</MinScaleDenominator>
-    <Filter>([aeroway] = 'aerodrome')</Filter>
-    <TextSymbolizer size="12" fill="#6692da" fontset-name="fontset-1" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>1500000</MaxScaleDenominator>
-    <MinScaleDenominator>400000</MinScaleDenominator>
-    <Filter>([aeroway] = 'airport')</Filter>
-    <PointSymbolizer file="symbols/airport.p.16.png" />
-    <TextSymbolizer size="12" dy="-12" fill="#6692da" halo-radius="1" placement="interior" fontset-name="fontset-2" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>400000</MaxScaleDenominator>
-    <MinScaleDenominator>100000</MinScaleDenominator>
-    <Filter>([aeroway] = 'airport')</Filter>
-    <TextSymbolizer size="14" fill="#6692da" halo-radius="1" placement="interior" fontset-name="fontset-2" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <Filter>([aeroway] = 'helipad')</Filter>
-    <PointSymbolizer file="symbols/helipad.p.16.png" />
-    <TextSymbolizer size="12" fill="#6692da" dy="-10" fontset-name="fontset-2" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-</Style>
 <Layer name="amenity-symbols"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
     <StyleName>amenity-symbols-aeroway</StyleName>
@@ -12739,40 +12705,6 @@ case when leisure='pitch' then 2
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([railway] = 'level_crossing')</Filter>
     <PointSymbolizer file="symbols/level_crossing.png" placement="interior" />
-  </Rule>
-</Style>
-<Style name="amenity-symbols-poly-aeroway" filter-mode="first">
-  <Rule>
-    <MaxScaleDenominator>750000</MaxScaleDenominator>
-    <MinScaleDenominator>400000</MinScaleDenominator>
-    <Filter>([aeroway] = 'aerodrome')</Filter>
-    <PointSymbolizer file="symbols/aerodrome.p.16.png" />
-    <TextSymbolizer dy="-12" size="12" fill="#6692da" fontset-name="fontset-1" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>400000</MaxScaleDenominator>
-    <MinScaleDenominator>100000</MinScaleDenominator>
-    <Filter>([aeroway] = 'aerodrome')</Filter>
-    <TextSymbolizer size="12" fill="#6692da" fontset-name="fontset-1" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>1500000</MaxScaleDenominator>
-    <MinScaleDenominator>400000</MinScaleDenominator>
-    <Filter>([aeroway] = 'airport')</Filter>
-    <PointSymbolizer file="symbols/airport.p.16.png" />
-    <TextSymbolizer size="12" dy="-12" fill="#6692da" halo-radius="1" placement="interior" fontset-name="fontset-2" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>400000</MaxScaleDenominator>
-    <MinScaleDenominator>100000</MinScaleDenominator>
-    <Filter>([aeroway] = 'airport')</Filter>
-    <TextSymbolizer size="14" fill="#6692da" halo-radius="1" placement="interior" fontset-name="fontset-2" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>12500</MaxScaleDenominator>
-    <Filter>([aeroway] = 'helipad')</Filter>
-    <PointSymbolizer file="symbols/helipad.p.16.png" />
-    <TextSymbolizer size="12" fill="#6692da" dy="-10" fontset-name="fontset-2" halo-radius="1" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
 </Style>
 <Layer name="amenity-symbols-poly"
