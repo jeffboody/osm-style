@@ -14154,12 +14154,12 @@ case when leisure='pitch' then 2
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <Filter>([landuse] = 'basin')</Filter>
-    <TextSymbolizer size="15" fill="#6699cc" fontset-name="fontset-0" halo-radius="1" wrap-width="20" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#2c2988" fontset-name="fontset-0" halo-radius="1" wrap-width="20" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <Filter>([landuse] = 'reservoir')</Filter>
-    <TextSymbolizer size="15" fill="#6699cc" fontset-name="fontset-0" halo-radius="1" wrap-width="20" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#2c2988" fontset-name="fontset-0" halo-radius="1" wrap-width="20" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
 </Style>
 <Style name="text-historic" filter-mode="first">
@@ -14184,22 +14184,22 @@ case when leisure='pitch' then 2
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([natural] = 'spring')</Filter>
-    <TextSymbolizer size="15" fill="#6699cc" fontset-name="fontset-0" halo-radius="1" wrap-width="20" placement="interior" dy="6" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#2c2988" fontset-name="fontset-0" halo-radius="1" wrap-width="20" placement="interior" dy="6" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([natural] = 'bay')</Filter>
-    <TextSymbolizer size="15" fill="#6699cc" fontset-name="fontset-0" halo-radius="1" wrap-width="20" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#2c2988" fontset-name="fontset-0" halo-radius="1" wrap-width="20" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <Filter>([natural] = 'water')</Filter>
-    <TextSymbolizer size="15" fill="#6699cc" fontset-name="fontset-0" halo-radius="1" wrap-width="20" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#2c2988" fontset-name="fontset-0" halo-radius="1" wrap-width="20" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <Filter>([natural] = 'lake')</Filter>
-    <TextSymbolizer size="15" fill="#6699cc" fontset-name="fontset-0" halo-radius="1" wrap-width="20" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#2c2988" fontset-name="fontset-0" halo-radius="1" wrap-width="20" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
@@ -14606,12 +14606,12 @@ case when leisure='pitch' then 2
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <Filter>([landuse] = 'basin')</Filter>
-    <TextSymbolizer size="15" fill="#6699cc" fontset-name="fontset-0" halo-radius="1" wrap-width="20" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#2c2988" fontset-name="fontset-0" halo-radius="1" wrap-width="20" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <Filter>([landuse] = 'reservoir')</Filter>
-    <TextSymbolizer size="15" fill="#6699cc" fontset-name="fontset-0" halo-radius="1" wrap-width="20" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#2c2988" fontset-name="fontset-0" halo-radius="1" wrap-width="20" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
 </Style>
 <Style name="text-poly-historic" filter-mode="first">
@@ -14636,22 +14636,22 @@ case when leisure='pitch' then 2
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([natural] = 'spring')</Filter>
-    <TextSymbolizer size="15" fill="#6699cc" fontset-name="fontset-0" halo-radius="1" wrap-width="20" placement="interior" dy="6" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#2c2988" fontset-name="fontset-0" halo-radius="1" wrap-width="20" placement="interior" dy="6" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([natural] = 'bay')</Filter>
-    <TextSymbolizer size="15" fill="#6699cc" fontset-name="fontset-0" halo-radius="1" wrap-width="20" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#2c2988" fontset-name="fontset-0" halo-radius="1" wrap-width="20" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <Filter>([natural] = 'water')</Filter>
-    <TextSymbolizer size="15" fill="#6699cc" fontset-name="fontset-0" halo-radius="1" wrap-width="20" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#2c2988" fontset-name="fontset-0" halo-radius="1" wrap-width="20" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <Filter>([natural] = 'lake')</Filter>
-    <TextSymbolizer size="15" fill="#6699cc" fontset-name="fontset-0" halo-radius="1" wrap-width="20" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fill="#2c2988" fontset-name="fontset-0" halo-radius="1" wrap-width="20" placement="interior" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
@@ -14981,19 +14981,19 @@ case when leisure='pitch' then 2
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([waterway] = 'canal') and ([lock] = 'yes')</Filter>
-    <TextSymbolizer placement="point" wrap-width="20" size="14" fill="#6699cc" fontset-name="fontset-0" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer placement="point" wrap-width="20" size="14" fill="#2c2988" fontset-name="fontset-0" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([waterway] = 'canal') and ([lock] = 'yes')</Filter>
-    <TextSymbolizer fontset-name="fontset-0" halo-radius="1" size="12" placement="line" fill="#6699cc" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" halo-radius="1" size="12" placement="line" fill="#2c2988" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([waterway] = 'canal') and ([lock] = 'yes')</Filter>
-    <TextSymbolizer size="14" fill="#6699cc" placement="line" fontset-name="fontset-0" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="14" fill="#2c2988" placement="line" fontset-name="fontset-0" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
@@ -15010,34 +15010,34 @@ case when leisure='pitch' then 2
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([waterway] = 'canal')</Filter>
-    <TextSymbolizer fontset-name="fontset-0" halo-radius="1" size="12" placement="line" fill="#6699cc" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" halo-radius="1" size="12" placement="line" fill="#2c2988" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([waterway] = 'canal')</Filter>
-    <TextSymbolizer size="14" fill="#6699cc" placement="line" fontset-name="fontset-0" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="14" fill="#2c2988" placement="line" fontset-name="fontset-0" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([waterway] = 'river') and ([tunnel] = 'yes')</Filter>
-    <TextSymbolizer minimum-distance="200" size="15" fontset-name="fontset-0" placement="line" fill="#6699cc" spacing="400" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer minimum-distance="200" size="15" fontset-name="fontset-0" placement="line" fill="#2c2988" spacing="400" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([waterway] = 'river') and ([tunnel] = 'yes')</Filter>
-    <TextSymbolizer minimum-distance="200" fontset-name="fontset-0" placement="line" fill="#6699cc" spacing="400" size="14" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer minimum-distance="200" fontset-name="fontset-0" placement="line" fill="#2c2988" spacing="400" size="14" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([waterway] = 'river')</Filter>
-    <TextSymbolizer size="15" fontset-name="fontset-0" placement="line" fill="#6699cc" spacing="400" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="15" fontset-name="fontset-0" placement="line" fill="#2c2988" spacing="400" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([waterway] = 'river')</Filter>
-    <TextSymbolizer fontset-name="fontset-0" placement="line" fill="#6699cc" spacing="400" size="14" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" placement="line" fill="#2c2988" spacing="400" size="14" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
@@ -15053,17 +15053,17 @@ case when leisure='pitch' then 2
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <Filter>([waterway] = 'ditch')</Filter>
-    <TextSymbolizer fontset-name="fontset-0" size="12" fill="#6699cc" spacing="600" placement="line" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" size="12" fill="#2c2988" spacing="600" placement="line" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <Filter>([waterway] = 'drain')</Filter>
-    <TextSymbolizer fontset-name="fontset-0" size="12" fill="#6699cc" spacing="600" placement="line" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer fontset-name="fontset-0" size="12" fill="#2c2988" spacing="600" placement="line" halo-radius="1" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <Filter>([waterway] = 'stream')</Filter>
-    <TextSymbolizer size="12" fontset-name="fontset-0" fill="#6699cc" halo-radius="1" spacing="600" placement="line" ><![CDATA[[name]]]></TextSymbolizer>
+    <TextSymbolizer size="12" fontset-name="fontset-0" fill="#2c2988" halo-radius="1" spacing="600" placement="line" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
 </Style>
 <Layer name="water-lines-text"
