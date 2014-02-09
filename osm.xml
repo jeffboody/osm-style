@@ -478,23 +478,23 @@ case when leisure='pitch' then 2
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <Filter>([waterway] = 'stream')</Filter>
-    <LineSymbolizer stroke-width="2.5" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="2.5" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([waterway] = 'stream')</Filter>
-    <LineSymbolizer stroke-width="1.5" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="1.5" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([waterway] = 'ditch')</Filter>
-    <LineSymbolizer stroke-width="1.5" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="1.5" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([waterway] = 'drain')</Filter>
-    <LineSymbolizer stroke-width="1.5" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="1.5" stroke="#b4b4b4" />
   </Rule>
 </Style>
 <Layer name="water-lines-casing"
@@ -664,7 +664,7 @@ case when leisure='pitch' then 2
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([waterway] = 'canal') and ([tunnel] = 'yes') and ([disused] = 'yes')</Filter>
-    <LineSymbolizer stroke-width="3" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="3" stroke="#b4b4b4" />
     <LineSymbolizer stroke-width="7" stroke-dasharray="4, 8" stroke="#b5e4d0" stroke-opacity="0.5" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
@@ -677,7 +677,7 @@ case when leisure='pitch' then 2
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([waterway] = 'canal') and ([tunnel] = 'yes') and ([disused] = 'yes')</Filter>
-    <LineSymbolizer stroke-width="3" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="3" stroke="#b4b4b4" />
     <LineSymbolizer stroke-width="4.5" stroke-dasharray="4, 8" stroke="#b5e4d0" stroke-opacity="0.5" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
@@ -690,7 +690,7 @@ case when leisure='pitch' then 2
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([waterway] = 'canal') and ([tunnel] = 'yes')</Filter>
     <LineSymbolizer stroke-width="7" stroke-dasharray="4, 2" stroke="#2dced0" stroke-linejoin="round" stroke-linecap="round" />
-    <LineSymbolizer stroke-width="3" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="3" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
@@ -703,7 +703,7 @@ case when leisure='pitch' then 2
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([waterway] = 'canal') and ([tunnel] = 'yes')</Filter>
     <LineSymbolizer stroke-dasharray="4, 2" stroke-width="7" stroke="#2dced0" stroke-linejoin="round" stroke-linecap="round" />
-    <LineSymbolizer stroke-width="3" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="3" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
@@ -756,7 +756,7 @@ case when leisure='pitch' then 2
     <Filter>([waterway] = 'river') and ([tunnel] = 'yes')</Filter>
     <LineSymbolizer stroke-width="12" stroke="#2dced0" stroke-linecap="round" stroke-linejoin="round" />
     <LineSymbolizer stroke-width="13" stroke-dasharray="4, 2" stroke="#2dced0" />
-    <LineSymbolizer stroke-width="9" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="9" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
@@ -764,7 +764,7 @@ case when leisure='pitch' then 2
     <Filter>([waterway] = 'river') and ([tunnel] = 'yes')</Filter>
     <LineSymbolizer stroke-width="10" stroke="#2dced0" stroke-linecap="round" stroke-linejoin="round" />
     <LineSymbolizer stroke-width="11" stroke-dasharray="4, 2" stroke="#2dced0" />
-    <LineSymbolizer stroke-width="7" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="7" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
@@ -772,7 +772,7 @@ case when leisure='pitch' then 2
     <Filter>([waterway] = 'river') and ([tunnel] = 'yes')</Filter>
     <LineSymbolizer stroke-width="6" stroke="#2dced0" stroke-linecap="round" stroke-linejoin="round" />
     <LineSymbolizer stroke-width="7" stroke-dasharray="4, 2" stroke="#2dced0" />
-    <LineSymbolizer stroke-width="4" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="4" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
@@ -780,7 +780,7 @@ case when leisure='pitch' then 2
     <Filter>([waterway] = 'river') and ([tunnel] = 'yes')</Filter>
     <LineSymbolizer stroke-width="5" stroke="#2dced0" stroke-linecap="round" stroke-linejoin="round" />
     <LineSymbolizer stroke-width="6" stroke-dasharray="4, 2" stroke="#2dced0" />
-    <LineSymbolizer stroke-width="4" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="4" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
@@ -1109,89 +1109,89 @@ case when leisure='pitch' then 2
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([highway] = 'unclassified')</Filter>
-    <LineSymbolizer stroke-width="13" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="13" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([highway] = 'unclassified')</Filter>
-    <LineSymbolizer stroke-width="9.4" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="9.4" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([highway] = 'unclassified')</Filter>
-    <LineSymbolizer stroke-width="6.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="6.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([highway] = 'unclassified')</Filter>
-    <LineSymbolizer stroke-width="3" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="3" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([highway] = 'unclassified')</Filter>
-    <LineSymbolizer stroke-width="2" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="2" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([highway] = 'residential')</Filter>
-    <LineSymbolizer stroke-width="13" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="13" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([highway] = 'residential')</Filter>
-    <LineSymbolizer stroke-width="9.4" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="9.4" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([highway] = 'residential')</Filter>
-    <LineSymbolizer stroke-width="6.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="6.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([highway] = 'residential')</Filter>
-    <LineSymbolizer stroke-width="3" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="3" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([highway] = 'residential')</Filter>
-    <LineSymbolizer stroke-width="2" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="2" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([highway] = 'road')</Filter>
-    <LineSymbolizer stroke-width="13" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="13" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([highway] = 'road')</Filter>
-    <LineSymbolizer stroke-width="9.4" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="9.4" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([highway] = 'road')</Filter>
-    <LineSymbolizer stroke-width="6.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="6.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([highway] = 'road')</Filter>
-    <LineSymbolizer stroke-width="3" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="3" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([highway] = 'road')</Filter>
-    <LineSymbolizer stroke-width="2" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="2" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
@@ -1762,49 +1762,49 @@ case when leisure='pitch' then 2
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([highway] = 'path') and ([bicycle] = 'designated')</Filter>
     <LineSymbolizer stroke-width="5" stroke="#808080" stroke-dasharray="4, 2" />
-    <LineSymbolizer stroke-width="3" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.4" />
+    <LineSymbolizer stroke-width="3" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.4" />
     <LineSymbolizer stroke-width="2" stroke="#0000ff" stroke-opacity="0.5" stroke-dasharray="1, 3" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([highway] = 'path') and ([foot] = 'designated')</Filter>
     <LineSymbolizer stroke-width="5.5" stroke="#808080" stroke-dasharray="4, 2" />
-    <LineSymbolizer stroke-width="3.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.4" />
+    <LineSymbolizer stroke-width="3.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.4" />
     <LineSymbolizer stroke-width="2.5" stroke="#fa8072" stroke-dasharray="1, 3" stroke-opacity="0.5" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([highway] = 'path') and ([horse] = 'designated')</Filter>
     <LineSymbolizer stroke-width="5" stroke="#808080" stroke-dasharray="4, 2" />
-    <LineSymbolizer stroke-width="3" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.4" />
+    <LineSymbolizer stroke-width="3" stroke="#b4b4b4" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.4" />
     <LineSymbolizer stroke-width="2" stroke="#008000" stroke-opacity="0.5" stroke-dasharray="4, 2" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([highway] = 'path')</Filter>
     <LineSymbolizer stroke-width="5.5" stroke="#808080" stroke-dasharray="4, 2" />
-    <LineSymbolizer stroke-width="1" stroke="#ffffff" stroke-opacity="0.4" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="1" stroke="#b4b4b4" stroke-opacity="0.4" stroke-linejoin="round" stroke-linecap="round" />
     <LineSymbolizer stroke-width="0.5" stroke="#000000" stroke-dasharray="6, 3" stroke-linecap="round" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([highway] = 'cycleway')</Filter>
     <LineSymbolizer stroke-width="5" stroke="#808080" stroke-dasharray="4, 2" />
-    <LineSymbolizer stroke-width="3" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="3" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
     <LineSymbolizer stroke-width="2" stroke="#0000ff" stroke-opacity="0.5" stroke-dasharray="1, 3" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([highway] = 'footway')</Filter>
     <LineSymbolizer stroke-width="5.5" stroke="#808080" stroke-dasharray="4, 2" />
-    <LineSymbolizer stroke-width="3.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="3.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
     <LineSymbolizer stroke-width="2.5" stroke="#fa8072" stroke-dasharray="1, 3" stroke-opacity="0.5" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([highway] = 'bridleway')</Filter>
     <LineSymbolizer stroke-width="5" stroke="#808080" stroke-dasharray="4, 2" />
-    <LineSymbolizer stroke-width="3" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" />
+    <LineSymbolizer stroke-width="3" stroke="#b4b4b4" stroke-linecap="round" stroke-linejoin="round" />
     <LineSymbolizer stroke-width="2" stroke="#008000" stroke-opacity="0.5" stroke-dasharray="4, 2" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
 </Style>
@@ -1826,41 +1826,41 @@ case when leisure='pitch' then 2
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([tracktype] = 'grade5')</Filter>
     <LineSymbolizer stroke-width="4.5" stroke="#808080" stroke-dasharray="4, 2" />
-    <LineSymbolizer stroke-width="3" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" />
+    <LineSymbolizer stroke-width="3" stroke="#b4b4b4" stroke-linecap="round" stroke-linejoin="round" />
     <LineSymbolizer stroke-width="2" stroke-dasharray="1, 5" stroke="#996600" stroke-opacity="0.5" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([tracktype] = 'grade4')</Filter>
     <LineSymbolizer stroke-width="4.5" stroke="#808080" stroke-dasharray="4, 2" />
-    <LineSymbolizer stroke-width="3" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" />
+    <LineSymbolizer stroke-width="3" stroke="#b4b4b4" stroke-linecap="round" stroke-linejoin="round" />
     <LineSymbolizer stroke-width="2" stroke-dasharray="4, 7, 1, 5" stroke="#996600" stroke-opacity="0.5" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([tracktype] = 'grade3')</Filter>
     <LineSymbolizer stroke-width="4.5" stroke="#808080" stroke-dasharray="4, 2" />
-    <LineSymbolizer stroke-width="3.5" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" />
+    <LineSymbolizer stroke-width="3.5" stroke="#b4b4b4" stroke-linecap="round" stroke-linejoin="round" />
     <LineSymbolizer stroke-width="2" stroke-dasharray="100, 0" stroke="#996600" stroke-opacity="0.5" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([tracktype] = 'grade2')</Filter>
     <LineSymbolizer stroke-width="4.5" stroke="#808080" stroke-dasharray="4, 2" />
-    <LineSymbolizer stroke-width="3" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" />
+    <LineSymbolizer stroke-width="3" stroke="#b4b4b4" stroke-linecap="round" stroke-linejoin="round" />
     <LineSymbolizer stroke="#a87000" stroke-width="1.5" stroke-dasharray="3, 4" stroke-opacity="0.5" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([tracktype] = 'grade1')</Filter>
     <LineSymbolizer stroke-width="4" stroke="#808080" stroke-dasharray="4, 2" />
-    <LineSymbolizer stroke-width="3.5" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" />
+    <LineSymbolizer stroke-width="3.5" stroke="#b4b4b4" stroke-linecap="round" stroke-linejoin="round" />
     <LineSymbolizer stroke-width="2" stroke="#b37700" stroke-dasharray="100, 0" stroke-opacity="0.5" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <LineSymbolizer stroke-width="4.5" stroke="#808080" stroke-dasharray="4, 2" />
-    <LineSymbolizer stroke-width="3" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" />
+    <LineSymbolizer stroke-width="3" stroke="#b4b4b4" stroke-linecap="round" stroke-linejoin="round" />
     <LineSymbolizer stroke-width="1.5" stroke="#996600" stroke-dasharray="3, 4" stroke-opacity="0.5" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
 </Style>
@@ -2092,19 +2092,19 @@ case when leisure='pitch' then 2
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([int_tc_type] = 'living_street')</Filter>
-    <MarkersSymbolizer width="24" height="24" allow-overlap="true" ignore-placement="true" stroke-width="0" fill="#ffffff" />
+    <MarkersSymbolizer width="24" height="24" allow-overlap="true" ignore-placement="true" stroke-width="0" fill="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([int_tc_type] = 'living_street')</Filter>
-    <MarkersSymbolizer width="18" height="18" allow-overlap="true" ignore-placement="true" stroke-width="0" fill="#ffffff" />
+    <MarkersSymbolizer width="18" height="18" allow-overlap="true" ignore-placement="true" stroke-width="0" fill="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([int_tc_type] = 'living_street')</Filter>
-    <MarkersSymbolizer width="14" height="14" allow-overlap="true" ignore-placement="true" stroke-width="0" fill="#ffffff" />
+    <MarkersSymbolizer width="14" height="14" allow-overlap="true" ignore-placement="true" stroke-width="0" fill="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
@@ -2273,31 +2273,31 @@ case when leisure='pitch' then 2
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([highway] = 'living_street')</Filter>
-    <LineSymbolizer stroke-width="14.5" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" />
+    <LineSymbolizer stroke-width="14.5" stroke="#b4b4b4" stroke-linecap="round" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([highway] = 'living_street')</Filter>
-    <LineSymbolizer stroke-width="9" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" />
+    <LineSymbolizer stroke-width="9" stroke="#b4b4b4" stroke-linecap="round" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([highway] = 'living_street')</Filter>
-    <LineSymbolizer stroke-width="6" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" />
+    <LineSymbolizer stroke-width="6" stroke="#b4b4b4" stroke-linecap="round" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([highway] = 'living_street')</Filter>
-    <LineSymbolizer stroke-width="4" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" />
+    <LineSymbolizer stroke-width="4" stroke="#b4b4b4" stroke-linecap="round" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([highway] = 'living_street')</Filter>
-    <LineSymbolizer stroke-width="2.5" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" />
+    <LineSymbolizer stroke-width="2.5" stroke="#b4b4b4" stroke-linecap="round" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
@@ -2750,17 +2750,17 @@ case when leisure='pitch' then 2
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_residential')</Filter>
-    <PolygonSymbolizer fill="#ffffff" />
+    <PolygonSymbolizer fill="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_service')</Filter>
-    <PolygonSymbolizer fill="#ffffff" />
+    <PolygonSymbolizer fill="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_unclassified')</Filter>
-    <PolygonSymbolizer fill="#ffffff" />
+    <PolygonSymbolizer fill="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
@@ -2973,7 +2973,7 @@ case when leisure='pitch' then 2
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([feature] = 'railway_spur-siding-yard') and ([tunnel] != 'yes')</Filter>
     <LineSymbolizer stroke="#999999" stroke-width="2" stroke-linejoin="round" />
-    <LineSymbolizer stroke-width="0.8" stroke-dasharray="0, 8, 11, 1" stroke="#ffffff" stroke-linejoin="round" />
+    <LineSymbolizer stroke-width="0.8" stroke-dasharray="0, 8, 11, 1" stroke="#b4b4b4" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>400000</MaxScaleDenominator>
@@ -2985,19 +2985,19 @@ case when leisure='pitch' then 2
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'railway_rail') and ([tunnel] != 'yes')</Filter>
     <LineSymbolizer stroke-width="3" stroke="#999999" stroke-linejoin="round" />
-    <LineSymbolizer stroke-dasharray="0, 11, 8, 1" stroke-width="1" stroke="#ffffff" stroke-linejoin="round" />
+    <LineSymbolizer stroke-dasharray="0, 11, 8, 1" stroke-width="1" stroke="#b4b4b4" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([feature] = 'railway_rail') and ([tunnel] != 'yes')</Filter>
     <LineSymbolizer stroke-width="3" stroke="#999999" stroke-linejoin="round" />
-    <LineSymbolizer stroke-width="1" stroke="#ffffff" stroke-dasharray="8, 12" stroke-linejoin="round" />
+    <LineSymbolizer stroke-width="1" stroke="#b4b4b4" stroke-dasharray="8, 12" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([feature] = 'railway_spur-siding-yard') and ([tunnel] = 'yes')</Filter>
-    <LineSymbolizer stroke-width="2" stroke="#ffffff" stroke-dasharray="1, 9" stroke-linejoin="round" />
+    <LineSymbolizer stroke-width="2" stroke="#b4b4b4" stroke-dasharray="1, 9" stroke-linejoin="round" />
     <LineSymbolizer stroke-width="2" stroke="#fdfdfd" stroke-dasharray="0, 1, 1, 8" stroke-linejoin="round" />
     <LineSymbolizer stroke-width="2" stroke="#ececec" stroke-dasharray="0, 2, 1, 7" stroke-linejoin="round" />
     <LineSymbolizer stroke-width="2" stroke="#cacaca" stroke-dasharray="0, 3, 1, 6" stroke-linejoin="round" />
@@ -3014,109 +3014,109 @@ case when leisure='pitch' then 2
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_track') and ([tracktype] = 'grade5')</Filter>
-    <LineSymbolizer stroke-width="3" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.4" />
+    <LineSymbolizer stroke-width="3" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.4" />
     <LineSymbolizer stroke-width="2" stroke-dasharray="1, 5" stroke-opacity="0.8" stroke="#996600" stroke-linecap="round" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([feature] = 'highway_track') and ([tracktype] = 'grade5')</Filter>
-    <LineSymbolizer stroke-width="2.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.4" />
+    <LineSymbolizer stroke-width="2.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.4" />
     <LineSymbolizer stroke-width="1.2" stroke="#996600" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3, 4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_track') and ([tracktype] = 'grade4')</Filter>
-    <LineSymbolizer stroke-width="3" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.4" />
+    <LineSymbolizer stroke-width="3" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.4" />
     <LineSymbolizer stroke-width="2" stroke-dasharray="4, 7, 1, 5" stroke-opacity="0.8" stroke="#996600" stroke-linecap="round" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([feature] = 'highway_track') and ([tracktype] = 'grade4')</Filter>
-    <LineSymbolizer stroke-width="2.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.4" />
+    <LineSymbolizer stroke-width="2.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.4" />
     <LineSymbolizer stroke-width="1.2" stroke="#996600" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3, 4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_track') and ([tracktype] = 'grade3')</Filter>
-    <LineSymbolizer stroke-width="3" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.4" />
+    <LineSymbolizer stroke-width="3" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.4" />
     <LineSymbolizer stroke-width="1.5" stroke-dasharray="3, 4" stroke-opacity="0.8" stroke="#996600" stroke-linecap="round" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([feature] = 'highway_track') and ([tracktype] = 'grade3')</Filter>
-    <LineSymbolizer stroke-width="2.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.4" />
+    <LineSymbolizer stroke-width="2.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.4" />
     <LineSymbolizer stroke-width="1.2" stroke="#996600" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3, 4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_track') and ([tracktype] = 'grade2')</Filter>
-    <LineSymbolizer stroke-width="3" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.4" />
+    <LineSymbolizer stroke-width="3" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.4" />
     <LineSymbolizer stroke="#a87000" stroke-width="1.5" stroke-dasharray="9, 4" stroke-opacity="0.8" stroke-linecap="round" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([feature] = 'highway_track') and ([tracktype] = 'grade2')</Filter>
-    <LineSymbolizer stroke-width="2.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.4" />
+    <LineSymbolizer stroke-width="2.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.4" />
     <LineSymbolizer stroke-width="1.2" stroke="#996600" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3, 4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_track') and ([tracktype] = 'grade1')</Filter>
-    <LineSymbolizer stroke-width="3.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.4" />
+    <LineSymbolizer stroke-width="3.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.4" />
     <LineSymbolizer stroke-width="2" stroke="#b37700" stroke-dasharray="100, 0" stroke-opacity="0.7" stroke-linecap="round" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([feature] = 'highway_track') and ([tracktype] = 'grade1')</Filter>
-    <LineSymbolizer stroke-width="2.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.4" />
+    <LineSymbolizer stroke-width="2.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.4" />
     <LineSymbolizer stroke-width="1.2" stroke="#996600" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3, 4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([feature] = 'highway_track')</Filter>
-    <LineSymbolizer stroke-width="2.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.4" />
+    <LineSymbolizer stroke-width="2.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.4" />
     <LineSymbolizer stroke-width="1.2" stroke="#996600" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3, 4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_track')</Filter>
-    <LineSymbolizer stroke-width="3" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.4" />
+    <LineSymbolizer stroke-width="3" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.4" />
     <LineSymbolizer stroke-width="1.5" stroke="#996600" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3, 4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_path') and ([bicycle] = 'designated') and ([tunnel] != 'yes')</Filter>
-    <LineSymbolizer stroke-width="3" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.4" />
+    <LineSymbolizer stroke-width="3" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.4" />
     <LineSymbolizer stroke-width="1.2" stroke-dasharray="1, 3" stroke="#0000ff" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_path') and ([foot] = 'designated') and ([tunnel] != 'yes')</Filter>
-    <LineSymbolizer stroke-width="4" stroke="#ffffff" stroke-opacity="0.4" stroke-linecap="round" stroke-linejoin="round" />
+    <LineSymbolizer stroke-width="4" stroke="#b4b4b4" stroke-opacity="0.4" stroke-linecap="round" stroke-linejoin="round" />
     <LineSymbolizer stroke-width="1.5" stroke="#fa8072" stroke-dasharray="1, 3" stroke-linecap="round" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_path') and ([horse] = 'designated') and ([tunnel] != 'yes')</Filter>
-    <LineSymbolizer stroke-width="3" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.4" />
+    <LineSymbolizer stroke-width="3" stroke="#b4b4b4" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.4" />
     <LineSymbolizer stroke="#008000" stroke-width="1.2" stroke-dasharray="4, 2" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([feature] = 'highway_service') and ([service] = 'INT-normal')</Filter>
-    <LineSymbolizer stroke-width="6" stroke-linejoin="round" stroke-linecap="round" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="6" stroke-linejoin="round" stroke-linecap="round" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([feature] = 'highway_service') and ([service] = 'INT-normal')</Filter>
-    <LineSymbolizer stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="#ffffff" />
+    <LineSymbolizer stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
@@ -3156,31 +3156,31 @@ case when leisure='pitch' then 2
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_unclassified') and ([tunnel] != 'yes')</Filter>
-    <LineSymbolizer stroke-width="13" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" />
+    <LineSymbolizer stroke-width="13" stroke="#b4b4b4" stroke-linecap="round" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([feature] = 'highway_unclassified') and ([tunnel] != 'yes')</Filter>
-    <LineSymbolizer stroke-width="9.4" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" />
+    <LineSymbolizer stroke-width="9.4" stroke="#b4b4b4" stroke-linecap="round" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([feature] = 'highway_unclassified') and ([tunnel] != 'yes')</Filter>
-    <LineSymbolizer stroke-width="6.5" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" />
+    <LineSymbolizer stroke-width="6.5" stroke="#b4b4b4" stroke-linecap="round" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([feature] = 'highway_unclassified') and ([tunnel] != 'yes')</Filter>
-    <LineSymbolizer stroke-width="3" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" />
+    <LineSymbolizer stroke-width="3" stroke="#b4b4b4" stroke-linecap="round" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([feature] = 'highway_unclassified') and ([tunnel] != 'yes')</Filter>
-    <LineSymbolizer stroke-width="2" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" />
+    <LineSymbolizer stroke-width="2" stroke="#b4b4b4" stroke-linecap="round" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
@@ -3191,31 +3191,31 @@ case when leisure='pitch' then 2
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_residential') and ([tunnel] != 'yes')</Filter>
-    <LineSymbolizer stroke-width="13" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" />
+    <LineSymbolizer stroke-width="13" stroke="#b4b4b4" stroke-linecap="round" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([feature] = 'highway_residential') and ([tunnel] != 'yes')</Filter>
-    <LineSymbolizer stroke-width="9.4" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" />
+    <LineSymbolizer stroke-width="9.4" stroke="#b4b4b4" stroke-linecap="round" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([feature] = 'highway_residential') and ([tunnel] != 'yes')</Filter>
-    <LineSymbolizer stroke-width="6.5" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" />
+    <LineSymbolizer stroke-width="6.5" stroke="#b4b4b4" stroke-linecap="round" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([feature] = 'highway_residential') and ([tunnel] != 'yes')</Filter>
-    <LineSymbolizer stroke-width="3" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" />
+    <LineSymbolizer stroke-width="3" stroke="#b4b4b4" stroke-linecap="round" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([feature] = 'highway_residential') and ([tunnel] != 'yes')</Filter>
-    <LineSymbolizer stroke-width="2" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" />
+    <LineSymbolizer stroke-width="2" stroke="#b4b4b4" stroke-linecap="round" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
@@ -3227,26 +3227,26 @@ case when leisure='pitch' then 2
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([feature] = 'highway_proposed') and ([construction] = 'cycleway')</Filter>
-    <LineSymbolizer stroke-width="0" stroke="#ffffff" stroke-opacity="0.4" />
+    <LineSymbolizer stroke-width="0" stroke="#b4b4b4" stroke-opacity="0.4" />
     <LineSymbolizer stroke-width="0" stroke="#6699ff" stroke-dasharray="2, 6" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_proposed') and ([construction] = 'cycleway')</Filter>
-    <LineSymbolizer stroke="#ffffff" stroke-width="3" stroke-opacity="0.4" />
+    <LineSymbolizer stroke="#b4b4b4" stroke-width="3" stroke-opacity="0.4" />
     <LineSymbolizer stroke-width="1.2" stroke="#6699ff" stroke-dasharray="2, 6" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([feature] = 'highway_construction') and ([construction] = 'cycleway')</Filter>
-    <LineSymbolizer stroke-width="0" stroke="#ffffff" stroke-opacity="0.4" />
+    <LineSymbolizer stroke-width="0" stroke="#b4b4b4" stroke-opacity="0.4" />
     <LineSymbolizer stroke-width="0" stroke="#6699ff" stroke-dasharray="2, 6" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_construction') and ([construction] = 'cycleway')</Filter>
-    <LineSymbolizer stroke="#ffffff" stroke-width="3" stroke-opacity="0.4" />
+    <LineSymbolizer stroke="#b4b4b4" stroke-width="3" stroke-opacity="0.4" />
     <LineSymbolizer stroke-width="1.2" stroke="#6699ff" stroke-dasharray="2, 6" />
   </Rule>
   <Rule>
@@ -3254,254 +3254,254 @@ case when leisure='pitch' then 2
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([feature] = 'highway_proposed') and ([construction] = 'service')</Filter>
     <LineSymbolizer stroke-width="0" stroke="#aaaaaa" />
-    <LineSymbolizer stroke-width="0" stroke-dasharray="6, 4" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="0" stroke-dasharray="6, 4" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
     <Filter>([feature] = 'highway_proposed') and ([construction] = 'service')</Filter>
     <LineSymbolizer stroke-width="0" stroke="#aaaaaa" />
-    <LineSymbolizer stroke-width="0" stroke-dasharray="4, 2" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="0" stroke-dasharray="4, 2" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([feature] = 'highway_proposed') and ([construction] = 'service')</Filter>
     <LineSymbolizer stroke-width="8" stroke="#aaaaaa" />
-    <LineSymbolizer stroke-width="7" stroke-dasharray="8, 6" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="7" stroke-dasharray="8, 6" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([feature] = 'highway_proposed') and ([construction] = 'service')</Filter>
     <LineSymbolizer stroke-width="4" stroke="#aaaaaa" />
-    <LineSymbolizer stroke-width="3.5" stroke-dasharray="6, 4" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="3.5" stroke-dasharray="6, 4" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([feature] = 'highway_construction') and ([construction] = 'service')</Filter>
     <LineSymbolizer stroke-width="0" stroke="#aaaaaa" />
-    <LineSymbolizer stroke-width="0" stroke-dasharray="6, 4" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="0" stroke-dasharray="6, 4" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
     <Filter>([feature] = 'highway_construction') and ([construction] = 'service')</Filter>
     <LineSymbolizer stroke-width="0" stroke="#aaaaaa" />
-    <LineSymbolizer stroke-width="0" stroke-dasharray="4, 2" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="0" stroke-dasharray="4, 2" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([feature] = 'highway_construction') and ([construction] = 'service')</Filter>
     <LineSymbolizer stroke-width="8" stroke="#aaaaaa" />
-    <LineSymbolizer stroke-width="7" stroke-dasharray="8, 6" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="7" stroke-dasharray="8, 6" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([feature] = 'highway_construction') and ([construction] = 'service')</Filter>
     <LineSymbolizer stroke-width="4" stroke="#aaaaaa" />
-    <LineSymbolizer stroke-width="3.5" stroke-dasharray="6, 4" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="3.5" stroke-dasharray="6, 4" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
     <Filter>([feature] = 'highway_proposed') and ([construction] = 'residential')</Filter>
     <LineSymbolizer stroke-width="0" stroke="#aaaaaa" />
-    <LineSymbolizer stroke-width="0" stroke-dasharray="4, 2" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="0" stroke-dasharray="4, 2" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([feature] = 'highway_proposed') and ([construction] = 'residential')</Filter>
     <LineSymbolizer stroke-width="8" stroke="#aaaaaa" />
-    <LineSymbolizer stroke-width="7" stroke-dasharray="8, 6" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="7" stroke-dasharray="8, 6" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([feature] = 'highway_proposed') and ([construction] = 'residential')</Filter>
     <LineSymbolizer stroke-width="4" stroke="#aaaaaa" />
-    <LineSymbolizer stroke-width="3.5" stroke-dasharray="6, 4" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="3.5" stroke-dasharray="6, 4" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
     <Filter>([feature] = 'highway_construction') and ([construction] = 'unclassified')</Filter>
     <LineSymbolizer stroke-width="0" stroke="#aaaaaa" />
-    <LineSymbolizer stroke-width="0" stroke-dasharray="4, 2" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="0" stroke-dasharray="4, 2" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([feature] = 'highway_construction') and ([construction] = 'unclassified')</Filter>
     <LineSymbolizer stroke-width="8" stroke="#aaaaaa" />
-    <LineSymbolizer stroke-width="7" stroke-dasharray="8, 6" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="7" stroke-dasharray="8, 6" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([feature] = 'highway_construction') and ([construction] = 'unclassified')</Filter>
     <LineSymbolizer stroke-width="4" stroke="#aaaaaa" />
-    <LineSymbolizer stroke-width="3.5" stroke-dasharray="6, 4" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="3.5" stroke-dasharray="6, 4" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
     <Filter>([feature] = 'highway_proposed') and ([construction] = 'living_street')</Filter>
     <LineSymbolizer stroke-width="0" stroke="#aaaaaa" />
-    <LineSymbolizer stroke-width="0" stroke-dasharray="4, 2" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="0" stroke-dasharray="4, 2" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([feature] = 'highway_proposed') and ([construction] = 'living_street')</Filter>
     <LineSymbolizer stroke-width="8" stroke="#aaaaaa" />
-    <LineSymbolizer stroke-width="7" stroke-dasharray="8, 6" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="7" stroke-dasharray="8, 6" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([feature] = 'highway_proposed') and ([construction] = 'living_street')</Filter>
     <LineSymbolizer stroke-width="4" stroke="#aaaaaa" />
-    <LineSymbolizer stroke-width="3.5" stroke-dasharray="6, 4" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="3.5" stroke-dasharray="6, 4" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
     <Filter>([feature] = 'highway_construction') and ([construction] = 'living_street')</Filter>
     <LineSymbolizer stroke-width="0" stroke="#aaaaaa" />
-    <LineSymbolizer stroke-width="0" stroke-dasharray="4, 2" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="0" stroke-dasharray="4, 2" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([feature] = 'highway_construction') and ([construction] = 'living_street')</Filter>
     <LineSymbolizer stroke-width="8" stroke="#aaaaaa" />
-    <LineSymbolizer stroke-width="7" stroke-dasharray="8, 6" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="7" stroke-dasharray="8, 6" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([feature] = 'highway_construction') and ([construction] = 'living_street')</Filter>
     <LineSymbolizer stroke-width="4" stroke="#aaaaaa" />
-    <LineSymbolizer stroke-width="3.5" stroke-dasharray="6, 4" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="3.5" stroke-dasharray="6, 4" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
     <Filter>([feature] = 'highway_proposed') and ([construction] = 'unclassified')</Filter>
     <LineSymbolizer stroke-width="0" stroke="#aaaaaa" />
-    <LineSymbolizer stroke-width="0" stroke-dasharray="4, 2" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="0" stroke-dasharray="4, 2" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([feature] = 'highway_proposed') and ([construction] = 'unclassified')</Filter>
     <LineSymbolizer stroke-width="8" stroke="#aaaaaa" />
-    <LineSymbolizer stroke-width="7" stroke-dasharray="8, 6" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="7" stroke-dasharray="8, 6" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([feature] = 'highway_proposed') and ([construction] = 'unclassified')</Filter>
     <LineSymbolizer stroke-width="4" stroke="#aaaaaa" />
-    <LineSymbolizer stroke-width="3.5" stroke-dasharray="6, 4" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="3.5" stroke-dasharray="6, 4" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
     <Filter>([feature] = 'highway_construction') and ([construction] = 'residential')</Filter>
     <LineSymbolizer stroke-width="0" stroke="#aaaaaa" />
-    <LineSymbolizer stroke-width="0" stroke-dasharray="4, 2" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="0" stroke-dasharray="4, 2" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([feature] = 'highway_construction') and ([construction] = 'residential')</Filter>
     <LineSymbolizer stroke-width="8" stroke="#aaaaaa" />
-    <LineSymbolizer stroke-width="7" stroke-dasharray="8, 6" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="7" stroke-dasharray="8, 6" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([feature] = 'highway_construction') and ([construction] = 'residential')</Filter>
     <LineSymbolizer stroke-width="4" stroke="#aaaaaa" />
-    <LineSymbolizer stroke-width="3.5" stroke-dasharray="6, 4" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="3.5" stroke-dasharray="6, 4" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
     <Filter>([feature] = 'highway_construction') and ([construction] = 'tertiary')</Filter>
     <LineSymbolizer stroke-width="0" stroke="#f8f880" />
-    <LineSymbolizer stroke-width="0" stroke-dasharray="4, 2" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="0" stroke-dasharray="4, 2" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([feature] = 'highway_construction') and ([construction] = 'tertiary')</Filter>
     <LineSymbolizer stroke-width="8" stroke="#f8f880" />
-    <LineSymbolizer stroke-width="7" stroke-dasharray="8, 6" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="7" stroke-dasharray="8, 6" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([feature] = 'highway_construction') and ([construction] = 'tertiary')</Filter>
     <LineSymbolizer stroke-width="4" stroke="#f8f880" />
-    <LineSymbolizer stroke-width="3.5" stroke-dasharray="6, 4" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="3.5" stroke-dasharray="6, 4" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
     <Filter>([feature] = 'highway_construction') and ([construction] = 'tertiary_link')</Filter>
     <LineSymbolizer stroke-width="0" stroke="#f8f880" />
-    <LineSymbolizer stroke-width="0" stroke-dasharray="4, 2" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="0" stroke-dasharray="4, 2" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([feature] = 'highway_construction') and ([construction] = 'tertiary_link')</Filter>
     <LineSymbolizer stroke-width="8" stroke="#f8f880" />
-    <LineSymbolizer stroke-width="7" stroke-dasharray="8, 6" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="7" stroke-dasharray="8, 6" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([feature] = 'highway_construction') and ([construction] = 'tertiary_link')</Filter>
     <LineSymbolizer stroke-width="4" stroke="#f8f880" />
-    <LineSymbolizer stroke-width="3.5" stroke-dasharray="6, 4" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="3.5" stroke-dasharray="6, 4" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
     <Filter>([feature] = 'highway_proposed') and ([construction] = 'tertiary_link')</Filter>
     <LineSymbolizer stroke-width="0" stroke="#f8f880" />
-    <LineSymbolizer stroke-width="0" stroke-dasharray="4, 2" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="0" stroke-dasharray="4, 2" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([feature] = 'highway_proposed') and ([construction] = 'tertiary_link')</Filter>
     <LineSymbolizer stroke-width="8" stroke="#f8f880" />
-    <LineSymbolizer stroke-width="7" stroke-dasharray="8, 6" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="7" stroke-dasharray="8, 6" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([feature] = 'highway_proposed') and ([construction] = 'tertiary_link')</Filter>
     <LineSymbolizer stroke-width="4" stroke="#f8f880" />
-    <LineSymbolizer stroke-width="3.5" stroke-dasharray="6, 4" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="3.5" stroke-dasharray="6, 4" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
     <Filter>([feature] = 'highway_proposed') and ([construction] = 'tertiary')</Filter>
     <LineSymbolizer stroke-width="0" stroke="#f8f880" />
-    <LineSymbolizer stroke-width="0" stroke-dasharray="4, 2" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="0" stroke-dasharray="4, 2" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([feature] = 'highway_proposed') and ([construction] = 'tertiary')</Filter>
     <LineSymbolizer stroke-width="8" stroke="#f8f880" />
-    <LineSymbolizer stroke-width="7" stroke-dasharray="8, 6" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="7" stroke-dasharray="8, 6" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([feature] = 'highway_proposed') and ([construction] = 'tertiary')</Filter>
     <LineSymbolizer stroke-width="4" stroke="#f8f880" />
-    <LineSymbolizer stroke-width="3.5" stroke-dasharray="6, 4" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="3.5" stroke-dasharray="6, 4" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>400000</MaxScaleDenominator>
@@ -3513,7 +3513,7 @@ case when leisure='pitch' then 2
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([feature] = 'railway_INT-preserved-ssy')</Filter>
     <LineSymbolizer stroke-width="2" stroke="#999999" stroke-linejoin="round" />
-    <LineSymbolizer stroke-width="0.8" stroke="#ffffff" stroke-dasharray="0, 1, 8, 1" stroke-linejoin="round" />
+    <LineSymbolizer stroke-width="0.8" stroke="#b4b4b4" stroke-dasharray="0, 1, 8, 1" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
@@ -3525,7 +3525,7 @@ case when leisure='pitch' then 2
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([feature] = 'railway_preserved')</Filter>
     <LineSymbolizer stroke-width="3" stroke="#999999" stroke-linejoin="round" />
-    <LineSymbolizer stroke-width="1" stroke="#ffffff" stroke-dasharray="0, 1, 8, 1" stroke-linejoin="round" />
+    <LineSymbolizer stroke-width="1" stroke="#b4b4b4" stroke-dasharray="0, 1, 8, 1" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
@@ -3547,20 +3547,20 @@ case when leisure='pitch' then 2
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([feature] = 'railway_narrow_gauge') and ([tunnel] = 'yes')</Filter>
     <LineSymbolizer stroke-width="5" stroke-dasharray="5, 3" stroke="#666666" />
-    <LineSymbolizer stroke="#ffffff" stroke-width="4" />
+    <LineSymbolizer stroke="#b4b4b4" stroke-width="4" />
     <LineSymbolizer stroke="#aaaaaa" stroke-width="1.5" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([feature] = 'railway_funicular') and ([tunnel] = 'yes')</Filter>
     <LineSymbolizer stroke-width="5" stroke-dasharray="5, 3" stroke="#666666" />
-    <LineSymbolizer stroke="#ffffff" stroke-width="4" />
+    <LineSymbolizer stroke="#b4b4b4" stroke-width="4" />
     <LineSymbolizer stroke="#aaaaaa" stroke-width="1.5" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([feature] = 'railway_rail') and ([tunnel] = 'yes')</Filter>
-    <LineSymbolizer stroke-width="3" stroke="#ffffff" stroke-dasharray="1, 9" stroke-linejoin="round" />
+    <LineSymbolizer stroke-width="3" stroke="#b4b4b4" stroke-dasharray="1, 9" stroke-linejoin="round" />
     <LineSymbolizer stroke-width="3" stroke="#fdfdfd" stroke-dasharray="0, 1, 1, 8" stroke-linejoin="round" />
     <LineSymbolizer stroke-width="3" stroke="#ececec" stroke-dasharray="0, 2, 1, 7" stroke-linejoin="round" />
     <LineSymbolizer stroke-width="3" stroke="#cacaca" stroke-dasharray="0, 3, 1, 6" stroke-linejoin="round" />
@@ -3571,32 +3571,32 @@ case when leisure='pitch' then 2
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_path') and ([tunnel] != 'yes')</Filter>
-    <LineSymbolizer stroke-width="1" stroke="#ffffff" stroke-opacity="0.4" stroke-linecap="round" stroke-linejoin="round" />
+    <LineSymbolizer stroke-width="1" stroke="#b4b4b4" stroke-opacity="0.4" stroke-linecap="round" stroke-linejoin="round" />
     <LineSymbolizer stroke-width="0.5" stroke-dasharray="6, 3" stroke="#000000" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_cycleway') and ([tunnel] != 'yes')</Filter>
-    <LineSymbolizer stroke-width="3" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.4" />
+    <LineSymbolizer stroke-width="3" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" stroke-opacity="0.4" />
     <LineSymbolizer stroke-width="1.2" stroke-dasharray="1, 3" stroke="#0000ff" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_footway') and ([tunnel] != 'yes')</Filter>
-    <LineSymbolizer stroke-width="4" stroke="#ffffff" stroke-opacity="0.4" stroke-linecap="round" stroke-linejoin="round" />
+    <LineSymbolizer stroke-width="4" stroke="#b4b4b4" stroke-opacity="0.4" stroke-linecap="round" stroke-linejoin="round" />
     <LineSymbolizer stroke-width="1.5" stroke="#fa8072" stroke-dasharray="1, 3" stroke-linecap="round" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_bridleway') and ([tunnel] != 'yes')</Filter>
-    <LineSymbolizer stroke-width="3" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.4" />
+    <LineSymbolizer stroke-width="3" stroke="#b4b4b4" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.4" />
     <LineSymbolizer stroke="#008000" stroke-width="1.2" stroke-dasharray="4, 2" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([feature] = 'highway_steps')</Filter>
-    <LineSymbolizer stroke-width="6" stroke="#ffffff" stroke-opacity="0.4" />
+    <LineSymbolizer stroke-width="6" stroke="#b4b4b4" stroke-opacity="0.4" />
     <LineSymbolizer stroke-width="2" stroke="#fa8072" stroke-dasharray="1, 3" stroke-linecap="round" stroke-linejoin="round" />
   </Rule>
   <Rule>
@@ -3630,7 +3630,7 @@ case when leisure='pitch' then 2
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([feature] = 'highway_service') and ([service] = 'INT-minor')</Filter>
-    <LineSymbolizer stroke-width="3" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="3" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
@@ -3810,361 +3810,361 @@ case when leisure='pitch' then 2
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([feature] = 'highway_proposed') and ([construction] = 'secondary')</Filter>
     <LineSymbolizer stroke-width="8" stroke="#f4f450" />
-    <LineSymbolizer stroke-width="7" stroke-dasharray="8, 6" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="7" stroke-dasharray="8, 6" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([feature] = 'highway_proposed') and ([construction] = 'secondary')</Filter>
     <LineSymbolizer stroke-width="4" stroke="#f4f450" />
-    <LineSymbolizer stroke-width="3.5" stroke-dasharray="6, 4" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="3.5" stroke-dasharray="6, 4" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
     <Filter>([feature] = 'highway_proposed') and ([construction] = 'secondary')</Filter>
     <LineSymbolizer stroke="#f4f450" stroke-width="2" />
-    <LineSymbolizer stroke-width="2" stroke-dasharray="4, 2" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="2" stroke-dasharray="4, 2" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([feature] = 'highway_proposed') and ([construction] = 'secondary_link')</Filter>
     <LineSymbolizer stroke-width="8" stroke="#f4f450" />
-    <LineSymbolizer stroke-width="7" stroke-dasharray="8, 6" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="7" stroke-dasharray="8, 6" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([feature] = 'highway_proposed') and ([construction] = 'secondary_link')</Filter>
     <LineSymbolizer stroke-width="4" stroke="#f4f450" />
-    <LineSymbolizer stroke-width="3.5" stroke-dasharray="6, 4" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="3.5" stroke-dasharray="6, 4" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
     <Filter>([feature] = 'highway_proposed') and ([construction] = 'secondary_link')</Filter>
     <LineSymbolizer stroke="#f4f450" stroke-width="2" />
-    <LineSymbolizer stroke-width="2" stroke-dasharray="4, 2" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="2" stroke-dasharray="4, 2" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([feature] = 'highway_proposed') and ([construction] = 'primary')</Filter>
     <LineSymbolizer stroke-width="8" stroke="#f0b923" />
-    <LineSymbolizer stroke-width="7" stroke-dasharray="8, 6" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="7" stroke-dasharray="8, 6" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([feature] = 'highway_proposed') and ([construction] = 'primary')</Filter>
     <LineSymbolizer stroke-width="4" stroke="#f0b923" />
-    <LineSymbolizer stroke-width="3.5" stroke-dasharray="6, 4" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="3.5" stroke-dasharray="6, 4" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
     <Filter>([feature] = 'highway_proposed') and ([construction] = 'primary')</Filter>
     <LineSymbolizer stroke="#f0b923" stroke-width="2" />
-    <LineSymbolizer stroke-width="2" stroke-dasharray="4, 2" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="2" stroke-dasharray="4, 2" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([feature] = 'highway_proposed') and ([construction] = 'primary_link')</Filter>
     <LineSymbolizer stroke-width="8" stroke="#f0b923" />
-    <LineSymbolizer stroke-width="7" stroke-dasharray="8, 6" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="7" stroke-dasharray="8, 6" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([feature] = 'highway_proposed') and ([construction] = 'primary_link')</Filter>
     <LineSymbolizer stroke-width="4" stroke="#f0b923" />
-    <LineSymbolizer stroke-width="3.5" stroke-dasharray="6, 4" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="3.5" stroke-dasharray="6, 4" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
     <Filter>([feature] = 'highway_proposed') and ([construction] = 'primary_link')</Filter>
     <LineSymbolizer stroke="#f0b923" stroke-width="2" />
-    <LineSymbolizer stroke-width="2" stroke-dasharray="4, 2" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="2" stroke-dasharray="4, 2" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([feature] = 'highway_proposed') and ([construction] = 'trunk_link')</Filter>
     <LineSymbolizer stroke-width="8" stroke="#f1b923" />
-    <LineSymbolizer stroke-width="7" stroke-dasharray="8, 6" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="7" stroke-dasharray="8, 6" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([feature] = 'highway_proposed') and ([construction] = 'trunk_link')</Filter>
     <LineSymbolizer stroke-width="4" stroke="#f1b923" />
-    <LineSymbolizer stroke-width="3.5" stroke-dasharray="6, 4" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="3.5" stroke-dasharray="6, 4" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
     <Filter>([feature] = 'highway_proposed') and ([construction] = 'trunk_link')</Filter>
     <LineSymbolizer stroke="#f1b923" stroke-width="2" />
-    <LineSymbolizer stroke-width="2" stroke-dasharray="4, 2" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="2" stroke-dasharray="4, 2" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([feature] = 'highway_proposed') and ([construction] = 'trunk')</Filter>
     <LineSymbolizer stroke-width="8" stroke="#f1b923" />
-    <LineSymbolizer stroke-width="7" stroke-dasharray="8, 6" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="7" stroke-dasharray="8, 6" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([feature] = 'highway_proposed') and ([construction] = 'trunk')</Filter>
     <LineSymbolizer stroke-width="4" stroke="#f1b923" />
-    <LineSymbolizer stroke-width="3.5" stroke-dasharray="6, 4" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="3.5" stroke-dasharray="6, 4" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
     <Filter>([feature] = 'highway_proposed') and ([construction] = 'trunk')</Filter>
     <LineSymbolizer stroke="#f1b923" stroke-width="2" />
-    <LineSymbolizer stroke-width="2" stroke-dasharray="4, 2" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="2" stroke-dasharray="4, 2" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([feature] = 'highway_proposed') and ([construction] = 'motorway')</Filter>
     <LineSymbolizer stroke-width="8" stroke="#ffa023" />
-    <LineSymbolizer stroke-width="7" stroke-dasharray="8, 6" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="7" stroke-dasharray="8, 6" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([feature] = 'highway_proposed') and ([construction] = 'motorway')</Filter>
     <LineSymbolizer stroke-width="4" stroke="#ffa023" />
-    <LineSymbolizer stroke-width="3.5" stroke-dasharray="6, 4" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="3.5" stroke-dasharray="6, 4" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
     <Filter>([feature] = 'highway_proposed') and ([construction] = 'motorway')</Filter>
     <LineSymbolizer stroke="#ffa023" stroke-width="2" />
-    <LineSymbolizer stroke-width="2" stroke-dasharray="4, 2" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="2" stroke-dasharray="4, 2" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([feature] = 'highway_proposed') and ([construction] = 'motorway_link')</Filter>
     <LineSymbolizer stroke-width="8" stroke="#ffa023" />
-    <LineSymbolizer stroke-width="7" stroke-dasharray="8, 6" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="7" stroke-dasharray="8, 6" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([feature] = 'highway_proposed') and ([construction] = 'motorway_link')</Filter>
     <LineSymbolizer stroke-width="4" stroke="#ffa023" />
-    <LineSymbolizer stroke-width="3.5" stroke-dasharray="6, 4" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="3.5" stroke-dasharray="6, 4" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
     <Filter>([feature] = 'highway_proposed') and ([construction] = 'motorway_link')</Filter>
     <LineSymbolizer stroke="#ffa023" stroke-width="2" />
-    <LineSymbolizer stroke-width="2" stroke-dasharray="4, 2" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="2" stroke-dasharray="4, 2" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([feature] = 'highway_proposed')</Filter>
     <LineSymbolizer stroke-width="8" stroke="#99cccc" />
-    <LineSymbolizer stroke-width="7" stroke-dasharray="8, 6" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="7" stroke-dasharray="8, 6" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([feature] = 'highway_proposed')</Filter>
     <LineSymbolizer stroke-width="4" stroke="#99cccc" />
-    <LineSymbolizer stroke-width="3.5" stroke-dasharray="6, 4" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="3.5" stroke-dasharray="6, 4" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
     <Filter>([feature] = 'highway_proposed')</Filter>
     <LineSymbolizer stroke-width="2" stroke="#99cccc" />
-    <LineSymbolizer stroke-width="2" stroke-dasharray="4, 2" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="2" stroke-dasharray="4, 2" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([feature] = 'highway_construction') and ([construction] = 'secondary_link')</Filter>
     <LineSymbolizer stroke-width="8" stroke="#f4f450" />
-    <LineSymbolizer stroke-width="7" stroke-dasharray="8, 6" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="7" stroke-dasharray="8, 6" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([feature] = 'highway_construction') and ([construction] = 'secondary_link')</Filter>
     <LineSymbolizer stroke-width="4" stroke="#f4f450" />
-    <LineSymbolizer stroke-width="3.5" stroke-dasharray="6, 4" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="3.5" stroke-dasharray="6, 4" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
     <Filter>([feature] = 'highway_construction') and ([construction] = 'secondary_link')</Filter>
     <LineSymbolizer stroke="#f4f450" stroke-width="2" />
-    <LineSymbolizer stroke-width="2" stroke-dasharray="4, 2" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="2" stroke-dasharray="4, 2" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([feature] = 'highway_construction') and ([construction] = 'secondary')</Filter>
     <LineSymbolizer stroke-width="8" stroke="#f4f450" />
-    <LineSymbolizer stroke-width="7" stroke-dasharray="8, 6" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="7" stroke-dasharray="8, 6" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([feature] = 'highway_construction') and ([construction] = 'secondary')</Filter>
     <LineSymbolizer stroke-width="4" stroke="#f4f450" />
-    <LineSymbolizer stroke-width="3.5" stroke-dasharray="6, 4" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="3.5" stroke-dasharray="6, 4" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
     <Filter>([feature] = 'highway_construction') and ([construction] = 'secondary')</Filter>
     <LineSymbolizer stroke="#f4f450" stroke-width="2" />
-    <LineSymbolizer stroke-width="2" stroke-dasharray="4, 2" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="2" stroke-dasharray="4, 2" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([feature] = 'highway_construction') and ([construction] = 'primary_link')</Filter>
     <LineSymbolizer stroke-width="8" stroke="#f0b923" />
-    <LineSymbolizer stroke-width="7" stroke-dasharray="8, 6" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="7" stroke-dasharray="8, 6" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([feature] = 'highway_construction') and ([construction] = 'primary_link')</Filter>
     <LineSymbolizer stroke-width="4" stroke="#f0b923" />
-    <LineSymbolizer stroke-width="3.5" stroke-dasharray="6, 4" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="3.5" stroke-dasharray="6, 4" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
     <Filter>([feature] = 'highway_construction') and ([construction] = 'primary_link')</Filter>
     <LineSymbolizer stroke="#f0b923" stroke-width="2" />
-    <LineSymbolizer stroke-width="2" stroke-dasharray="4, 2" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="2" stroke-dasharray="4, 2" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([feature] = 'highway_construction') and ([construction] = 'primary')</Filter>
     <LineSymbolizer stroke-width="8" stroke="#f0b923" />
-    <LineSymbolizer stroke-width="7" stroke-dasharray="8, 6" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="7" stroke-dasharray="8, 6" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([feature] = 'highway_construction') and ([construction] = 'primary')</Filter>
     <LineSymbolizer stroke-width="4" stroke="#f0b923" />
-    <LineSymbolizer stroke-width="3.5" stroke-dasharray="6, 4" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="3.5" stroke-dasharray="6, 4" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
     <Filter>([feature] = 'highway_construction') and ([construction] = 'primary')</Filter>
     <LineSymbolizer stroke="#f0b923" stroke-width="2" />
-    <LineSymbolizer stroke-width="2" stroke-dasharray="4, 2" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="2" stroke-dasharray="4, 2" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([feature] = 'highway_construction') and ([construction] = 'trunk_link')</Filter>
     <LineSymbolizer stroke-width="8" stroke="#f1b923" />
-    <LineSymbolizer stroke-width="7" stroke-dasharray="8, 6" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="7" stroke-dasharray="8, 6" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([feature] = 'highway_construction') and ([construction] = 'trunk_link')</Filter>
     <LineSymbolizer stroke-width="4" stroke="#f1b923" />
-    <LineSymbolizer stroke-width="3.5" stroke-dasharray="6, 4" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="3.5" stroke-dasharray="6, 4" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
     <Filter>([feature] = 'highway_construction') and ([construction] = 'trunk_link')</Filter>
     <LineSymbolizer stroke="#f1b923" stroke-width="2" />
-    <LineSymbolizer stroke-width="2" stroke-dasharray="4, 2" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="2" stroke-dasharray="4, 2" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([feature] = 'highway_construction') and ([construction] = 'trunk')</Filter>
     <LineSymbolizer stroke-width="8" stroke="#f1b923" />
-    <LineSymbolizer stroke-width="7" stroke-dasharray="8, 6" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="7" stroke-dasharray="8, 6" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([feature] = 'highway_construction') and ([construction] = 'trunk')</Filter>
     <LineSymbolizer stroke-width="4" stroke="#f1b923" />
-    <LineSymbolizer stroke-width="3.5" stroke-dasharray="6, 4" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="3.5" stroke-dasharray="6, 4" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
     <Filter>([feature] = 'highway_construction') and ([construction] = 'trunk')</Filter>
     <LineSymbolizer stroke="#f1b923" stroke-width="2" />
-    <LineSymbolizer stroke-width="2" stroke-dasharray="4, 2" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="2" stroke-dasharray="4, 2" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([feature] = 'highway_construction') and ([construction] = 'motorway_link')</Filter>
     <LineSymbolizer stroke-width="8" stroke="#ffa023" />
-    <LineSymbolizer stroke-width="7" stroke-dasharray="8, 6" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="7" stroke-dasharray="8, 6" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([feature] = 'highway_construction') and ([construction] = 'motorway_link')</Filter>
     <LineSymbolizer stroke-width="4" stroke="#ffa023" />
-    <LineSymbolizer stroke-width="3.5" stroke-dasharray="6, 4" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="3.5" stroke-dasharray="6, 4" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
     <Filter>([feature] = 'highway_construction') and ([construction] = 'motorway_link')</Filter>
     <LineSymbolizer stroke="#ffa023" stroke-width="2" />
-    <LineSymbolizer stroke-width="2" stroke-dasharray="4, 2" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="2" stroke-dasharray="4, 2" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([feature] = 'highway_construction') and ([construction] = 'motorway')</Filter>
     <LineSymbolizer stroke-width="8" stroke="#ffa023" />
-    <LineSymbolizer stroke-width="7" stroke-dasharray="8, 6" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="7" stroke-dasharray="8, 6" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([feature] = 'highway_construction') and ([construction] = 'motorway')</Filter>
     <LineSymbolizer stroke-width="4" stroke="#ffa023" />
-    <LineSymbolizer stroke-width="3.5" stroke-dasharray="6, 4" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="3.5" stroke-dasharray="6, 4" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
     <Filter>([feature] = 'highway_construction') and ([construction] = 'motorway')</Filter>
     <LineSymbolizer stroke="#ffa023" stroke-width="2" />
-    <LineSymbolizer stroke-width="2" stroke-dasharray="4, 2" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="2" stroke-dasharray="4, 2" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([feature] = 'highway_construction')</Filter>
     <LineSymbolizer stroke-width="8" stroke="#99cccc" />
-    <LineSymbolizer stroke-width="7" stroke-dasharray="8, 6" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="7" stroke-dasharray="8, 6" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([feature] = 'highway_construction')</Filter>
     <LineSymbolizer stroke-width="4" stroke="#99cccc" />
-    <LineSymbolizer stroke-width="3.5" stroke-dasharray="6, 4" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="3.5" stroke-dasharray="6, 4" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>200000</MaxScaleDenominator>
     <MinScaleDenominator>100000</MinScaleDenominator>
     <Filter>([feature] = 'highway_construction')</Filter>
     <LineSymbolizer stroke-width="2" stroke="#99cccc" />
-    <LineSymbolizer stroke-width="2" stroke-dasharray="4, 2" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="2" stroke-dasharray="4, 2" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
@@ -4195,7 +4195,7 @@ case when leisure='pitch' then 2
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'railway_monorail')</Filter>
-    <LineSymbolizer stroke-width="4" stroke="#ffffff" stroke-opacity="0.4" stroke-linecap="round" stroke-linejoin="round" />
+    <LineSymbolizer stroke-width="4" stroke="#b4b4b4" stroke-opacity="0.4" stroke-linecap="round" stroke-linejoin="round" />
     <LineSymbolizer stroke-width="3" stroke="#777777" stroke-dasharray="2, 3" stroke-linecap="round" stroke-linejoin="round" />
   </Rule>
   <Rule>
@@ -4387,13 +4387,13 @@ case when leisure='pitch' then 2
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([int_tc_type] = 'service')</Filter>
-    <MarkersSymbolizer width="14" height="14" allow-overlap="true" ignore-placement="true" stroke-width="0" fill="#ffffff" />
+    <MarkersSymbolizer width="14" height="14" allow-overlap="true" ignore-placement="true" stroke-width="0" fill="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([int_tc_type] = 'service')</Filter>
-    <MarkersSymbolizer width="12" height="12" allow-overlap="true" ignore-placement="true" stroke-width="0" fill="#ffffff" />
+    <MarkersSymbolizer width="12" height="12" allow-overlap="true" ignore-placement="true" stroke-width="0" fill="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
@@ -4415,36 +4415,36 @@ case when leisure='pitch' then 2
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([int_tc_type] = 'unclassified')</Filter>
-    <MarkersSymbolizer width="23.400000000000002" height="23.400000000000002" allow-overlap="true" ignore-placement="true" stroke-width="0" fill="#ffffff" />
+    <MarkersSymbolizer width="23.400000000000002" height="23.400000000000002" allow-overlap="true" ignore-placement="true" stroke-width="0" fill="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([int_tc_type] = 'unclassified')</Filter>
-    <MarkersSymbolizer width="16.92" height="16.92" allow-overlap="true" ignore-placement="true" stroke-width="0" fill="#ffffff" />
+    <MarkersSymbolizer width="16.92" height="16.92" allow-overlap="true" ignore-placement="true" stroke-width="0" fill="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([int_tc_type] = 'unclassified')</Filter>
-    <MarkersSymbolizer width="11.700000000000001" height="11.700000000000001" allow-overlap="true" ignore-placement="true" stroke-width="0" fill="#ffffff" />
+    <MarkersSymbolizer width="11.700000000000001" height="11.700000000000001" allow-overlap="true" ignore-placement="true" stroke-width="0" fill="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([int_tc_type] = 'residential')</Filter>
-    <MarkersSymbolizer width="23.400000000000002" height="23.400000000000002" allow-overlap="true" ignore-placement="true" stroke-width="0" fill="#ffffff" />
+    <MarkersSymbolizer width="23.400000000000002" height="23.400000000000002" allow-overlap="true" ignore-placement="true" stroke-width="0" fill="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([int_tc_type] = 'residential')</Filter>
-    <MarkersSymbolizer width="16.92" height="16.92" allow-overlap="true" ignore-placement="true" stroke-width="0" fill="#ffffff" />
+    <MarkersSymbolizer width="16.92" height="16.92" allow-overlap="true" ignore-placement="true" stroke-width="0" fill="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([int_tc_type] = 'residential')</Filter>
-    <MarkersSymbolizer width="11.700000000000001" height="11.700000000000001" allow-overlap="true" ignore-placement="true" stroke-width="0" fill="#ffffff" />
+    <MarkersSymbolizer width="11.700000000000001" height="11.700000000000001" allow-overlap="true" ignore-placement="true" stroke-width="0" fill="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
@@ -5028,14 +5028,14 @@ case when leisure='pitch' then 2
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'railway_rail')</Filter>
     <LineSymbolizer stroke-width="3" stroke="#999999" stroke-linejoin="round" />
-    <LineSymbolizer stroke-dasharray="0, 11, 8, 1" stroke-width="1" stroke="#ffffff" stroke-linejoin="round" />
+    <LineSymbolizer stroke-dasharray="0, 11, 8, 1" stroke-width="1" stroke="#b4b4b4" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([feature] = 'railway_rail')</Filter>
     <LineSymbolizer stroke-width="3" stroke="#999999" stroke-linejoin="round" />
-    <LineSymbolizer stroke-width="1" stroke="#ffffff" stroke-dasharray="8, 12" stroke-linejoin="round" />
+    <LineSymbolizer stroke-width="1" stroke="#b4b4b4" stroke-dasharray="8, 12" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
@@ -5116,7 +5116,7 @@ case when leisure='pitch' then 2
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([feature] = 'railway_INT-spur-siding-yard')</Filter>
     <LineSymbolizer stroke-width="2" stroke="#999999" stroke-linejoin="round" />
-    <LineSymbolizer stroke-width="0.8" stroke="#ffffff" stroke-dasharray="0, 8, 11, 1" stroke-linejoin="round" />
+    <LineSymbolizer stroke-width="0.8" stroke="#b4b4b4" stroke-dasharray="0, 8, 11, 1" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
@@ -5169,59 +5169,59 @@ case when leisure='pitch' then 2
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([feature] = 'highway_service')</Filter>
-    <LineSymbolizer stroke-width="6" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" />
+    <LineSymbolizer stroke-width="6" stroke="#b4b4b4" stroke-linecap="round" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([feature] = 'highway_service')</Filter>
-    <LineSymbolizer stroke-width="2" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" />
+    <LineSymbolizer stroke-width="2" stroke="#b4b4b4" stroke-linecap="round" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_unclassified')</Filter>
-    <LineSymbolizer stroke-width="14" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="14" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([feature] = 'highway_unclassified')</Filter>
-    <LineSymbolizer stroke-width="9.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="9.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([feature] = 'highway_unclassified')</Filter>
-    <LineSymbolizer stroke-width="7.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="7.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([feature] = 'highway_unclassified')</Filter>
-    <LineSymbolizer stroke-width="3.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="3.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_residential')</Filter>
-    <LineSymbolizer stroke-width="14" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="14" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([feature] = 'highway_residential')</Filter>
-    <LineSymbolizer stroke-width="9.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="9.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([feature] = 'highway_residential')</Filter>
-    <LineSymbolizer stroke-width="7.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="7.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([feature] = 'highway_residential')</Filter>
-    <LineSymbolizer stroke-width="3.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="3.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
@@ -5451,87 +5451,87 @@ case when leisure='pitch' then 2
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_track') and ([tracktype] = 'grade1')</Filter>
-    <LineSymbolizer stroke-width="3.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="3.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_path') and ([bicycle] = 'designated')</Filter>
-    <LineSymbolizer stroke-width="4" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="4" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_path') and ([foot] = 'designated')</Filter>
-    <LineSymbolizer stroke-width="4.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="4.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_path') and ([horse] = 'designated')</Filter>
-    <LineSymbolizer stroke-width="4" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="4" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'railway_narrow_gauge')</Filter>
-    <LineSymbolizer stroke-width="4" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="4" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'railway_light_rail')</Filter>
-    <LineSymbolizer stroke-width="4" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="4" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'railway_subway')</Filter>
-    <LineSymbolizer stroke-width="4" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="4" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([feature] = 'railway_disused')</Filter>
-    <LineSymbolizer stroke-width="4.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="4.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([feature] = 'railway_abandoned')</Filter>
-    <LineSymbolizer stroke-width="4.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="4.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([feature] = 'railway_construction')</Filter>
-    <LineSymbolizer stroke-width="4.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="4.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([feature] = 'railway_INT-spur-siding-yard')</Filter>
-    <LineSymbolizer stroke-width="4" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="4" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([feature] = 'railway_rail')</Filter>
-    <LineSymbolizer stroke-width="5" stroke="#ffffff" stroke-linejoin="round" />
+    <LineSymbolizer stroke-width="5" stroke="#b4b4b4" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_track')</Filter>
-    <LineSymbolizer stroke-width="3" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="3" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_path')</Filter>
-    <LineSymbolizer stroke-width="2.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="2.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_cycleway')</Filter>
-    <LineSymbolizer stroke-width="4" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="4" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_footway')</Filter>
-    <LineSymbolizer stroke-width="4.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="4.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_bridleway')</Filter>
-    <LineSymbolizer stroke-width="4" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="4" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
 </Style>
 <Style name="bridges-layer0-bridges_casing" filter-mode="first">
@@ -6142,14 +6142,14 @@ case when leisure='pitch' then 2
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'railway_rail')</Filter>
     <LineSymbolizer stroke-width="3" stroke="#999999" stroke-linejoin="round" />
-    <LineSymbolizer stroke-dasharray="0, 11, 8, 1" stroke-width="1" stroke="#ffffff" stroke-linejoin="round" />
+    <LineSymbolizer stroke-dasharray="0, 11, 8, 1" stroke-width="1" stroke="#b4b4b4" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([feature] = 'railway_rail')</Filter>
     <LineSymbolizer stroke-width="3" stroke="#999999" stroke-linejoin="round" />
-    <LineSymbolizer stroke-width="1" stroke="#ffffff" stroke-dasharray="8, 12" stroke-linejoin="round" />
+    <LineSymbolizer stroke-width="1" stroke="#b4b4b4" stroke-dasharray="8, 12" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
@@ -6230,7 +6230,7 @@ case when leisure='pitch' then 2
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([feature] = 'railway_INT-spur-siding-yard')</Filter>
     <LineSymbolizer stroke-width="2" stroke="#999999" stroke-linejoin="round" />
-    <LineSymbolizer stroke-width="0.8" stroke="#ffffff" stroke-dasharray="0, 8, 11, 1" stroke-linejoin="round" />
+    <LineSymbolizer stroke-width="0.8" stroke="#b4b4b4" stroke-dasharray="0, 8, 11, 1" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
@@ -6283,59 +6283,59 @@ case when leisure='pitch' then 2
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([feature] = 'highway_service')</Filter>
-    <LineSymbolizer stroke-width="6" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" />
+    <LineSymbolizer stroke-width="6" stroke="#b4b4b4" stroke-linecap="round" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([feature] = 'highway_service')</Filter>
-    <LineSymbolizer stroke-width="2" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" />
+    <LineSymbolizer stroke-width="2" stroke="#b4b4b4" stroke-linecap="round" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_unclassified')</Filter>
-    <LineSymbolizer stroke-width="14" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="14" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([feature] = 'highway_unclassified')</Filter>
-    <LineSymbolizer stroke-width="9.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="9.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([feature] = 'highway_unclassified')</Filter>
-    <LineSymbolizer stroke-width="7.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="7.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([feature] = 'highway_unclassified')</Filter>
-    <LineSymbolizer stroke-width="3.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="3.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_residential')</Filter>
-    <LineSymbolizer stroke-width="14" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="14" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([feature] = 'highway_residential')</Filter>
-    <LineSymbolizer stroke-width="9.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="9.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([feature] = 'highway_residential')</Filter>
-    <LineSymbolizer stroke-width="7.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="7.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([feature] = 'highway_residential')</Filter>
-    <LineSymbolizer stroke-width="3.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="3.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
@@ -6565,87 +6565,87 @@ case when leisure='pitch' then 2
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_track') and ([tracktype] = 'grade1')</Filter>
-    <LineSymbolizer stroke-width="3.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="3.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_path') and ([bicycle] = 'designated')</Filter>
-    <LineSymbolizer stroke-width="4" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="4" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_path') and ([foot] = 'designated')</Filter>
-    <LineSymbolizer stroke-width="4.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="4.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_path') and ([horse] = 'designated')</Filter>
-    <LineSymbolizer stroke-width="4" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="4" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'railway_narrow_gauge')</Filter>
-    <LineSymbolizer stroke-width="4" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="4" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'railway_light_rail')</Filter>
-    <LineSymbolizer stroke-width="4" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="4" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'railway_subway')</Filter>
-    <LineSymbolizer stroke-width="4" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="4" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([feature] = 'railway_disused')</Filter>
-    <LineSymbolizer stroke-width="4.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="4.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([feature] = 'railway_abandoned')</Filter>
-    <LineSymbolizer stroke-width="4.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="4.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([feature] = 'railway_construction')</Filter>
-    <LineSymbolizer stroke-width="4.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="4.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([feature] = 'railway_INT-spur-siding-yard')</Filter>
-    <LineSymbolizer stroke-width="4" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="4" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([feature] = 'railway_rail')</Filter>
-    <LineSymbolizer stroke-width="5" stroke="#ffffff" stroke-linejoin="round" />
+    <LineSymbolizer stroke-width="5" stroke="#b4b4b4" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_track')</Filter>
-    <LineSymbolizer stroke-width="3" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="3" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_path')</Filter>
-    <LineSymbolizer stroke-width="2.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="2.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_cycleway')</Filter>
-    <LineSymbolizer stroke-width="4" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="4" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_footway')</Filter>
-    <LineSymbolizer stroke-width="4.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="4.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_bridleway')</Filter>
-    <LineSymbolizer stroke-width="4" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="4" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
 </Style>
 <Style name="bridges-layer1-bridges_casing" filter-mode="first">
@@ -7256,14 +7256,14 @@ case when leisure='pitch' then 2
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'railway_rail')</Filter>
     <LineSymbolizer stroke-width="3" stroke="#999999" stroke-linejoin="round" />
-    <LineSymbolizer stroke-dasharray="0, 11, 8, 1" stroke-width="1" stroke="#ffffff" stroke-linejoin="round" />
+    <LineSymbolizer stroke-dasharray="0, 11, 8, 1" stroke-width="1" stroke="#b4b4b4" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([feature] = 'railway_rail')</Filter>
     <LineSymbolizer stroke-width="3" stroke="#999999" stroke-linejoin="round" />
-    <LineSymbolizer stroke-width="1" stroke="#ffffff" stroke-dasharray="8, 12" stroke-linejoin="round" />
+    <LineSymbolizer stroke-width="1" stroke="#b4b4b4" stroke-dasharray="8, 12" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
@@ -7344,7 +7344,7 @@ case when leisure='pitch' then 2
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([feature] = 'railway_INT-spur-siding-yard')</Filter>
     <LineSymbolizer stroke-width="2" stroke="#999999" stroke-linejoin="round" />
-    <LineSymbolizer stroke-width="0.8" stroke="#ffffff" stroke-dasharray="0, 8, 11, 1" stroke-linejoin="round" />
+    <LineSymbolizer stroke-width="0.8" stroke="#b4b4b4" stroke-dasharray="0, 8, 11, 1" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
@@ -7397,59 +7397,59 @@ case when leisure='pitch' then 2
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([feature] = 'highway_service')</Filter>
-    <LineSymbolizer stroke-width="6" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" />
+    <LineSymbolizer stroke-width="6" stroke="#b4b4b4" stroke-linecap="round" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([feature] = 'highway_service')</Filter>
-    <LineSymbolizer stroke-width="2" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" />
+    <LineSymbolizer stroke-width="2" stroke="#b4b4b4" stroke-linecap="round" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_unclassified')</Filter>
-    <LineSymbolizer stroke-width="14" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="14" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([feature] = 'highway_unclassified')</Filter>
-    <LineSymbolizer stroke-width="9.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="9.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([feature] = 'highway_unclassified')</Filter>
-    <LineSymbolizer stroke-width="7.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="7.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([feature] = 'highway_unclassified')</Filter>
-    <LineSymbolizer stroke-width="3.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="3.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_residential')</Filter>
-    <LineSymbolizer stroke-width="14" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="14" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([feature] = 'highway_residential')</Filter>
-    <LineSymbolizer stroke-width="9.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="9.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([feature] = 'highway_residential')</Filter>
-    <LineSymbolizer stroke-width="7.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="7.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([feature] = 'highway_residential')</Filter>
-    <LineSymbolizer stroke-width="3.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="3.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
@@ -7679,87 +7679,87 @@ case when leisure='pitch' then 2
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_track') and ([tracktype] = 'grade1')</Filter>
-    <LineSymbolizer stroke-width="3.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="3.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_path') and ([bicycle] = 'designated')</Filter>
-    <LineSymbolizer stroke-width="4" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="4" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_path') and ([foot] = 'designated')</Filter>
-    <LineSymbolizer stroke-width="4.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="4.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_path') and ([horse] = 'designated')</Filter>
-    <LineSymbolizer stroke-width="4" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="4" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'railway_narrow_gauge')</Filter>
-    <LineSymbolizer stroke-width="4" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="4" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'railway_light_rail')</Filter>
-    <LineSymbolizer stroke-width="4" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="4" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'railway_subway')</Filter>
-    <LineSymbolizer stroke-width="4" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="4" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([feature] = 'railway_disused')</Filter>
-    <LineSymbolizer stroke-width="4.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="4.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([feature] = 'railway_abandoned')</Filter>
-    <LineSymbolizer stroke-width="4.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="4.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([feature] = 'railway_construction')</Filter>
-    <LineSymbolizer stroke-width="4.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="4.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([feature] = 'railway_INT-spur-siding-yard')</Filter>
-    <LineSymbolizer stroke-width="4" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="4" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([feature] = 'railway_rail')</Filter>
-    <LineSymbolizer stroke-width="5" stroke="#ffffff" stroke-linejoin="round" />
+    <LineSymbolizer stroke-width="5" stroke="#b4b4b4" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_track')</Filter>
-    <LineSymbolizer stroke-width="3" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="3" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_path')</Filter>
-    <LineSymbolizer stroke-width="2.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="2.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_cycleway')</Filter>
-    <LineSymbolizer stroke-width="4" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="4" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_footway')</Filter>
-    <LineSymbolizer stroke-width="4.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="4.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_bridleway')</Filter>
-    <LineSymbolizer stroke-width="4" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="4" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
 </Style>
 <Style name="bridges-layer2-bridges_casing" filter-mode="first">
@@ -8370,14 +8370,14 @@ case when leisure='pitch' then 2
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'railway_rail')</Filter>
     <LineSymbolizer stroke-width="3" stroke="#999999" stroke-linejoin="round" />
-    <LineSymbolizer stroke-dasharray="0, 11, 8, 1" stroke-width="1" stroke="#ffffff" stroke-linejoin="round" />
+    <LineSymbolizer stroke-dasharray="0, 11, 8, 1" stroke-width="1" stroke="#b4b4b4" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([feature] = 'railway_rail')</Filter>
     <LineSymbolizer stroke-width="3" stroke="#999999" stroke-linejoin="round" />
-    <LineSymbolizer stroke-width="1" stroke="#ffffff" stroke-dasharray="8, 12" stroke-linejoin="round" />
+    <LineSymbolizer stroke-width="1" stroke="#b4b4b4" stroke-dasharray="8, 12" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
@@ -8458,7 +8458,7 @@ case when leisure='pitch' then 2
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([feature] = 'railway_INT-spur-siding-yard')</Filter>
     <LineSymbolizer stroke-width="2" stroke="#999999" stroke-linejoin="round" />
-    <LineSymbolizer stroke-width="0.8" stroke="#ffffff" stroke-dasharray="0, 8, 11, 1" stroke-linejoin="round" />
+    <LineSymbolizer stroke-width="0.8" stroke="#b4b4b4" stroke-dasharray="0, 8, 11, 1" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
@@ -8511,59 +8511,59 @@ case when leisure='pitch' then 2
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([feature] = 'highway_service')</Filter>
-    <LineSymbolizer stroke-width="6" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" />
+    <LineSymbolizer stroke-width="6" stroke="#b4b4b4" stroke-linecap="round" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([feature] = 'highway_service')</Filter>
-    <LineSymbolizer stroke-width="2" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" />
+    <LineSymbolizer stroke-width="2" stroke="#b4b4b4" stroke-linecap="round" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_unclassified')</Filter>
-    <LineSymbolizer stroke-width="14" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="14" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([feature] = 'highway_unclassified')</Filter>
-    <LineSymbolizer stroke-width="9.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="9.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([feature] = 'highway_unclassified')</Filter>
-    <LineSymbolizer stroke-width="7.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="7.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([feature] = 'highway_unclassified')</Filter>
-    <LineSymbolizer stroke-width="3.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="3.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_residential')</Filter>
-    <LineSymbolizer stroke-width="14" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="14" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([feature] = 'highway_residential')</Filter>
-    <LineSymbolizer stroke-width="9.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="9.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([feature] = 'highway_residential')</Filter>
-    <LineSymbolizer stroke-width="7.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="7.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([feature] = 'highway_residential')</Filter>
-    <LineSymbolizer stroke-width="3.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="3.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
@@ -8793,87 +8793,87 @@ case when leisure='pitch' then 2
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_track') and ([tracktype] = 'grade1')</Filter>
-    <LineSymbolizer stroke-width="3.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="3.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_path') and ([bicycle] = 'designated')</Filter>
-    <LineSymbolizer stroke-width="4" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="4" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_path') and ([foot] = 'designated')</Filter>
-    <LineSymbolizer stroke-width="4.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="4.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_path') and ([horse] = 'designated')</Filter>
-    <LineSymbolizer stroke-width="4" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="4" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'railway_narrow_gauge')</Filter>
-    <LineSymbolizer stroke-width="4" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="4" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'railway_light_rail')</Filter>
-    <LineSymbolizer stroke-width="4" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="4" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'railway_subway')</Filter>
-    <LineSymbolizer stroke-width="4" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="4" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([feature] = 'railway_disused')</Filter>
-    <LineSymbolizer stroke-width="4.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="4.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([feature] = 'railway_abandoned')</Filter>
-    <LineSymbolizer stroke-width="4.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="4.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([feature] = 'railway_construction')</Filter>
-    <LineSymbolizer stroke-width="4.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="4.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([feature] = 'railway_INT-spur-siding-yard')</Filter>
-    <LineSymbolizer stroke-width="4" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="4" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([feature] = 'railway_rail')</Filter>
-    <LineSymbolizer stroke-width="5" stroke="#ffffff" stroke-linejoin="round" />
+    <LineSymbolizer stroke-width="5" stroke="#b4b4b4" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_track')</Filter>
-    <LineSymbolizer stroke-width="3" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="3" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_path')</Filter>
-    <LineSymbolizer stroke-width="2.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="2.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_cycleway')</Filter>
-    <LineSymbolizer stroke-width="4" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="4" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_footway')</Filter>
-    <LineSymbolizer stroke-width="4.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="4.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_bridleway')</Filter>
-    <LineSymbolizer stroke-width="4" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="4" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
 </Style>
 <Style name="bridges-layer3-bridges_casing" filter-mode="first">
@@ -9484,14 +9484,14 @@ case when leisure='pitch' then 2
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'railway_rail')</Filter>
     <LineSymbolizer stroke-width="3" stroke="#999999" stroke-linejoin="round" />
-    <LineSymbolizer stroke-dasharray="0, 11, 8, 1" stroke-width="1" stroke="#ffffff" stroke-linejoin="round" />
+    <LineSymbolizer stroke-dasharray="0, 11, 8, 1" stroke-width="1" stroke="#b4b4b4" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([feature] = 'railway_rail')</Filter>
     <LineSymbolizer stroke-width="3" stroke="#999999" stroke-linejoin="round" />
-    <LineSymbolizer stroke-width="1" stroke="#ffffff" stroke-dasharray="8, 12" stroke-linejoin="round" />
+    <LineSymbolizer stroke-width="1" stroke="#b4b4b4" stroke-dasharray="8, 12" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
@@ -9572,7 +9572,7 @@ case when leisure='pitch' then 2
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([feature] = 'railway_INT-spur-siding-yard')</Filter>
     <LineSymbolizer stroke-width="2" stroke="#999999" stroke-linejoin="round" />
-    <LineSymbolizer stroke-width="0.8" stroke="#ffffff" stroke-dasharray="0, 8, 11, 1" stroke-linejoin="round" />
+    <LineSymbolizer stroke-width="0.8" stroke="#b4b4b4" stroke-dasharray="0, 8, 11, 1" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
@@ -9625,59 +9625,59 @@ case when leisure='pitch' then 2
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([feature] = 'highway_service')</Filter>
-    <LineSymbolizer stroke-width="6" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" />
+    <LineSymbolizer stroke-width="6" stroke="#b4b4b4" stroke-linecap="round" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([feature] = 'highway_service')</Filter>
-    <LineSymbolizer stroke-width="2" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" />
+    <LineSymbolizer stroke-width="2" stroke="#b4b4b4" stroke-linecap="round" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_unclassified')</Filter>
-    <LineSymbolizer stroke-width="14" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="14" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([feature] = 'highway_unclassified')</Filter>
-    <LineSymbolizer stroke-width="9.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="9.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([feature] = 'highway_unclassified')</Filter>
-    <LineSymbolizer stroke-width="7.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="7.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([feature] = 'highway_unclassified')</Filter>
-    <LineSymbolizer stroke-width="3.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="3.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_residential')</Filter>
-    <LineSymbolizer stroke-width="14" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="14" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([feature] = 'highway_residential')</Filter>
-    <LineSymbolizer stroke-width="9.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="9.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([feature] = 'highway_residential')</Filter>
-    <LineSymbolizer stroke-width="7.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="7.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([feature] = 'highway_residential')</Filter>
-    <LineSymbolizer stroke-width="3.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="3.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
@@ -9907,87 +9907,87 @@ case when leisure='pitch' then 2
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_track') and ([tracktype] = 'grade1')</Filter>
-    <LineSymbolizer stroke-width="3.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="3.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_path') and ([bicycle] = 'designated')</Filter>
-    <LineSymbolizer stroke-width="4" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="4" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_path') and ([foot] = 'designated')</Filter>
-    <LineSymbolizer stroke-width="4.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="4.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_path') and ([horse] = 'designated')</Filter>
-    <LineSymbolizer stroke-width="4" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="4" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'railway_narrow_gauge')</Filter>
-    <LineSymbolizer stroke-width="4" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="4" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'railway_light_rail')</Filter>
-    <LineSymbolizer stroke-width="4" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="4" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'railway_subway')</Filter>
-    <LineSymbolizer stroke-width="4" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="4" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([feature] = 'railway_disused')</Filter>
-    <LineSymbolizer stroke-width="4.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="4.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([feature] = 'railway_abandoned')</Filter>
-    <LineSymbolizer stroke-width="4.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="4.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([feature] = 'railway_construction')</Filter>
-    <LineSymbolizer stroke-width="4.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="4.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([feature] = 'railway_INT-spur-siding-yard')</Filter>
-    <LineSymbolizer stroke-width="4" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="4" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([feature] = 'railway_rail')</Filter>
-    <LineSymbolizer stroke-width="5" stroke="#ffffff" stroke-linejoin="round" />
+    <LineSymbolizer stroke-width="5" stroke="#b4b4b4" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_track')</Filter>
-    <LineSymbolizer stroke-width="3" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="3" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_path')</Filter>
-    <LineSymbolizer stroke-width="2.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="2.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_cycleway')</Filter>
-    <LineSymbolizer stroke-width="4" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="4" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_footway')</Filter>
-    <LineSymbolizer stroke-width="4.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="4.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_bridleway')</Filter>
-    <LineSymbolizer stroke-width="4" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="4" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
 </Style>
 <Style name="bridges-layer4-bridges_casing" filter-mode="first">
@@ -10598,14 +10598,14 @@ case when leisure='pitch' then 2
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'railway_rail')</Filter>
     <LineSymbolizer stroke-width="3" stroke="#999999" stroke-linejoin="round" />
-    <LineSymbolizer stroke-dasharray="0, 11, 8, 1" stroke-width="1" stroke="#ffffff" stroke-linejoin="round" />
+    <LineSymbolizer stroke-dasharray="0, 11, 8, 1" stroke-width="1" stroke="#b4b4b4" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <Filter>([feature] = 'railway_rail')</Filter>
     <LineSymbolizer stroke-width="3" stroke="#999999" stroke-linejoin="round" />
-    <LineSymbolizer stroke-width="1" stroke="#ffffff" stroke-dasharray="8, 12" stroke-linejoin="round" />
+    <LineSymbolizer stroke-width="1" stroke="#b4b4b4" stroke-dasharray="8, 12" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
@@ -10686,7 +10686,7 @@ case when leisure='pitch' then 2
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([feature] = 'railway_INT-spur-siding-yard')</Filter>
     <LineSymbolizer stroke-width="2" stroke="#999999" stroke-linejoin="round" />
-    <LineSymbolizer stroke-width="0.8" stroke="#ffffff" stroke-dasharray="0, 8, 11, 1" stroke-linejoin="round" />
+    <LineSymbolizer stroke-width="0.8" stroke="#b4b4b4" stroke-dasharray="0, 8, 11, 1" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
@@ -10739,59 +10739,59 @@ case when leisure='pitch' then 2
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <Filter>([feature] = 'highway_service')</Filter>
-    <LineSymbolizer stroke-width="6" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" />
+    <LineSymbolizer stroke-width="6" stroke="#b4b4b4" stroke-linecap="round" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([feature] = 'highway_service')</Filter>
-    <LineSymbolizer stroke-width="2" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" />
+    <LineSymbolizer stroke-width="2" stroke="#b4b4b4" stroke-linecap="round" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_unclassified')</Filter>
-    <LineSymbolizer stroke-width="14" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="14" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([feature] = 'highway_unclassified')</Filter>
-    <LineSymbolizer stroke-width="9.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="9.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([feature] = 'highway_unclassified')</Filter>
-    <LineSymbolizer stroke-width="7.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="7.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([feature] = 'highway_unclassified')</Filter>
-    <LineSymbolizer stroke-width="3.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="3.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_residential')</Filter>
-    <LineSymbolizer stroke-width="14" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="14" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>12500</MaxScaleDenominator>
     <MinScaleDenominator>5000</MinScaleDenominator>
     <Filter>([feature] = 'highway_residential')</Filter>
-    <LineSymbolizer stroke-width="9.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="9.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <MinScaleDenominator>12500</MinScaleDenominator>
     <Filter>([feature] = 'highway_residential')</Filter>
-    <LineSymbolizer stroke-width="7.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="7.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <MinScaleDenominator>25000</MinScaleDenominator>
     <Filter>([feature] = 'highway_residential')</Filter>
-    <LineSymbolizer stroke-width="3.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="3.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>5000</MaxScaleDenominator>
@@ -11021,87 +11021,87 @@ case when leisure='pitch' then 2
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_track') and ([tracktype] = 'grade1')</Filter>
-    <LineSymbolizer stroke-width="3.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="3.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_path') and ([bicycle] = 'designated')</Filter>
-    <LineSymbolizer stroke-width="4" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="4" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_path') and ([foot] = 'designated')</Filter>
-    <LineSymbolizer stroke-width="4.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="4.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_path') and ([horse] = 'designated')</Filter>
-    <LineSymbolizer stroke-width="4" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="4" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'railway_narrow_gauge')</Filter>
-    <LineSymbolizer stroke-width="4" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="4" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'railway_light_rail')</Filter>
-    <LineSymbolizer stroke-width="4" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="4" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'railway_subway')</Filter>
-    <LineSymbolizer stroke-width="4" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="4" stroke="#b4b4b4" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([feature] = 'railway_disused')</Filter>
-    <LineSymbolizer stroke-width="4.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="4.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([feature] = 'railway_abandoned')</Filter>
-    <LineSymbolizer stroke-width="4.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="4.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([feature] = 'railway_construction')</Filter>
-    <LineSymbolizer stroke-width="4.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="4.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([feature] = 'railway_INT-spur-siding-yard')</Filter>
-    <LineSymbolizer stroke-width="4" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="4" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([feature] = 'railway_rail')</Filter>
-    <LineSymbolizer stroke-width="5" stroke="#ffffff" stroke-linejoin="round" />
+    <LineSymbolizer stroke-width="5" stroke="#b4b4b4" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_track')</Filter>
-    <LineSymbolizer stroke-width="3" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="3" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_path')</Filter>
-    <LineSymbolizer stroke-width="2.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="2.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_cycleway')</Filter>
-    <LineSymbolizer stroke-width="4" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="4" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_footway')</Filter>
-    <LineSymbolizer stroke-width="4.5" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="4.5" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <Filter>([feature] = 'highway_bridleway')</Filter>
-    <LineSymbolizer stroke-width="4" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round" />
+    <LineSymbolizer stroke-width="4" stroke="#b4b4b4" stroke-linejoin="round" stroke-linecap="round" />
   </Rule>
 </Style>
 <Style name="bridges-layer5-bridges_casing" filter-mode="first">
@@ -11701,7 +11701,7 @@ case when leisure='pitch' then 2
     <MaxScaleDenominator>25000</MaxScaleDenominator>
     <Filter>([railway] = 'tram') and ([bridge] = 'yes')</Filter>
     <LineSymbolizer stroke-width="5" stroke="#000000" />
-    <LineSymbolizer stroke-width="4" stroke="#ffffff" />
+    <LineSymbolizer stroke-width="4" stroke="#b4b4b4" />
     <LineSymbolizer stroke-width="2" stroke="#444444" />
   </Rule>
   <Rule>
@@ -11739,13 +11739,13 @@ case when leisure='pitch' then 2
   <Rule>
     <MaxScaleDenominator>50000</MaxScaleDenominator>
     <LineSymbolizer stroke-width="3" stroke="#6666ff" stroke-linejoin="round" />
-    <LineSymbolizer stroke-dasharray="0, 11, 8, 1" stroke-width="1" stroke="#ffffff" stroke-linejoin="round" />
+    <LineSymbolizer stroke-dasharray="0, 11, 8, 1" stroke-width="1" stroke="#b4b4b4" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <MinScaleDenominator>50000</MinScaleDenominator>
     <LineSymbolizer stroke-width="3" stroke="#6666ff" stroke-linejoin="round" />
-    <LineSymbolizer stroke-width="1" stroke="#ffffff" stroke-dasharray="8, 12" stroke-linejoin="round" />
+    <LineSymbolizer stroke-width="1" stroke="#b4b4b4" stroke-dasharray="8, 12" stroke-linejoin="round" />
   </Rule>
 </Style>
 <Layer name="guideways"
