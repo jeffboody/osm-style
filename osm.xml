@@ -13624,19 +13624,8 @@ case when leisure='pitch' then 2
 <Style name="highway-junctions" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>25000</MaxScaleDenominator>
-    <TextSymbolizer size="18" fill="#6666ff" minimum-distance="2" fontset-name="fontset-1" halo-radius="1" wrap-width="12" ><![CDATA[[ref]]]></TextSymbolizer>
-    <TextSymbolizer size="17" dy="-10" fill="#6666ff" fontset-name="fontset-1" halo-radius="1" wrap-character=";" wrap-width="2" minimum-distance="2" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>200000</MaxScaleDenominator>
-    <MinScaleDenominator>25000</MinScaleDenominator>
-    <TextSymbolizer size="14" fill="#6666ff" minimum-distance="2" fontset-name="fontset-1" halo-radius="1" wrap-width="12" ><![CDATA[[ref]]]></TextSymbolizer>
-    <TextSymbolizer size="12" fill="#6666ff" dy="-8" fontset-name="fontset-1" halo-radius="1" wrap-character=";" wrap-width="2" minimum-distance="2" ><![CDATA[[name]]]></TextSymbolizer>
-  </Rule>
-  <Rule>
-    <MaxScaleDenominator>400000</MaxScaleDenominator>
-    <MinScaleDenominator>200000</MinScaleDenominator>
-    <TextSymbolizer size="14" fill="#6666ff" minimum-distance="2" fontset-name="fontset-1" halo-radius="1" wrap-width="12" ><![CDATA[[ref]]]></TextSymbolizer>
+    <TextSymbolizer size="18" fill="#008d00" minimum-distance="2" fontset-name="fontset-1" halo-radius="1" wrap-width="12" ><![CDATA[[ref]]]></TextSymbolizer>
+    <TextSymbolizer size="17" dy="-10" fill="#008d00" fontset-name="fontset-1" halo-radius="1" wrap-character=";" wrap-width="2" minimum-distance="2" ><![CDATA[[name]]]></TextSymbolizer>
   </Rule>
 </Style>
 <Layer name="highway-junctions"
