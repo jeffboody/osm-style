@@ -350,11 +350,6 @@
     <PolygonSymbolizer fill="#999966" fill-opacity="0.2" />
   </Rule>
   <Rule>
-    <MaxScaleDenominator>750000</MaxScaleDenominator>
-    <Filter>([feature] = 'landuse_residential')</Filter>
-    <PolygonSymbolizer fill="#dddddd" />
-  </Rule>
-  <Rule>
     <MaxScaleDenominator>100000</MaxScaleDenominator>
     <Filter>([feature] = 'leisure_playground')</Filter>
     <PolygonSymbolizer fill="#ccfff1" />
