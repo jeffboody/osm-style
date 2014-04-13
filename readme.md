@@ -25,7 +25,7 @@ stop
 postgres
 --------
 
-	cp -aRv /var/postgresql postgresql
+	cp -aRv /var/lib/postgresql postgresql
 	pg_ctlcluster 9.1 main restart
 
 	# /etc/postgresql/9.1/main/postgresql.conf
