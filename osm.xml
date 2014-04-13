@@ -41,7 +41,7 @@
 <Style name="world" filter-mode="first">
   <Rule>
     <MinScaleDenominator>750000</MinScaleDenominator>
-    <PolygonSymbolizer fill="#f2efe9" />
+    <PolygonSymbolizer fill="transparent" />
   </Rule>
 </Style>
 <Layer name="world"
