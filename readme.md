@@ -74,6 +74,9 @@ Clone mapnik
 	cd mapnik
 	git checkout -b br-2.2 origin/2.2.x
 
+	# switch to v3.0.9 (uninstall 2.2 first)
+	git checkout -b br-v3.0.9 v3.0.9
+
 Build mapnik
 
 	python scons/scons.py configure INPUT_PLUGINS=all OPTIMIZATION=3 SYSTEM_FONTS=/usr/share/fonts/truetype/
@@ -89,6 +92,14 @@ Clone mod_tile
 	croot
 	git clone git://github.com/openstreetmap/mod_tile.git
 	cd mod_tile
+
+Fix transparency
+
+	# Not needed any longer for transparency but does cause
+	# RGBA rather than INDEXED png images if desired
+	# https://lists.openstreetmap.org/pipermail/dev/2008-June/010760.html
+	vim gen_tile.cpp
+	<replace png256 with png>
 
 Build mod_tile
 
@@ -258,8 +269,54 @@ start renderd
 	<in a separate window>
 	sudo service apache2 reload
 
+openstreetmap-carto
+-------------------
+
+Optionally replace OSM Bright with OpenStreetMap Carto.
+
+Install project
+
+	git clone https://github.com/gravitystorm/openstreetmap-carto
+	apt-get install python-yaml
+	cd openstreetmap-carto
+	./get-shapefiles.sh
+	sudo ln -s <path to openstreetmap-carto> /usr/local/share/maps/style/openstreetmap-carto
+
+Update data path
+
+	vim project.yaml
+	%s/data\//\/usr\/local\/share\/maps\/style\/openstreetmap-carto\/data\//gc
+
+Generate xml
+
+	./scripts/yaml2mml.py
+	carto project.mml > osm.xml
+
+Configure renderd
+
+	sudo vim /usr/local/etc/renderd.conf
+	XML=/usr/local/share/maps/style/openstreetmap-carto/osm.xml
+
+restart renderd
+
+	# may need to recreate /var/run/renderd
+	sudo mkdir /var/run/renderd
+	sudo chown gisuser:gisuser /var/run/renderd
+
+	# delete cached tiles
+	sudo rm -rf /home/osm/mod_tile/default
+
+	# start renderd
+	sudo -u gisuser renderd -f -c /usr/local/etc/renderd.conf
+
+	# may need to reload OR restart apache2
+	sudo service apache2 reload
+	sudo service apache2 restart
+
 slippymap
 ---------
+
+	Note: must be connected to internet to load slippymap.html
 
 	croot
 	cd mod_tile
