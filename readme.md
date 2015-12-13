@@ -43,6 +43,21 @@ Setup database
 	ALTER TABLE spatial_ref_sys OWNER TO gisuser;
 	\q
 
+Recreate database
+
+	sudo -u postgres -i
+	dropdb gis
+	createdb -E UTF8 -O gisuser gis
+	psql
+	\c gis
+	CREATE EXTENSION postgis;
+	CREATE EXTENSION hstore;
+	ALTER TABLE geometry_columns OWNER TO gisuser;
+	ALTER TABLE spatial_ref_sys OWNER TO gisuser;
+	\q
+	exit
+	<re-import osm data>
+
 osm2pgsql
 ---------
 
@@ -259,7 +274,7 @@ import osm data
 
 	croot
 	cd osm2pgsql
-	su gisuser
+	sudo su gisuser
 	osm2pgsql --slim -d gis ../CO-151116.osm.pbf
 
 start renderd
