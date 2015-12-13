@@ -277,6 +277,15 @@ import osm data
 	sudo su gisuser
 	osm2pgsql --slim -d gis ../CO-151116.osm.pbf
 
+clean osm data
+
+	osmosis --read-pbf CO-151116.osm.pbf --write-xml CO-151116.osm
+	clean-n.sh CO-151116.osm CO-151116-n.osm
+	clean-xml CO-151116-n.osm CO-151116-clean.osm
+	<recreate database>
+	sudo su gisuser
+	osm2pgsql --slim -d gis ../CO-151116-clean.osm
+
 start renderd
 ------------
 
