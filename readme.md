@@ -87,9 +87,6 @@ Clone mapnik
 	croot
 	git clone git://github.com/mapnik/mapnik
 	cd mapnik
-	git checkout -b br-2.2 origin/2.2.x
-
-	# switch to v3.0.9 (uninstall 2.2 first)
 	git checkout -b br-v3.0.9 v3.0.9
 
 Build mapnik
@@ -125,71 +122,6 @@ Build mod_tile
 	sudo make install-mod_tile
 	sudo ldconfig
 
-osm bright
-----------
-
-Download resources
-
-	sudo mkdir -p /usr/local/share/maps/style
-	cd /usr/local/share/maps/style
-	sudo wget https://github.com/mapbox/osm-bright/archive/master.zip
-	sudo wget http://data.openstreetmapdata.com/simplified-land-polygons-complete-3857.zip
-	sudo wget http://data.openstreetmapdata.com/land-polygons-split-3857.zip
-	sudo wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_populated_places_simple.zip
-
-Unzip the resources
-
-	sudo unzip '*.zip'
-	sudo mkdir osm-bright-master/shp
-	sudo mv land-polygons-split-3857 osm-bright-master/shp/
-	sudo mv simplified-land-polygons-complete-3857 osm-bright-master/shp/
-	# sudo mv ne_10m_populated_places_simple osm-bright-master/shp/
-	sudo mkdir osm-bright-master/shp/ne_10m_populated_places_simple
-	sudo mv ne_10m_populated_places_simple.dbf osm-bright-master/shp/ne_10m_populated_places_simple/
-	sudo mv ne_10m_populated_places_simple.prj osm-bright-master/shp/ne_10m_populated_places_simple/
-	sudo mv ne_10m_populated_places_simple.shp osm-bright-master/shp/ne_10m_populated_places_simple/
-	sudo mv ne_10m_populated_places_simple.VERSION.txt osm-bright-master/shp/ne_10m_populated_places_simple/
-	sudo mv ne_10m_populated_places_simple.README.html osm-bright-master/shp/ne_10m_populated_places_simple/
-	sudo mv ne_10m_populated_places_simple.shx osm-bright-master/shp/ne_10m_populated_places_simple/
-
-Create index files
-
-	cd osm-bright-master/shp/land-polygons-split-3857
-	sudo shapeindex land_polygons.shp
-	cd ../simplified-land-polygons-complete-3857
-	sudo shapeindex simplified_land_polygons.shp
-	cd ../..
-
-Configure osm bright
-
-	sudo vim osm-bright/osm-bright.osm2pgsql.mml
-
-	# replace zip lines and add type shape
-	"file": "/usr/local/share/maps/style/osm-bright-master/shp/land-polygons-split-3857/land_polygons.shp", 
-	"type": "shape"
-	"file": "/usr/local/share/maps/style/osm-bright-master/shp/simplified-land-polygons-complete-3857/simplified_land_polygons.shp", 
-	"type": "shape",
-	"file": "/usr/local/share/maps/style/osm-bright-master/shp/ne_10m_populated_places_simple/ne_10m_populated_places_simple.shp", 
-	"type": "shape"
-
-	# replace neplaces "srs" and "srs-name" lines with:
-	"srs": "+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs"
-
-Configure style sheet
-
-	sudo cp configure.py.sample configure.py
-	sudo vim configure.py
-
-	# replace lines in configure.py
-	config["path"] = path.expanduser("/usr/local/share/maps/style")
-	config["postgis"]["dbname"]   = "gis"
-
-	sudo ./make.py
-	cd ../OSMBright/
-	sudo su
-	carto project.mml > OSMBright.xml
-	exit
-
 renderd
 -------
 
@@ -199,7 +131,7 @@ Configure renderd
 	socketname=/var/run/renderd/renderd.sock
 	plugins_dir=/usr/local/lib/mapnik/input
 	font_dir=/usr/share/fonts/truetype
-	XML=/usr/local/share/maps/style/OSMBright/OSMBright.xml
+	XML=/usr/local/share/maps/style/openstreetmap-carto/osm.xml
 	HOST=localhost
 
 	# move mod_tile to home directory due to space
@@ -264,27 +196,31 @@ download osmosis
 	wget http://bretth.dev.openstreetmap.org/osmosis-build/osmosis-latest.tgz
 	tar -xzf osmosis-latest.tgz
 
+refer to this site to determine lat/lon bounding box
+
+	http://pos-map.appspot.com/en/coordinates10.html
+
 crop planet (e.g.)
 
-	osmosis --read-pbf file="planet-151116.osm.pbf" --bounding-box top=72.0 left=-170.0 bottom=18.0 right=-66.0 --write-pbf file="US-151116.osm.pbf"
-	osmosis --read-pbf file="planet-151116.osm.pbf" --bounding-box top=50.0 left=-126.0 bottom=24.0 right=-65.0 --write-pbf file="US48-151116.osm.pbf"
-	osmosis --read-pbf file="US48-151116.osm.pbf" --bounding-box top=41.10419 left=-109.11621 bottom=36.88841 right=-101.88721 --write-pbf file="CO-151116.osm.pbf"
+	osmosis --read-pbf file="planet.osm.pbf" --bounding-box top=72.0 left=-170.0 bottom=18.0 right=-66.0 --write-pbf file="US.osm.pbf"
+	osmosis --read-pbf file="planet.osm.pbf" --bounding-box top=51.0 left=-126.0 bottom=23.0 right=-64.0 --write-pbf file="US48.osm.pbf"
+	osmosis --read-pbf file="planet.osm.pbf" --bounding-box top=43.0 left=-110.0 bottom=34.0 right=-100.0 --write-pbf file="CO.osm.pbf"
 
-import osm data
+import osm data (skip if reformatting)
 
 	croot
 	cd osm2pgsql
 	sudo su gisuser
-	osm2pgsql --slim -d gis ../CO-151116.osm.pbf
+	osm2pgsql --slim -d gis ../CO.osm.pbf
 
-clean osm data
+reformat osm data
 
-	osmosis --read-pbf CO-151116.osm.pbf --write-xml CO-151116.osm
-	clean-n.sh CO-151116.osm CO-151116-n.osm
-	clean-xml CO-151116-n.osm CO-151116-clean.osm
-	<recreate database>
-	sudo su gisuser
-	osm2pgsql --slim -d gis ../CO-151116-clean.osm
+	croot
+	osmosis --read-pbf CO.osm.pbf --write-xml CO.osm
+	clean-n.sh CO.osm CO-n.osm
+	clean-xml CO-n.osm CO-clean.osm
+	<Recreate database>
+	sudo -u gisuser osm2pgsql --slim -d gis ../CO-clean.osm
 
 start renderd
 ------------
@@ -296,14 +232,14 @@ start renderd
 openstreetmap-carto
 -------------------
 
-Optionally replace OSM Bright with OpenStreetMap Carto.
-
 Install project
 
-	git clone https://github.com/gravitystorm/openstreetmap-carto
-	apt-get install python-yaml
+	git clone git@github.com:jeffboody/openstreetmap-carto.git -b hd_v1
+	sudo apt-get install python-yaml
 	cd openstreetmap-carto
 	./get-shapefiles.sh
+	sudo mkdir /usr/local/share/maps
+	sudo mkdir /usr/local/share/maps/style
 	sudo ln -s <path to openstreetmap-carto> /usr/local/share/maps/style/openstreetmap-carto
 
 Update data path
@@ -316,26 +252,15 @@ Generate xml
 	./scripts/yaml2mml.py
 	carto project.mml > osm.xml
 
-Configure renderd
-
-	sudo vim /usr/local/etc/renderd.conf
-	XML=/usr/local/share/maps/style/openstreetmap-carto/osm.xml
-
 restart renderd
 
+	croot
+	cd osm-style
+
 	# may need to recreate /var/run/renderd
-	sudo mkdir /var/run/renderd
-	sudo chown gisuser:gisuser /var/run/renderd
+	./setup-renderd.conf
 
-	# delete cached tiles
-	sudo rm -rf /home/osm/mod_tile/default
-
-	# start renderd
-	sudo -u gisuser renderd -f -c /usr/local/etc/renderd.conf
-
-	# may need to reload OR restart apache2
-	sudo service apache2 reload
-	sudo service apache2 restart
+	./restart.sh
 
 slippymap
 ---------
@@ -346,7 +271,7 @@ slippymap
 	cd mod_tile
 	sudo mkdir /var/www/html/osm_tiles
 	sudo cp slippymap.html /var/www/html/osm_tiles/slippymap.html
-	sudo chown -R gisuser:gisuser /var/www/html/osm_tile
+	sudo chown -R gisuser:gisuser /var/www/html/osm_tiles
 
 	sudo vim /var/www/html/osm_tiles/slippymap.html
 
@@ -356,76 +281,3 @@ slippymap
 
 	# open in browser
 	http://localhost/osm_tiles/slippymap.html
-
-OSM Configuration (LEGACY)
-==========================
-
-http://switch2osm.org/serving-tiles/building-a-tile-server-from-packages/
-
-Change predefined data directories from /var to /home due to disk space issues.
-
-stop
-----
-
-	sudo su
-
-	service apache2 stop
-	service renderd stop
-	pg_ctlcluster 9.1 main stop
-
-	mkdir /home/osm
-	cd /home/osm
-
-postgres
---------
-
-	cp -aRv /var/lib/postgresql postgresql
-	pg_ctlcluster 9.1 main restart
-
-	# /etc/postgresql/9.1/main/postgresql.conf
-	- data_directory = '/var/lib/postgresql/9.1/main'
-	+ data_directory = '/home/osm/postgresql/9.1/main'
-
-renderd
--------
-
-	mkdir mod_tile
-	chown www-data:www-data mod_tile
-
-	# /etc/renderd.conf
-	- tile_dir=/var/lib/mod_tile
-	+ tile_dir=/home/osm/mod_tile
-
-apache2
--------
-
-	# /etc/apache2/sites-available/tileserver_site.conf
-	- ModTileTileDir /var/lib/mod_tile
-	+ ModTileTileDir /home/osm/mod_tile
-
-restart
--------
-
-	pg_ctlcluster 9.1 main restart
-	service renderd restart
-	service apache2 restart
-
-reload
-------
-
-	service renderd stop
-	rm -rf /home/osm/mod_tile/default
-	cp osm.xml /etc/mapnik-osm-carto-data
-	service renderd start
-
-notes
------
-
-	# map links
-	http://localhost/osm/slippymap.html
-	http://localhost/osm/1/0/0.png
-	http://localhost/osm/15/6807/12397.png
-
-	# stylesheet
-	# https://github.com/mapnik/mapnik/wiki/XMLConfigReference
-	/etc/mapnik-osm-carto-data
