@@ -339,6 +339,7 @@ static int osm_element_parseName(osm_element_t* self,
 }
 
 static int osm_element_parseEle(osm_element_t* self,
+                                int ft,
                                 const XML_Char* a,
                                 XML_Char* b)
 {
@@ -347,9 +348,12 @@ static int osm_element_parseEle(osm_element_t* self,
 	assert(b);
 
 	// assume the ele is in meters
-	// convert meters to ft
 	float ele = strtof(a, NULL);
-	ele *= 3937.0f/1200.0f;
+	if(ft == 0)
+	{
+		// convert meters to ft
+		ele *= 3937.0f/1200.0f;
+	}
 	snprintf(b, 256, "%i", (int) (ele + 0.5f));
 
 	osm_token_t w0;
@@ -361,7 +365,7 @@ static int osm_element_parseEle(osm_element_t* self,
 	if(str == NULL)
 	{
 		// input is null string
-		LOGE("invalid line=%i, ele=%s", self->line, a);
+		LOGW("invalid line=%i, ele=%s", self->line, a);
 		return 0;
 	}
 	
@@ -376,19 +380,22 @@ static int osm_element_parseEle(osm_element_t* self,
 	if(str == NULL)
 	{
 		// check if w1 is ft
-		if(strcmp(w1.word, "ft"))
+		if((strcmp(w1.word, "ft")   == 0) ||
+		   (strcmp(w1.word, "feet") == 0))
 		{
-			LOGE("invalid line=%i, ele=%s", self->line, a);
+			// assume w0 is in ft
+			float ele = strtof(w0.word, NULL);
+			snprintf(b, 256, "%i", (int) (ele + 0.5f));
+			return 1;
+		}
+		else
+		{
+			LOGW("invalid line=%i, ele=%s", self->line, a);
 			return 0;
 		}
-
-		// assume w0 is in ft
-		float ele = strtof(w0.word, NULL);
-		snprintf(b, 256, "%i", (int) (ele + 0.5f));
-		return 1;
 	}
 
-	LOGE("invalid line=%i, ele=%s", self->line, a);
+	LOGW("invalid line=%i, ele=%s", self->line, a);
 	return 0;
 }
 
@@ -500,8 +507,6 @@ static void osm_element_evalTag(osm_element_t* self,
 		}
 	}
 
-	osm_parser_printElemBegin(parser, self->name, indent);
-	osm_parser_printElemAttsPair(parser, &(atts[0]));
 	if((strcmp(atts[1], "addr:street") == 0) ||
 	   (strcmp(atts[1], "name") == 0)        ||
 	   (strcmp(atts[1], "destination") == 0) ||
@@ -515,20 +520,29 @@ static void osm_element_evalTag(osm_element_t* self,
 		if(osm_element_parseName(self, atts[3], name) == 0)
 		{
 			parser->error = 1;
+			return;
 		}
+		osm_parser_printElemBegin(parser, self->name, indent);
+		osm_parser_printElemAttsPair(parser, &(atts[0]));
 		osm_parser_printElemAttsPair(parser, p);
 	}
-	else if(strcmp(atts[1], "ele") == 0)
+	else if((strcmp(atts[1], "ele") == 0) ||
+	        (strcmp(atts[1], "ele:ft") == 0))
 	{
 		XML_Char ele[256];
 
 		const XML_Char  v[2] = "v";
 		const XML_Char* p[2] = { v, ele };
 
-		if(osm_element_parseEle(self, atts[3], ele) == 0)
+		int ft = (strcmp(atts[1], "ele:ft") == 0) ? 1 : 0;
+
+		if(osm_element_parseEle(self, ft, atts[3], ele) == 0)
 		{
-			parser->error = 1;
+			// ignore
+			return;
 		}
+		osm_parser_printElemBegin(parser, self->name, indent);
+		osm_parser_printElemAttsPair(parser, &(atts[0]));
 		osm_parser_printElemAttsPair(parser, p);
 
 		osm_element_t* parent = self->parent;
@@ -540,6 +554,8 @@ static void osm_element_evalTag(osm_element_t* self,
 	}
 	else
 	{
+		osm_parser_printElemBegin(parser, self->name, indent);
+		osm_parser_printElemAttsPair(parser, &(atts[0]));
 		osm_parser_printElemAttsPair(parser, &(atts[2]));
 	}
 	osm_parser_printElemEnd(parser, 1);
