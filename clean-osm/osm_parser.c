@@ -103,15 +103,7 @@ static void osm_parser_parseEnd(void* _self,
 	osm_element_t* parent = NULL;
 	if(self->indent == 1)
 	{
-		if((strcmp(name, "node") == 0) &&
-		   (self->current->head == NULL))
-		{
-			// skip empty nodes
-		}
-		else
-		{
-			osm_element_eval(self->current, self, self->indent);
-		}
+		osm_element_eval(self->current, self, self->indent);
 		osm_element_delete(&self->current);
 	}
 	else
