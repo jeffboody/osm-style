@@ -21,5 +21,6 @@ libexpat:
 clean:
 	rm -f $(OBJECTS) *~ \#*\# $(TARGET)
 	$(MAKE) -C libexpat/expat/lib clean
+	rm libexpat
 
 $(OBJECTS): $(HFILES)
