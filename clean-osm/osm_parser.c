@@ -200,8 +200,8 @@ int osm_parser_parse(osm_parser_t* self)
 {
 	assert(self);
 
-	// TODO - header
-	osm_parser_print(self, "%s", "HEADER\n");
+	// print the xml header
+	osm_parser_print(self, "%s", "<?xml version='1.0' encoding='UTF-8'?>\n");
 
 	int done = 0;
 	while(done == 0)
