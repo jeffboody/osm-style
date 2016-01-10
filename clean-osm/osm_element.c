@@ -437,6 +437,7 @@ static void osm_element_evalNode(osm_element_t* self,
 			iter = iter->next;
 		}
 
+		#if 0
 		// insert the ele tag
 		if(self->has_peak &&
 		   self->has_lat && self->has_lon &&
@@ -457,6 +458,7 @@ static void osm_element_evalNode(osm_element_t* self,
 			osm_parser_printElemAttsPair(parser, val);
 			osm_parser_printElemEnd(parser, 1);
 		}
+		#endif
 
 		osm_parser_printElemClose(parser, self->name, indent);
 	}
