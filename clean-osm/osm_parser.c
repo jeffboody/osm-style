@@ -41,10 +41,10 @@ static void osm_parser_print(osm_parser_t* self,
 	assert(self);
 	assert(fmt);
 
-	char buf[256];
+	char buf[4096];
 	va_list argptr;
 	va_start(argptr, fmt);
-	vsnprintf(buf, 256, fmt, argptr);
+	vsnprintf(buf, 4096, fmt, argptr);
 	va_end(argptr);
 	fprintf(self->out, "%s", buf);
 }
@@ -119,6 +119,103 @@ static void osm_parser_parseEnd(void* _self,
 		parent = self->current->parent;
 	}
 	self->current = parent;
+}
+
+static void osm_parser_specialChars(const XML_Char* a,
+                                    int max,
+                                    XML_Char* b)
+{
+	assert(a);
+	assert(b);
+
+	int i   = 0;
+	int len = 0;
+	while(1)
+	{
+		// eat invalid characters
+		if((a[i] == '\n') ||
+		   (a[i] == '\t') ||
+		   (a[i] == '\r'))
+		{
+			++i;
+			continue;
+		}
+
+		// check for word boundary
+		if(len == (max - 1))
+		{
+			LOGE("invalid %s", a);
+			return;
+		}
+		else if(a[i] == '\0')
+		{
+			return;
+		}
+
+		if((a[i] == '&') && (len <= (max - 6)))
+		{
+			b[len]     = '&';
+			b[len + 1] = 'a';
+			b[len + 2] = 'm';
+			b[len + 3] = 'p';
+			b[len + 4] = ';';
+			b[len + 5] = '\0';
+			len += 5;
+			++i;
+		}
+		else if((a[i] == '"') && (len <= (max - 7)))
+		{
+			b[len]     = '&';
+			b[len + 1] = 'q';
+			b[len + 2] = 'u';
+			b[len + 3] = 'o';
+			b[len + 4] = 't';
+			b[len + 5] = ';';
+			b[len + 6] = '\0';
+			len += 6;
+			++i;
+		}
+		else if((a[i] == '\'') && (len <= (max - 7)))
+		{
+			b[len]     = '&';
+			b[len + 1] = 'a';
+			b[len + 2] = 'p';
+			b[len + 3] = 'o';
+			b[len + 4] = 's';
+			b[len + 5] = ';';
+			b[len + 6] = '\0';
+			len += 6;
+			++i;
+		}
+		else if((a[i] == '<') && (len <= (max - 7)))
+		{
+			b[len]     = '&';
+			b[len + 1] = 'l';
+			b[len + 2] = 't';
+			b[len + 3] = ';';
+			b[len + 4] = '\0';
+			len += 4;
+			++i;
+		}
+		else if((a[i] == '>') && (len <= (max - 7)))
+		{
+			b[len]     = '&';
+			b[len + 1] = 'g';
+			b[len + 2] = 't';
+			b[len + 3] = ';';
+			b[len + 4] = '\0';
+			len += 4;
+			++i;
+		}
+		else
+		{
+			// append character to word
+			b[len]     = a[i];
+			b[len + 1] = '\0';
+			++len;
+			++i;
+		}
+	}
 }
 
 /***********************************************************
@@ -285,7 +382,9 @@ void osm_parser_printElemAttsPair(osm_parser_t* self,
 	assert(self);
 	assert(atts);
 
-	osm_parser_print(self, " %s=\"%s\"", atts[0], atts[1]);
+	XML_Char line[4096];
+	osm_parser_specialChars(atts[1], 4096, line);
+	osm_parser_print(self, " %s=\"%s\"", atts[0], line);
 }
 
 void osm_parser_printElemEnd(osm_parser_t* self, int close)

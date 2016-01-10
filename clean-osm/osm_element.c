@@ -38,8 +38,8 @@ typedef struct
 {
 	int abreviate;
 
-	XML_Char word[256];
-	XML_Char abreviation[256];
+	XML_Char word[4096];
+	XML_Char abreviation[4096];
 	XML_Char separator[2];
 } osm_token_t;
 
@@ -53,92 +53,92 @@ static int osm_abreviateWord(const XML_Char* a,
 
 	// abreviations based loosely on
 	// https://github.com/nvkelso/map-label-style-manual
-	if(strncmp(a, "North", 256) == 0)
+	if(strncmp(a, "North", 4096) == 0)
 	{
-		strncat(b, "N", 256);
+		strncat(b, "N", 4096);
 	}
-	else if(strncmp(a, "East", 256) == 0)
+	else if(strncmp(a, "East", 4096) == 0)
 	{
-		strncat(b, "E", 256);
+		strncat(b, "E", 4096);
 	}
-	else if(strncmp(a, "Sbh", 256) == 0)
+	else if(strncmp(a, "Sbh", 4096) == 0)
 	{
-		strncat(b, "S", 256);
+		strncat(b, "S", 4096);
 	}
-	else if(strncmp(a, "West", 256) == 0)
+	else if(strncmp(a, "West", 4096) == 0)
 	{
-		strncat(b, "W", 256);
+		strncat(b, "W", 4096);
 	}
-	else if(strncmp(a, "Avenue", 256) == 0)
+	else if(strncmp(a, "Avenue", 4096) == 0)
 	{
-		strncat(b, "Ave", 256);
+		strncat(b, "Ave", 4096);
 	}
-	else if(strncmp(a, "Boulevard", 256) == 0)
+	else if(strncmp(a, "Boulevard", 4096) == 0)
 	{
-		strncat(b, "Blvd", 256);
+		strncat(b, "Blvd", 4096);
 	}
-	else if(strncmp(a, "Court", 256) == 0)
+	else if(strncmp(a, "Court", 4096) == 0)
 	{
-		strncat(b, "Ct", 256);
+		strncat(b, "Ct", 4096);
 	}
-	else if(strncmp(a, "Drive", 256) == 0)
+	else if(strncmp(a, "Drive", 4096) == 0)
 	{
-		strncat(b, "Dr", 256);
+		strncat(b, "Dr", 4096);
 	}
-	else if(strncmp(a, "Expressway", 256) == 0)
+	else if(strncmp(a, "Expressway", 4096) == 0)
 	{
-		strncat(b, "Expwy", 256);
+		strncat(b, "Expwy", 4096);
 	}
-	else if(strncmp(a, "Freeway", 256) == 0)
+	else if(strncmp(a, "Freeway", 4096) == 0)
 	{
-		strncat(b, "Fwy", 256);
+		strncat(b, "Fwy", 4096);
 	}
-	else if(strncmp(a, "Highway", 256) == 0)
+	else if(strncmp(a, "Highway", 4096) == 0)
 	{
-		strncat(b, "Hwy", 256);
+		strncat(b, "Hwy", 4096);
 	}
-	else if(strncmp(a, "Lane", 256) == 0)
+	else if(strncmp(a, "Lane", 4096) == 0)
 	{
-		strncat(b, "Ln", 256);
+		strncat(b, "Ln", 4096);
 	}
-	else if(strncmp(a, "Parkway", 256) == 0)
+	else if(strncmp(a, "Parkway", 4096) == 0)
 	{
-		strncat(b, "Pkwy", 256);
+		strncat(b, "Pkwy", 4096);
 	}
-	else if(strncmp(a, "Place", 256) == 0)
+	else if(strncmp(a, "Place", 4096) == 0)
 	{
-		strncat(b, "Pl", 256);
+		strncat(b, "Pl", 4096);
 	}
-	else if(strncmp(a, "Road", 256) == 0)
+	else if(strncmp(a, "Road", 4096) == 0)
 	{
-		strncat(b, "Rd", 256);
+		strncat(b, "Rd", 4096);
 	}
-	else if(strncmp(a, "Street", 256) == 0)
+	else if(strncmp(a, "Street", 4096) == 0)
 	{
-		strncat(b, "St", 256);
+		strncat(b, "St", 4096);
 	}
-	else if(strncmp(a, "Terrace", 256) == 0)
+	else if(strncmp(a, "Terrace", 4096) == 0)
 	{
-		strncat(b, "Ter", 256);
+		strncat(b, "Ter", 4096);
 	}
-	else if(strncmp(a, "Trail", 256) == 0)
+	else if(strncmp(a, "Trail", 4096) == 0)
 	{
-		strncat(b, "Tr", 256);
+		strncat(b, "Tr", 4096);
 	}
-	else if(strncmp(a, "Mount", 256) == 0)
+	else if(strncmp(a, "Mount", 4096) == 0)
 	{
-		strncat(b, "Mt", 256);
+		strncat(b, "Mt", 4096);
 	}
-	else if(strncmp(a, "Mountain", 256) == 0)
+	else if(strncmp(a, "Mountain", 4096) == 0)
 	{
-		strncat(b, "Mtn", 256);
+		strncat(b, "Mtn", 4096);
 	}
 	else
 	{
-		strncat(b, a, 256);
+		strncat(b, a, 4096);
 		abreviate = 0;
 	}
-	b[255] = '\0';
+	b[4095] = '\0';
 
 	return abreviate;
 }
@@ -148,8 +148,8 @@ static void osm_element_catWord(XML_Char* str, XML_Char* word)
 	assert(str);
 	assert(word);
 
-	strncat(str, word, 256);
-	str[255] = '\0';
+	strncat(str, word, 4096);
+	str[4095] = '\0';
 }
 
 static const XML_Char* osm_element_parseWord(osm_element_t* self,
@@ -200,7 +200,7 @@ static const XML_Char* osm_element_parseWord(osm_element_t* self,
 		{
 			return NULL;
 		}
-		else if(len == 255)
+		else if(len == 4095)
 		{
 			LOGE("invalid line=%i", self->line);
 			return NULL;
@@ -262,8 +262,8 @@ static int osm_element_parseName(osm_element_t* self,
 	if(str == NULL)
 	{
 		// input is single word
-		strncpy(b, a, 256);
-		b[255] = '\0';
+		strncpy(b, a, 4096);
+		b[4095] = '\0';
 		return 1;
 	}
 
@@ -354,7 +354,7 @@ static int osm_element_parseEle(osm_element_t* self,
 		// convert meters to ft
 		ele *= 3937.0f/1200.0f;
 	}
-	snprintf(b, 256, "%i", (int) (ele + 0.5f));
+	snprintf(b, 4096, "%i", (int) (ele + 0.5f));
 
 	osm_token_t w0;
 	osm_token_t w1;
@@ -385,7 +385,7 @@ static int osm_element_parseEle(osm_element_t* self,
 		{
 			// assume w0 is in ft
 			float ele = strtof(w0.word, NULL);
-			snprintf(b, 256, "%i", (int) (ele + 0.5f));
+			snprintf(b, 4096, "%i", (int) (ele + 0.5f));
 			return 1;
 		}
 		else
@@ -443,8 +443,8 @@ static void osm_element_evalNode(osm_element_t* self,
 		   (self->has_ele == 0))
 		{
 			// TODO - lookup height
-			XML_Char h[256];
-			snprintf(h, 256, "%i", 404);
+			XML_Char h[4096];
+			snprintf(h, 4096, "%i", 404);
 
 			const XML_Char  k[2] = "k";
 			const XML_Char  v[2] = "v";
@@ -512,7 +512,7 @@ static void osm_element_evalTag(osm_element_t* self,
 	   (strcmp(atts[1], "destination") == 0) ||
 	   (strcmp(atts[1], "exit_to") == 0))
 	{
-		XML_Char name[256];
+		XML_Char name[4096];
 
 		const XML_Char  v[2] = "v";
 		const XML_Char* p[2] = { v, name };
@@ -529,7 +529,7 @@ static void osm_element_evalTag(osm_element_t* self,
 	else if((strcmp(atts[1], "ele") == 0) ||
 	        (strcmp(atts[1], "ele:ft") == 0))
 	{
-		XML_Char ele[256];
+		XML_Char ele[4096];
 
 		const XML_Char  v[2] = "v";
 		const XML_Char* p[2] = { v, ele };
