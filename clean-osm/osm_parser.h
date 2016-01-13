@@ -25,7 +25,7 @@
 #define osm_parser_H
 
 #include <stdio.h>
-#include <libexpat/expat/lib/expat.h>
+#include "libexpat/expat/lib/expat.h"
 #include "osm_element.h"
 
 typedef struct osm_parser_s

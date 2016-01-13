@@ -231,14 +231,14 @@ osm_parser_t* osm_parser_new(const char* fname_in,
 	self->in = fopen(fname_in, "r");
 	if(self->in == NULL)
 	{
-		printf("invalid %s", fname_in);
+		LOGE("invalid %s", fname_in);
 		goto fail_in;
 	}
 
 	self->out = fopen(fname_out, "w");
 	if(self->out == NULL)
 	{
-		printf("invalid %s", fname_out);
+		LOGE("invalid %s", fname_out);
 		goto fail_out;
 	}
 
