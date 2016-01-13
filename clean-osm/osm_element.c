@@ -53,6 +53,7 @@ static int osm_abreviateWord(const XML_Char* a,
 
 	// abreviations based loosely on
 	// https://github.com/nvkelso/map-label-style-manual
+	// http://pe.usps.gov/text/pub28/28c1_001.htm
 	if(strncmp(a, "North", 4096) == 0)
 	{
 		strncat(b, "N", 4096);
@@ -61,13 +62,29 @@ static int osm_abreviateWord(const XML_Char* a,
 	{
 		strncat(b, "E", 4096);
 	}
-	else if(strncmp(a, "Sbh", 4096) == 0)
+	else if(strncmp(a, "South", 4096) == 0)
 	{
 		strncat(b, "S", 4096);
 	}
 	else if(strncmp(a, "West", 4096) == 0)
 	{
 		strncat(b, "W", 4096);
+	}
+	else if(strncmp(a, "Northeast", 4096) == 0)
+	{
+		strncat(b, "NE", 4096);
+	}
+	else if(strncmp(a, "Northwest", 4096) == 0)
+	{
+		strncat(b, "NW", 4096);
+	}
+	else if(strncmp(a, "Southeast", 4096) == 0)
+	{
+		strncat(b, "SE", 4096);
+	}
+	else if(strncmp(a, "Southwest", 4096) == 0)
+	{
+		strncat(b, "SW", 4096);
 	}
 	else if(strncmp(a, "Avenue", 4096) == 0)
 	{
@@ -80,6 +97,10 @@ static int osm_abreviateWord(const XML_Char* a,
 	else if(strncmp(a, "Court", 4096) == 0)
 	{
 		strncat(b, "Ct", 4096);
+	}
+	else if(strncmp(a, "Circle", 4096) == 0)
+	{
+		strncat(b, "Cir", 4096);
 	}
 	else if(strncmp(a, "Drive", 4096) == 0)
 	{
@@ -125,7 +146,8 @@ static int osm_abreviateWord(const XML_Char* a,
 	{
 		strncat(b, "Tr", 4096);
 	}
-	else if(strncmp(a, "Mount", 4096) == 0)
+	else if((strncmp(a, "Mount", 4096) == 0) ||
+	        (strncmp(a, "Mt.",   4096) == 0))
 	{
 		strncat(b, "Mt", 4096);
 	}
