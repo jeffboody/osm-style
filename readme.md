@@ -2,6 +2,10 @@ OSM Style
 =========
 
 Osm map style mod that can be combined with terrain shading.
+The style has forked from openstreetmap-carto since the
+original project began. The new style is located here.
+
+https://github.com/jeffboody/openstreetmap-carto/tree/hd_v1
 
 OSM Configuration
 =================
