@@ -1,3 +1,18 @@
+Configure CLOUD
+===============
+
+	vim /etc/default/locale
+	LANG="en_US.UTF-8"
+
+	sudo apt-get update
+	sudo apt-get install mosh
+	locale-gen en_US.UTF-8
+
+	useradd USER -m -s /bin/bash
+	passwd USER
+	useradd USER sudo
+
+
 OSM Style
 =========
 
@@ -18,7 +33,7 @@ modified for Ubuntu 15.10.
 Install shared dependencies
 
 	sudo apt-get install libboost-all-dev subversion git-core tar unzip wget bzip2 build-essential autoconf libtool libxml2-dev libgeos-dev libgeos++-dev libpq-dev libbz2-dev libproj-dev munin-node munin libprotobuf-c0-dev protobuf-c-compiler libfreetype6-dev libpng12-dev libicu-dev libgdal-dev libcairo-dev libcairomm-1.0-dev apache2 apache2-dev libagg-dev liblua5.2-dev ttf-unifont lua5.1 liblua5.1-dev node-carto
-	sudo apt-get install libtiff-dev libgeotiff-epsg
+	libtiff-dev
 
 postgresql / postgis
 --------------------
@@ -83,8 +98,28 @@ Build osm2pgsql
 	make
 	sudo make install
 
+golong font
+-----------
+
+	croot
+	sudo mkdir /usr/share/fonts/truetype/golong
+	cd /usr/share/fonts/truetype/golong
+	sudo wget http://www.squaregear.net/fonts/golong.zip
+	sudo unzip golong.zip
+
 mapnik
 ------
+
+Download harfbuzz
+
+	croot
+	git clone https://github.com/behdad/harfbuzz.git
+	cd harfbuzz
+	sudo apt-get install autoconf automake libtool pkg-config ragel gtk-doc-tools
+	./autogen.sh
+	./configure
+	make
+	sudo make install
 
 Clone mapnik
 
@@ -200,6 +235,8 @@ download osmosis
 	wget http://bretth.dev.openstreetmap.org/osmosis-build/osmosis-latest.tgz
 	tar -xzf osmosis-latest.tgz
 
+	sudo apt-get install openjdk-7-jdk
+
 refer to this site to determine lat/lon bounding box
 
 	http://pos-map.appspot.com/en/coordinates10.html
@@ -222,8 +259,9 @@ reformat osm data
 	croot
 	osmosis --read-pbf CO.osm.pbf --write-xml CO.osm
 	clean-n.sh CO.osm CO-n.osm
-	clean-xml CO-n.osm CO-clean.osm
+	clean-osm CO-n.osm CO-clean.osm
 	<Recreate database>
+	cd osm2pgsql
 	sudo -u gisuser osm2pgsql --slim -d gis ../CO-clean.osm
 
 start renderd
@@ -239,7 +277,7 @@ openstreetmap-carto
 Install project
 
 	git clone git@github.com:jeffboody/openstreetmap-carto.git -b hd_v1
-	sudo apt-get install python-yaml
+	sudo apt-get install python-yaml curl
 	cd openstreetmap-carto
 	./get-shapefiles.sh
 	sudo mkdir /usr/local/share/maps
@@ -259,12 +297,12 @@ Generate xml
 restart renderd
 
 	croot
-	cd osm-style
+	cd osm-style/bin
 
 	# may need to recreate /var/run/renderd
-	./setup-renderd.conf
+	./renderd-setup.conf
 
-	./restart.sh
+	./renderd-restart.sh
 
 slippymap
 ---------
