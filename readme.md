@@ -284,11 +284,6 @@ Install project
 	sudo mkdir /usr/local/share/maps/style
 	sudo ln -s <path to openstreetmap-carto> /usr/local/share/maps/style/openstreetmap-carto
 
-Update data path
-
-	vim project.yaml
-	%s/data\//\/usr\/local\/share\/maps\/style\/openstreetmap-carto\/data\//gc
-
 Generate xml
 
 	./scripts/yaml2mml.py
