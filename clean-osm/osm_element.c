@@ -224,7 +224,7 @@ static const XML_Char* osm_element_parseWord(osm_element_t* self,
 		}
 		else if(len == 4095)
 		{
-			LOGE("invalid line=%i", self->line);
+			LOGW("invalid line=%i", self->line);
 			return NULL;
 		}
 		else if(str[i] == '\0')
@@ -276,7 +276,7 @@ static int osm_element_parseName(osm_element_t* self,
 	if(str == NULL)
 	{
 		// input is null string
-		LOGE("invalid line=%i, name=%s", self->line, a);
+		LOGW("invalid line=%i, name=%s", self->line, a);
 		return 0;
 	}
 	
@@ -510,7 +510,7 @@ static void osm_element_evalTag(osm_element_t* self,
 	   (strcmp(atts[0], "k") != 0) ||
 	   (strcmp(atts[2], "v") != 0))
 	{
-		LOGE("invalid line=%i", self->line);
+		LOGW("invalid line=%i", self->line);
 		parser->error = 1;
 		return;
 	}
@@ -543,6 +543,7 @@ static void osm_element_evalTag(osm_element_t* self,
 
 		if(osm_element_parseName(self, atts[3], name) == 0)
 		{
+			LOGW("invalid line=%i", self->line);
 			parser->error = 1;
 			return;
 		}

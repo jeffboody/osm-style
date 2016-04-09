@@ -322,11 +322,11 @@ int osm_parser_parse(osm_parser_t* self)
 			return 0;
 		}
 
-		// check if the internal error flag is set
+		// reset internal error flag
 		if(self->error)
 		{
 			LOGE("internal error");
-			return 0;
+			self->error = 0;
 		}
 	}
 
