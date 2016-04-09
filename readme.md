@@ -243,9 +243,9 @@ refer to this site to determine lat/lon bounding box
 
 crop planet (e.g.)
 
-	osmosis --read-pbf file="planet.osm.pbf" --bounding-box top=72.0 left=-170.0 bottom=18.0 right=-66.0 --write-pbf file="US.osm.pbf"
-	osmosis --read-pbf file="planet.osm.pbf" --bounding-box top=51.0 left=-126.0 bottom=23.0 right=-64.0 --write-pbf file="US48.osm.pbf"
-	osmosis --read-pbf file="planet.osm.pbf" --bounding-box top=43.0 left=-110.0 bottom=34.0 right=-100.0 --write-pbf file="CO.osm.pbf"
+	./osmosis/bin/osmosis --read-pbf planet.osm.pbf --bounding-box top=72.0 left=-170.0 bottom=18.0 right=-66.0 --write-xml US.osm
+	./osmosis/bin/osmosis --read-pbf planet.osm.pbf --bounding-box top=51.0 left=-126.0 bottom=23.0 right=-64.0 --write-xml US48.osm
+	./osmosis/bin/osmosis --read-pbf planet.osm.pbf --bounding-box top=43.0 left=-110.0 bottom=34.0 right=-100.0 --write-xml CO.osm
 
 import osm data (skip if reformatting)
 
@@ -259,7 +259,7 @@ reformat osm data
 	croot
 	osmosis --read-pbf CO.osm.pbf --write-xml CO.osm
 	clean-n.sh CO.osm CO-n.osm
-	clean-osm CO-n.osm CO-clean.osm
+	clean-osm CO-n.osm CO-clean.osm | tee clean.txt
 	<Recreate database>
 	cd osm2pgsql
 	sudo -u gisuser osm2pgsql --slim -d gis ../CO-clean.osm
