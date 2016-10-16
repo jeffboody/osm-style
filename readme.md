@@ -32,8 +32,7 @@ modified for Ubuntu 15.10.
 
 Install shared dependencies
 
-	sudo apt-get install libboost-all-dev subversion git-core tar unzip wget bzip2 build-essential autoconf libtool libxml2-dev libgeos-dev libgeos++-dev libpq-dev libbz2-dev libproj-dev munin-node munin libprotobuf-c0-dev protobuf-c-compiler libfreetype6-dev libpng12-dev libicu-dev libgdal-dev libcairo-dev libcairomm-1.0-dev apache2 apache2-dev libagg-dev liblua5.2-dev ttf-unifont lua5.1 liblua5.1-dev node-carto
-	libtiff-dev
+	sudo apt-get install libboost-all-dev subversion git-core tar unzip wget bzip2 build-essential autoconf libtool libxml2-dev libgeos-dev libgeos++-dev libpq-dev libbz2-dev libproj-dev munin-node munin libprotobuf-c0-dev protobuf-c-compiler libfreetype6-dev libpng12-dev libicu-dev libgdal-dev libcairo-dev libcairomm-1.0-dev apache2 apache2-dev libagg-dev liblua5.2-dev ttf-unifont lua5.1 liblua5.1-dev node-carto libtiff-dev
 
 postgresql / postgis
 --------------------
@@ -176,11 +175,12 @@ Configure renderd
 	# move mod_tile to home directory due to space
 	sudo mkdir /var/run/renderd
 	sudo chown gisuser:gisuser /var/run/renderd
-	sudo mkdir /home/osm
-	sudo chmod 777 /home/osm
-	sudo mkdir /home/osm/mod_tile
-	sudo chown gisuser:gisuser /home/osm/mod_tile
-	sudo ln -s /home/osm/mod_tile /var/lib/mod_tile
+	sudo adduser --home /home/gisuser gisuser
+	# sudo mkdir /home/gisuser
+	# sudo chmod 777 /home/gisuser
+	sudo mkdir /home/gisuser/mod_tile
+	sudo chown gisuser:gisuser /home/gisuser/mod_tile
+	sudo ln -s /home/gisuser/mod_tile /var/lib/mod_tile
 
 mod_tile
 --------
@@ -210,11 +210,11 @@ move database
 
 	sudo su
 	pg_ctlcluster 9.4 main stop
-	cp -aRv /var/lib/postgresql /home/osm/postgresql
+	cp -aRv /var/lib/postgresql /home/gisuser/postgresql
 	vim /etc/postgresql/9.4/main/postgresql.conf
 
 	# change data directory
-	data_directory = '/home/osm/postgresql/9.4/main'
+	data_directory = '/home/gisuser/postgresql/9.4/main'
 
 	pg_ctlcluster 9.4 main restart
 	exit
@@ -224,7 +224,7 @@ osm data
 
 download planet
 
-	wget http://ftp5.gwdg.de/pub/misc/openstreetmap/planet.openstreetmap.org/pbf/planet-151116.osm.pbf
+	wget http://ftp5.gwdg.de/pub/misc/openstreetmap/planet.openstreetmap.org/pbf/planet-161010.osm.pbf
 
 download osmosis
 
