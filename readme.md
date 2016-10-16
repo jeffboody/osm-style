@@ -258,8 +258,8 @@ reformat osm data
 
 	croot
 	osmosis --read-pbf CO.osm.pbf --write-xml CO.osm
-	clean-n.sh CO.osm CO-n.osm
-	clean-osm CO-n.osm CO-clean.osm | tee clean.txt
+	clean-symbols.sh CO.osm CO-clean.osm
+	clean-osm CO-clean.osm CO-clean.osm | tee clean.txt
 	<Recreate database>
 	cd osm2pgsql
 	sudo -u gisuser osm2pgsql --slim -d gis ../CO-clean.osm
