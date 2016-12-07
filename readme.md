@@ -1,17 +1,16 @@
 Configure CLOUD
 ===============
 
+	useradd USER -m -s /bin/bash
+	passwd USER
+	useradd USER sudo
+
 	vim /etc/default/locale
 	LANG="en_US.UTF-8"
 
 	sudo apt-get update
 	sudo apt-get install mosh
 	locale-gen en_US.UTF-8
-
-	useradd USER -m -s /bin/bash
-	passwd USER
-	useradd USER sudo
-
 
 OSM Style
 =========
@@ -247,20 +246,16 @@ crop planet (e.g.)
 	./osmosis/bin/osmosis --read-pbf planet.osm.pbf --bounding-box top=51.0 left=-126.0 bottom=23.0 right=-64.0 --write-xml US48.osm
 	./osmosis/bin/osmosis --read-pbf planet.osm.pbf --bounding-box top=43.0 left=-110.0 bottom=34.0 right=-100.0 --write-xml CO.osm
 
-import osm data (skip if reformatting)
-
-	croot
-	cd osm2pgsql
-	sudo su gisuser
-	osm2pgsql --slim -d gis ../CO.osm.pbf
-
 reformat osm data
 
 	croot
-	osmosis --read-pbf CO.osm.pbf --write-xml CO.osm
-	clean-symbols.sh CO.osm CO-clean.osm
-	clean-osm CO-clean.osm CO-clean.osm | tee clean.txt
+	clean-symbols.sh CO.osm CO-clean-symbols.osm
+	clean-osm CO-clean-symbols.osm CO-clean.osm | tee clean.txt
+
+import osm data
+
 	<Recreate database>
+	croot
 	cd osm2pgsql
 	sudo -u gisuser osm2pgsql --slim -d gis ../CO-clean.osm
 
