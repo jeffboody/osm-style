@@ -120,6 +120,9 @@ static void osm_parser_specialChars(const XML_Char* a,
 	assert(a);
 	assert(b);
 
+	// initialize b
+	b[0] = '\0';
+
 	int i   = 0;
 	int len = 0;
 	while(1)
@@ -134,18 +137,19 @@ static void osm_parser_specialChars(const XML_Char* a,
 		}
 
 		// check for word boundary
-		if(len == (max - 1))
-		{
-			LOGE("invalid %s", a);
-			return;
-		}
-		else if(a[i] == '\0')
+		if(a[i] == '\0')
 		{
 			return;
 		}
 
-		if((a[i] == '&') && (len <= (max - 6)))
+		if(a[i] == '&')
 		{
+			if((len + 5) >= max)
+			{
+				LOGE("invalid %s", a);
+				return;
+			}
+
 			b[len]     = '&';
 			b[len + 1] = 'a';
 			b[len + 2] = 'm';
@@ -155,8 +159,14 @@ static void osm_parser_specialChars(const XML_Char* a,
 			len += 5;
 			++i;
 		}
-		else if((a[i] == '"') && (len <= (max - 7)))
+		else if(a[i] == '"')
 		{
+			if((len + 6) >= max)
+			{
+				LOGE("invalid %s", a);
+				return;
+			}
+
 			b[len]     = '&';
 			b[len + 1] = 'q';
 			b[len + 2] = 'u';
@@ -167,8 +177,14 @@ static void osm_parser_specialChars(const XML_Char* a,
 			len += 6;
 			++i;
 		}
-		else if((a[i] == '\'') && (len <= (max - 7)))
+		else if(a[i] == '\'')
 		{
+			if((len + 6) >= max)
+			{
+				LOGE("invalid %s", a);
+				return;
+			}
+
 			b[len]     = '&';
 			b[len + 1] = 'a';
 			b[len + 2] = 'p';
@@ -179,8 +195,14 @@ static void osm_parser_specialChars(const XML_Char* a,
 			len += 6;
 			++i;
 		}
-		else if((a[i] == '<') && (len <= (max - 7)))
+		else if(a[i] == '<')
 		{
+			if((len + 4) >= max)
+			{
+				LOGE("invalid %s", a);
+				return;
+			}
+
 			b[len]     = '&';
 			b[len + 1] = 'l';
 			b[len + 2] = 't';
@@ -189,8 +211,14 @@ static void osm_parser_specialChars(const XML_Char* a,
 			len += 4;
 			++i;
 		}
-		else if((a[i] == '>') && (len <= (max - 7)))
+		else if(a[i] == '>')
 		{
+			if((len + 4) >= max)
+			{
+				LOGE("invalid %s", a);
+				return;
+			}
+
 			b[len]     = '&';
 			b[len + 1] = 'g';
 			b[len + 2] = 't';
@@ -201,6 +229,12 @@ static void osm_parser_specialChars(const XML_Char* a,
 		}
 		else
 		{
+			if((len + 1) >= max)
+			{
+				LOGE("invalid %s", a);
+				return;
+			}
+
 			// append character to word
 			b[len]     = a[i];
 			b[len + 1] = '\0';
