@@ -1,4 +1,4 @@
-TARGET   = clean-osm
+TARGET   = filter-osm
 CLASSES  = osm_parser osm_element osm_log
 SOURCE   = $(TARGET).c $(CLASSES:%=%.c)
 OBJECTS  = $(TARGET).o $(CLASSES:%=%.o)
