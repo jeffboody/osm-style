@@ -49,6 +49,20 @@ static void osm_parser_print(osm_parser_t* self,
 	fprintf(self->out, "%s", buf);
 }
 
+static void osm_parser_printdb(osm_parser_t* self,
+                               const char* fmt, ...)
+{
+	assert(self);
+	assert(fmt);
+
+	char buf[4096];
+	va_list argptr;
+	va_start(argptr, fmt);
+	vsnprintf(buf, 4096, fmt, argptr);
+	va_end(argptr);
+	fprintf(self->db, "%s", buf);
+}
+
 static void osm_parser_parseStart(void* _self,
                                   const XML_Char* name,
                                   const XML_Char** atts)
@@ -249,10 +263,12 @@ static void osm_parser_specialChars(const XML_Char* a,
 ***********************************************************/
 
 osm_parser_t* osm_parser_new(const char* fname_in,
-                             const char* fname_out)
+                             const char* fname_out,
+                             const char* fname_db)
 {
 	assert(fname_in);
 	assert(fname_out);
+	assert(fname_db);
 
 	osm_parser_t* self = (osm_parser_t*)
 	                     malloc(sizeof(osm_parser_t));
@@ -276,6 +292,13 @@ osm_parser_t* osm_parser_new(const char* fname_in,
 		goto fail_out;
 	}
 
+	self->db = fopen(fname_db, "w");
+	if(self->db == NULL)
+	{
+		LOGE("invalid %s", fname_db);
+		goto fail_db;
+	}
+
 	self->xml = XML_ParserCreate("UTF-8");
 	if(self->xml == NULL)
 	{
@@ -296,6 +319,8 @@ osm_parser_t* osm_parser_new(const char* fname_in,
 
 	// failure
 	fail_parser_create:
+		fclose(self->db);
+	fail_db:
 		fclose(self->out);
 	fail_out:
 		fclose(self->in);
@@ -312,6 +337,7 @@ void osm_parser_delete(osm_parser_t** _self)
 	if(self)
 	{
 		XML_ParserFree(self->xml);
+		fclose(self->db);
 		fclose(self->out);
 		fclose(self->in);
 		free(self);
@@ -325,6 +351,10 @@ int osm_parser_parse(osm_parser_t* self)
 
 	// print the xml header
 	osm_parser_print(self, "%s", "<?xml version='1.0' encoding='UTF-8'?>\n");
+
+	// print the search header
+	osm_parser_printdb(self, "%s", "<?xml version='1.0' encoding='UTF-8'?>\n");
+	osm_parser_printdb(self, "%s", "<db>\n");
 
 	int done = 0;
 	while(done == 0)
@@ -363,6 +393,8 @@ int osm_parser_parse(osm_parser_t* self)
 			self->error = 0;
 		}
 	}
+
+	osm_parser_printdb(self, "%s", "<\\db>\n");
 
 	return 1;
 }
@@ -435,4 +467,29 @@ void osm_parser_printElemClose(osm_parser_t* self,
 
 	osm_parser_printIndent(self, indent);
 	osm_parser_print(self, "</%s>\n", name);
+}
+
+void osm_parser_printDb(osm_parser_t* self,
+                        int class,
+                        const char* name,
+                        const char* state,
+                        double lat, double lon)
+{
+	assert(self);
+	assert(name);
+	assert(state);
+
+	const char* s = osm_element_fromClass(class);
+	if(state[0] == '\0')
+	{
+		osm_parser_printdb(self,
+		                   "\t<node name=\"%s\" class=\"%s\" lat=\"%lf\" lon=\"%lf\" \\>\n",
+		                   name, s, lat, lon);
+	}
+	else
+	{
+		osm_parser_printdb(self,
+		                   "\t<node name=\"%s\" class=\"%s\" state=\"%s\" lat=\"%lf\" lon=\"%lf\" \\>\n",
+		                   name, s, state, lat, lon);
+	}
 }

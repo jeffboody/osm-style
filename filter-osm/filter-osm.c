@@ -29,14 +29,15 @@
 
 int main(int argc, const char** argv)
 {
-	if(argc != 3)
+	if(argc != 4)
 	{
-		LOGE("%s in.xml out.xml", argv[0]);
+		LOGE("%s in.xml out.xml db.xml", argv[0]);
 		return EXIT_FAILURE;
 	}
 
 	osm_parser_t* parser = osm_parser_new(argv[1],
-	                                      argv[2]);
+	                                      argv[2],
+	                                      argv[3]);
 	if(parser == NULL)
 	{
 		return EXIT_FAILURE;

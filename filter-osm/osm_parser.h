@@ -34,12 +34,14 @@ typedef struct osm_parser_s
 	int error;
 	FILE* in;
 	FILE* out;
+	FILE* db;
 	XML_Parser xml;
 	osm_element_t* current;
 } osm_parser_t;
 
 osm_parser_t* osm_parser_new(const char* fname_in,
-                             const char* fname_out);
+                             const char* fname_out,
+                             const char* fname_db);
 int           osm_parser_parse(osm_parser_t* self);
 void          osm_parser_delete(osm_parser_t** _self);
 void          osm_parser_printElemBegin(osm_parser_t* self,
@@ -53,5 +55,10 @@ void          osm_parser_printElemEnd(osm_parser_t* self, int close);
 void          osm_parser_printElemClose(osm_parser_t* self,
                                         const XML_Char* name,
                                         int indent);
+void          osm_parser_printDb(osm_parser_t* self,
+                                 int class,
+                                 const char* name,
+                                 const char* state,
+                                 double lat, double lon);
 
 #endif

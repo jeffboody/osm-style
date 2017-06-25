@@ -53,6 +53,11 @@ typedef struct osm_element_s
 	double lat;
 	double lon;
 	int    ele;
+
+	// database
+	int  db_class;
+	char db_name[256];
+	char db_state[3];
 } osm_element_t;
 
 osm_element_t* osm_element_new(osm_element_t* parent,
@@ -63,5 +68,8 @@ void           osm_element_delete(osm_element_t** _self);
 void           osm_element_eval(osm_element_t* self,
                                 struct osm_parser_s* parser,
                                 int indent);
+int            osm_element_toClass(const char* k,
+                                   const char* v);
+const char*    osm_element_fromClass(int class);
 
 #endif
