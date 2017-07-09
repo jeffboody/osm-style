@@ -394,7 +394,7 @@ int osm_parser_parse(osm_parser_t* self)
 		}
 	}
 
-	osm_parser_printdb(self, "%s", "<\\db>\n");
+	osm_parser_printdb(self, "%s", "</db>\n");
 
 	return 1;
 }
@@ -479,17 +479,21 @@ void osm_parser_printDb(osm_parser_t* self,
 	assert(name);
 	assert(state);
 
-	const char* s = osm_element_fromClass(class);
+	XML_Char name2[4096];
+	osm_parser_specialChars(name, 4096, name2);
+
+	const char* class2 = osm_element_fromClass(class);
+
 	if(state[0] == '\0')
 	{
 		osm_parser_printdb(self,
-		                   "\t<node name=\"%s\" class=\"%s\" lat=\"%lf\" lon=\"%lf\" \\>\n",
-		                   name, s, lat, lon);
+		                   "\t<node name=\"%s\" class=\"%s\" lat=\"%lf\" lon=\"%lf\" />\n",
+		                   name2, class2, lat, lon);
 	}
 	else
 	{
 		osm_parser_printdb(self,
-		                   "\t<node name=\"%s\" class=\"%s\" state=\"%s\" lat=\"%lf\" lon=\"%lf\" \\>\n",
-		                   name, s, state, lat, lon);
+		                   "\t<node name=\"%s\" class=\"%s\" state=\"%s\" lat=\"%lf\" lon=\"%lf\" />\n",
+		                   name2, class2, state, lat, lon);
 	}
 }
