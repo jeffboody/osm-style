@@ -487,13 +487,13 @@ void osm_parser_printDb(osm_parser_t* self,
 	if(state[0] == '\0')
 	{
 		osm_parser_printdb(self,
-		                   "\t<node name=\"%s\" class=\"%s\" lat=\"%lf\" lon=\"%lf\" />\n",
-		                   name2, class2, lat, lon);
+		                   "\t<node name=\"%s\" class=\"%s\" rank=\"%i\" lat=\"%lf\" lon=\"%lf\" />\n",
+		                   name2, class2, class, lat, lon);
 	}
 	else
 	{
 		osm_parser_printdb(self,
-		                   "\t<node name=\"%s\" class=\"%s\" state=\"%s\" lat=\"%lf\" lon=\"%lf\" />\n",
-		                   name2, class2, state, lat, lon);
+		                   "\t<node name=\"%s\" state=\"%s\" class=\"%s\" rank=\"%i\" lat=\"%lf\" lon=\"%lf\" />\n",
+		                   name2, state, class2, class, lat, lon);
 	}
 }
