@@ -31,7 +31,7 @@ modified for Ubuntu 15.10.
 
 Install shared dependencies
 
-	sudo apt-get install libboost-all-dev subversion git-core tar unzip wget bzip2 build-essential autoconf libtool libxml2-dev libgeos-dev libgeos++-dev libpq-dev libbz2-dev libproj-dev munin-node munin libprotobuf-c0-dev protobuf-c-compiler libfreetype6-dev libpng12-dev libicu-dev libgdal-dev libcairo-dev libcairomm-1.0-dev apache2 apache2-dev libagg-dev liblua5.2-dev ttf-unifont lua5.1 liblua5.1-dev node-carto libtiff-dev
+	sudo apt-get install libboost-all-dev subversion git-core tar unzip wget bzip2 build-essential autoconf libtool libxml2-dev libgeos-dev libgeos++-dev libpq-dev libbz2-dev libproj-dev munin-node munin libprotobuf-c0-dev protobuf-c-compiler libfreetype6-dev libicu-dev libgdal-dev libcairo-dev libcairomm-1.0-dev apache2 apache2-dev libagg-dev liblua5.2-dev ttf-unifont lua5.1 liblua5.1-dev node-carto libtiff-dev
 
 postgresql / postgis
 --------------------
@@ -124,7 +124,15 @@ Clone mapnik
 	croot
 	git clone git://github.com/mapnik/mapnik
 	cd mapnik
-	git checkout -b br-v3.0.9 v3.0.9
+	# shields missing
+	# git checkout -b master origin/master
+
+	# crash
+	# git checkout -b v3.0.x origin/v3.0.x
+	# git checkout -b v3.0.12 094994ef540353b846490bf5c0dd127d00740dcb
+
+	# just right
+	git checkout -b onemoretime 8dea5498877c4d200a9a032a65f1f5dad74b5aca
 
 Build mapnik
 
@@ -208,14 +216,14 @@ move database
 -------------
 
 	sudo su
-	pg_ctlcluster 9.4 main stop
+	pg_ctlcluster 9.6 main stop
 	cp -aRv /var/lib/postgresql /home/gisuser/postgresql
-	vim /etc/postgresql/9.4/main/postgresql.conf
+	vim /etc/postgresql/9.6/main/postgresql.conf
 
 	# change data directory
-	data_directory = '/home/gisuser/postgresql/9.4/main'
+	data_directory = '/home/gisuser/postgresql/9.6/main'
 
-	pg_ctlcluster 9.4 main restart
+	pg_ctlcluster 9.6 main restart
 	exit
 
 osm data
@@ -223,7 +231,7 @@ osm data
 
 download planet
 
-	wget http://ftp5.gwdg.de/pub/misc/openstreetmap/planet.openstreetmap.org/pbf/planet-161010.osm.pbf
+	wget https://ftp.osuosl.org/pub/openstreetmap/pbf/planet-latest.osm.pbf
 
 download osmosis
 
@@ -234,7 +242,7 @@ download osmosis
 	wget http://bretth.dev.openstreetmap.org/osmosis-build/osmosis-latest.tgz
 	tar -xzf osmosis-latest.tgz
 
-	sudo apt-get install openjdk-7-jdk
+	sudo apt-get install openjdk-8-jdk
 
 refer to this site to determine lat/lon bounding box
 
@@ -242,22 +250,22 @@ refer to this site to determine lat/lon bounding box
 
 crop planet (e.g.)
 
-	./osmosis/bin/osmosis --read-pbf planet.osm.pbf --bounding-box top=72.0 left=-170.0 bottom=18.0 right=-66.0 --write-xml US-base.osm
-	./osmosis/bin/osmosis --read-pbf planet.osm.pbf --bounding-box top=51.0 left=-126.0 bottom=23.0 right=-64.0 --write-xml US48-base.osm
-	./osmosis/bin/osmosis --read-pbf planet.osm.pbf --bounding-box top=43.0 left=-110.0 bottom=34.0 right=-100.0 --write-xml CO-base.osm
+	./osmosis/bin/osmosis --read-pbf planet-latest.osm.pbf --bounding-box top=72.0 left=-170.0 bottom=18.0 right=-66.0 --write-xml US-base.osm
+	./osmosis/bin/osmosis --read-pbf planet-latest.osm.pbf --bounding-box top=51.0 left=-126.0 bottom=23.0 right=-64.0 --write-xml US48-base.osm
+	./osmosis/bin/osmosis --read-pbf planet-latest.osm.pbf --bounding-box top=43.0 left=-110.0 bottom=34.0 right=-100.0 --write-xml CO-base.osm
 
 reformat osm data
 
 	croot
-	clean-symbols.sh CO-base.osm CO-clean.osm
-	filter-osm CO-clean.osm CO.osm | tee log.txt
+	./osm-style/filter-osm/clean-symbols.sh US48-base.osm US48-clean.osm
+	./osm-style/filter-osm/filter-osm US48-clean.osm US48.osm US48-db.xml | tee US48-log.txt
 
 import osm data
 
 	<Recreate database>
 	croot
 	cd osm2pgsql
-	sudo -u gisuser osm2pgsql --slim -d gis ../CO.osm
+	sudo -u gisuser osm2pgsql --slim -d gis ../US48.osm
 
 start renderd
 ------------
@@ -290,7 +298,7 @@ restart renderd
 	cd osm-style/bin
 
 	# may need to recreate /var/run/renderd
-	./renderd-setup.conf
+	./renderd-setup.sh
 
 	./renderd-restart.sh
 
