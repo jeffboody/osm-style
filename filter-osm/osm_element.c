@@ -359,10 +359,11 @@ static const XML_Char* osm_element_parseWord(osm_element_t* self,
 	int i = 0;
 	while(1)
 	{
-		if((str[i] == ' ')  ||
-		   (str[i] == '\n') ||
-		   (str[i] == '\t') ||
-		   (str[i] == '\r'))
+		char c = str[i];
+		if((c == ' ')  ||
+		   (c == '\n') ||
+		   (c == '\t') ||
+		   (c == '\r'))
 		{
 			++i;
 			continue;
@@ -375,17 +376,38 @@ static const XML_Char* osm_element_parseWord(osm_element_t* self,
 	int len = 0;
 	while(1)
 	{
-		// eat invalid characters
-		if((str[i] == '\n') ||
-		   (str[i] == '\t') ||
-		   (str[i] == '\r'))
+		char c = str[i];
+
+		// validate characters
+		// disallow '"' because of "Skyscraper Peak", etc.
+		if((c == '\n') ||
+		   (c == '\t') ||
+		   (c == '\r') ||
+		   (c == '"'))
 		{
+			// eat unsupported characters
+			if(c == '"')
+			{
+				LOGW("quote i=%i, line=%i, str=%s", i, self->line, str);
+			}
+			++i;
+			continue;
+		}
+		else if(((c >= 32) && (c <= 126)) ||
+		        (c == '\0'))
+		{
+			// accept printable characters and null char
+		}
+		else
+		{
+			// eat invalid characters
+			LOGW("invalid line=%i, str=%s", self->line, str);
 			++i;
 			continue;
 		}
 
 		// check for word boundary
-		if((str[i] == '\0') && (len == 0))
+		if((c == '\0') && (len == 0))
 		{
 			return NULL;
 		}
@@ -394,20 +416,20 @@ static const XML_Char* osm_element_parseWord(osm_element_t* self,
 			LOGW("invalid line=%i", self->line);
 			return NULL;
 		}
-		else if(str[i] == '\0')
+		else if(c == '\0')
 		{
 			tok->abreviate = osm_abreviateWord(tok->word,
 			                                   tok->abreviation);
 			return &str[i];
 		}
-		else if(str[i] == ' ')
+		else if(c == ' ')
 		{
 			tok->abreviate = osm_abreviateWord(tok->word,
 			                                   tok->abreviation);
 			tok->separator[0] = ' ';
 			return &str[i + 1];
 		}
-		else if(str[i] == ';')
+		else if(c == ';')
 		{
 			tok->abreviate = osm_abreviateWord(tok->word,
 			                                   tok->abreviation);
@@ -416,7 +438,7 @@ static const XML_Char* osm_element_parseWord(osm_element_t* self,
 		}
 
 		// append character to word
-		tok->word[len]     = str[i];
+		tok->word[len]     = c;
 		tok->word[len + 1] = '\0';
 		++len;
 		++i;
@@ -753,6 +775,15 @@ static void osm_element_evalTag(osm_element_t* self,
 			parser->error = 1;
 			return;
 		}
+
+		// override the name with parsed name
+		if(strcmp(atts[1], "name") == 0)
+		{
+			osm_element_t* parent = self->parent;
+			snprintf(parent->db_name, 256, "%s", name);
+			parent->db_name[255] = '\0';
+		}
+
 		osm_parser_printElemBegin(parser, self->name, indent);
 		osm_parser_printElemAttsPair(parser, &(atts[0]));
 		osm_parser_printElemAttsPair(parser, p);
