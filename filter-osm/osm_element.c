@@ -456,94 +456,108 @@ static int osm_element_parseName(osm_element_t* self,
 	// initialize output string
 	b[0] = '\0';
 
-	osm_token_t w0;
-	osm_token_t w1;
-	osm_token_t wn;
+	// parse all words
+	const XML_Char* str   = a;
+	const int       WORDS = 16;
+	int             words = 0;
+	osm_token_t     word[WORDS];
+	while(str && (words < WORDS))
+	{
+		str = osm_element_parseWord(self, str, &word[words]);
+		if(str)
+		{
+			++words;
+		}
+	}
 
-	const XML_Char* str = a;
-	str = osm_element_parseWord(self, str, &w0);
-	if(str == NULL)
+	// trim elevation from name
+	// e.g. "Mt Meeker 13,870 ft"
+	if((words >= 2) &&
+	   (strncmp(word[words - 1].word, "ft", 4096) == 0))
+	{
+		LOGW("trim %s", a);
+		words -= 2;
+	}
+
+	if(words == 0)
 	{
 		// input is null string
 		LOGW("invalid line=%i, name=%s", self->line, a);
 		return 0;
 	}
-	
-	str = osm_element_parseWord(self, str, &w1);
-	if(str == NULL)
+	else if(words == 1)
 	{
 		// input is single word
 		strncpy(b, a, 4096);
 		b[4095] = '\0';
 		return 1;
 	}
-
-	str = osm_element_parseWord(self, str, &wn);
-	if(str == NULL)
+	else if(words == 2)
 	{
 		// input is two words
-		if(w1.abreviate)
+		if(word[1].abreviate)
 		{
 			// don't abreviate first word if second
 			// word is also abreviated
-			osm_element_catWord(b, w0.word);
-			osm_element_catWord(b, w0.separator);
-			osm_element_catWord(b, w1.abreviation);
-			osm_element_catWord(b, w1.separator);
+			osm_element_catWord(b, word[0].word);
+			osm_element_catWord(b, word[0].separator);
+			osm_element_catWord(b, word[1].abreviation);
+			osm_element_catWord(b, word[1].separator);
 		}
-		else if(w0.abreviate)
+		else if(word[0].abreviate)
 		{
-			osm_element_catWord(b, w0.abreviation);
-			osm_element_catWord(b, w0.separator);
-			osm_element_catWord(b, w1.word);
-			osm_element_catWord(b, w1.separator);
+			osm_element_catWord(b, word[0].abreviation);
+			osm_element_catWord(b, word[0].separator);
+			osm_element_catWord(b, word[1].word);
+			osm_element_catWord(b, word[1].separator);
 		}
 		else
 		{
-			osm_element_catWord(b, w0.word);
-			osm_element_catWord(b, w0.separator);
-			osm_element_catWord(b, w1.word);
-			osm_element_catWord(b, w1.separator);
+			osm_element_catWord(b, word[0].word);
+			osm_element_catWord(b, word[0].separator);
+			osm_element_catWord(b, word[1].word);
+			osm_element_catWord(b, word[1].separator);
 		}
 		return 1;
 	}
 
 	// three or more words
 	// end of special cases
-	if(w0.abreviate)
+	if(word[0].abreviate)
 	{
-		osm_element_catWord(b, w0.abreviation);
+		osm_element_catWord(b, word[0].abreviation);
 	}
 	else
 	{
-		osm_element_catWord(b, w0.word);
+		osm_element_catWord(b, word[0].word);
 	}
-	osm_element_catWord(b, w0.separator);
+	osm_element_catWord(b, word[0].separator);
 
-	if(w1.abreviate)
+	if(word[1].abreviate)
 	{
-		osm_element_catWord(b, w1.abreviation);
+		osm_element_catWord(b, word[1].abreviation);
 	}
 	else
 	{
-		osm_element_catWord(b, w1.word);
+		osm_element_catWord(b, word[1].word);
 	}
-	osm_element_catWord(b, w1.separator);
+	osm_element_catWord(b, word[1].separator);
 
 	// parse the rest of the line
-	while(str)
+	int n = 2;
+	while(n < words)
 	{
-		if(wn.abreviate)
+		if(word[n].abreviate)
 		{
-			osm_element_catWord(b, wn.abreviation);
+			osm_element_catWord(b, word[n].abreviation);
 		}
 		else
 		{
-			osm_element_catWord(b, wn.word);
+			osm_element_catWord(b, word[n].word);
 		}
-		osm_element_catWord(b, wn.separator);
+		osm_element_catWord(b, word[n].separator);
 
-		str = osm_element_parseWord(self, str, &wn);
+		++n;
 	}
 
 	return 1;
