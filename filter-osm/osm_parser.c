@@ -473,7 +473,8 @@ void osm_parser_printDb(osm_parser_t* self,
                         int class,
                         const char* name,
                         const char* state,
-                        double lat, double lon)
+                        double lat, double lon,
+                        int ele)
 {
 	assert(self);
 	assert(name);
@@ -484,16 +485,30 @@ void osm_parser_printDb(osm_parser_t* self,
 
 	const char* class2 = osm_element_fromClass(class);
 
-	if(state[0] == '\0')
+	int has_state = state[0] != '\0';
+	int has_ele   = ele != 0;
+	if(has_state && has_ele)
 	{
 		osm_parser_printdb(self,
-		                   "\t<node name=\"%s\" class=\"%s\" rank=\"%i\" lat=\"%lf\" lon=\"%lf\" />\n",
-		                   name2, class2, class, lat, lon);
+		                   "\t<node name=\"%s\" state=\"%s\" class=\"%s\" rank=\"%i\" lat=\"%lf\" lon=\"%lf\" ele=\"%i\" />\n",
+		                   name2, state, class2, class, lat, lon, ele);
 	}
-	else
+	else if(has_state)
 	{
 		osm_parser_printdb(self,
 		                   "\t<node name=\"%s\" state=\"%s\" class=\"%s\" rank=\"%i\" lat=\"%lf\" lon=\"%lf\" />\n",
 		                   name2, state, class2, class, lat, lon);
+	}
+	else if(has_ele)
+	{
+		osm_parser_printdb(self,
+		                   "\t<node name=\"%s\" class=\"%s\" rank=\"%i\" lat=\"%lf\" lon=\"%lf\" ele=\"%i\" />\n",
+		                   name2, class2, class, lat, lon, ele);
+	}
+	else
+	{
+		osm_parser_printdb(self,
+		                   "\t<node name=\"%s\" class=\"%s\" rank=\"%i\" lat=\"%lf\" lon=\"%lf\" />\n",
+		                   name2, class2, class, lat, lon);
 	}
 }

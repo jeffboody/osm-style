@@ -678,7 +678,8 @@ static void osm_element_evalNode(osm_element_t* self,
 			                   self->db_class,
 			                   self->db_name,
 			                   self->db_state,
-			                   self->lat, self->lon);
+			                   self->lat, self->lon,
+			                   self->ele);
 		}
 
 		osm_parser_printElemClose(parser, self->name, indent);

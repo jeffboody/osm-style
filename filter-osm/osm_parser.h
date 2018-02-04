@@ -59,6 +59,7 @@ void          osm_parser_printDb(osm_parser_t* self,
                                  int class,
                                  const char* name,
                                  const char* state,
-                                 double lat, double lon);
+                                 double lat, double lon,
+                                 int ele);
 
 #endif
