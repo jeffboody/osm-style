@@ -502,21 +502,18 @@ static int osm_element_parseName(osm_element_t* self,
 			osm_element_catWord(b, word[0].word);
 			osm_element_catWord(b, word[0].separator);
 			osm_element_catWord(b, word[1].abreviation);
-			osm_element_catWord(b, word[1].separator);
 		}
 		else if(word[0].abreviate)
 		{
 			osm_element_catWord(b, word[0].abreviation);
 			osm_element_catWord(b, word[0].separator);
 			osm_element_catWord(b, word[1].word);
-			osm_element_catWord(b, word[1].separator);
 		}
 		else
 		{
 			osm_element_catWord(b, word[0].word);
 			osm_element_catWord(b, word[0].separator);
 			osm_element_catWord(b, word[1].word);
-			osm_element_catWord(b, word[1].separator);
 		}
 		return 1;
 	}
@@ -541,12 +538,13 @@ static int osm_element_parseName(osm_element_t* self,
 	{
 		osm_element_catWord(b, word[1].word);
 	}
-	osm_element_catWord(b, word[1].separator);
 
 	// parse the rest of the line
 	int n = 2;
 	while(n < words)
 	{
+		osm_element_catWord(b, word[n - 1].separator);
+
 		if(word[n].abreviate)
 		{
 			osm_element_catWord(b, word[n].abreviation);
@@ -555,7 +553,6 @@ static int osm_element_parseName(osm_element_t* self,
 		{
 			osm_element_catWord(b, word[n].word);
 		}
-		osm_element_catWord(b, word[n].separator);
 
 		++n;
 	}
