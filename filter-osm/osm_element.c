@@ -446,18 +446,21 @@ static const XML_Char* osm_element_parseWord(osm_element_t* self,
 }
 
 static int osm_element_parseName(osm_element_t* self,
-                                 const XML_Char* a,
-                                 XML_Char* b)
+                                 const XML_Char* name,
+                                 XML_Char* name_filtered,
+                                 XML_Char* name_abreviated)
 {
 	assert(self);
-	assert(a);
-	assert(b);
+	assert(name);
+	assert(name_filtered);
+	assert(name_abreviated);
 
 	// initialize output string
-	b[0] = '\0';
+	name_filtered[0]   = '\0';
+	name_abreviated[0] = '\0';
 
 	// parse all words
-	const XML_Char* str   = a;
+	const XML_Char* str   = name;
 	const int       WORDS = 16;
 	int             words = 0;
 	osm_token_t     word[WORDS];
@@ -475,83 +478,95 @@ static int osm_element_parseName(osm_element_t* self,
 	if((words >= 2) &&
 	   (strncmp(word[words - 1].word, "ft", 4096) == 0))
 	{
-		LOGW("trim %s", a);
+		LOGW("trim %s", name);
 		words -= 2;
 	}
 
 	if(words == 0)
 	{
 		// input is null string
-		LOGW("invalid line=%i, name=%s", self->line, a);
+		LOGW("invalid line=%i, name=%s", self->line, name);
 		return 0;
 	}
 	else if(words == 1)
 	{
 		// input is single word
-		strncpy(b, a, 4096);
-		b[4095] = '\0';
+		strncpy(name_filtered, name, 4096);
+		name_filtered[4095] = '\0';
+		strncpy(name_abreviated, name, 4096);
+		name_abreviated[4095] = '\0';
 		return 1;
 	}
 	else if(words == 2)
 	{
+		osm_element_catWord(name_filtered, word[0].word);
+		osm_element_catWord(name_filtered, word[0].separator);
+		osm_element_catWord(name_filtered, word[1].word);
+
 		// input is two words
 		if(word[1].abreviate)
 		{
 			// don't abreviate first word if second
 			// word is also abreviated
-			osm_element_catWord(b, word[0].word);
-			osm_element_catWord(b, word[0].separator);
-			osm_element_catWord(b, word[1].abreviation);
+			osm_element_catWord(name_abreviated, word[0].word);
+			osm_element_catWord(name_abreviated, word[0].separator);
+			osm_element_catWord(name_abreviated, word[1].abreviation);
 		}
 		else if(word[0].abreviate)
 		{
-			osm_element_catWord(b, word[0].abreviation);
-			osm_element_catWord(b, word[0].separator);
-			osm_element_catWord(b, word[1].word);
+			osm_element_catWord(name_abreviated, word[0].abreviation);
+			osm_element_catWord(name_abreviated, word[0].separator);
+			osm_element_catWord(name_abreviated, word[1].word);
 		}
 		else
 		{
-			osm_element_catWord(b, word[0].word);
-			osm_element_catWord(b, word[0].separator);
-			osm_element_catWord(b, word[1].word);
+			osm_element_catWord(name_abreviated, word[0].word);
+			osm_element_catWord(name_abreviated, word[0].separator);
+			osm_element_catWord(name_abreviated, word[1].word);
 		}
 		return 1;
 	}
 
 	// three or more words
 	// end of special cases
+	osm_element_catWord(name_filtered, word[0].word);
+	osm_element_catWord(name_filtered, word[0].separator);
 	if(word[0].abreviate)
 	{
-		osm_element_catWord(b, word[0].abreviation);
+		osm_element_catWord(name_abreviated, word[0].abreviation);
 	}
 	else
 	{
-		osm_element_catWord(b, word[0].word);
+		osm_element_catWord(name_abreviated, word[0].word);
 	}
-	osm_element_catWord(b, word[0].separator);
+	osm_element_catWord(name_abreviated, word[0].separator);
 
+	osm_element_catWord(name_filtered, word[1].word);
 	if(word[1].abreviate)
 	{
-		osm_element_catWord(b, word[1].abreviation);
+		osm_element_catWord(name_abreviated, word[1].abreviation);
 	}
 	else
 	{
-		osm_element_catWord(b, word[1].word);
+		osm_element_catWord(name_abreviated, word[1].word);
 	}
 
 	// parse the rest of the line
 	int n = 2;
 	while(n < words)
 	{
-		osm_element_catWord(b, word[n - 1].separator);
+		osm_element_catWord(name_filtered, word[n - 1].separator);
+		osm_element_catWord(name_filtered, word[n].word);
+
+		osm_element_catWord(name_abreviated, word[n - 1].separator);
 
 		if(word[n].abreviate)
 		{
-			osm_element_catWord(b, word[n].abreviation);
+			osm_element_catWord(name_abreviated, word[n].abreviation);
 		}
 		else
 		{
-			osm_element_catWord(b, word[n].word);
+			osm_element_catWord(name_abreviated, word[n].word);
 		}
 
 		++n;
@@ -777,22 +792,25 @@ static void osm_element_evalTag(osm_element_t* self,
 	   (strcmp(atts[1], "destination") == 0) ||
 	   (strcmp(atts[1], "exit_to") == 0))
 	{
-		XML_Char name[4096];
+		XML_Char name_filtered[4096];
+		XML_Char name_abreviated[4096];
 
-		const XML_Char* p[2] = { "v", name };
+		const XML_Char* p[2] = { "v", name_abreviated };
 
-		if(osm_element_parseName(self, atts[3], name) == 0)
+		if(osm_element_parseName(self, atts[3],
+		                         name_filtered,
+		                         name_abreviated) == 0)
 		{
 			LOGW("invalid line=%i", self->line);
 			parser->error = 1;
 			return;
 		}
 
-		// override the name with parsed name
+		// override the name with filtered name
 		if(strcmp(atts[1], "name") == 0)
 		{
 			osm_element_t* parent = self->parent;
-			snprintf(parent->db_name, 256, "%s", name);
+			snprintf(parent->db_name, 256, "%s", name_filtered);
 			parent->db_name[255] = '\0';
 		}
 
