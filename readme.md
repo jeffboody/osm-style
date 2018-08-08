@@ -253,12 +253,15 @@ crop planet (e.g.)
 	./osmosis/bin/osmosis --read-pbf planet-latest.osm.pbf --bounding-box top=72.0 left=-170.0 bottom=18.0 right=-66.0 --write-xml US-base.osm
 	./osmosis/bin/osmosis --read-pbf planet-latest.osm.pbf --bounding-box top=51.0 left=-126.0 bottom=23.0 right=-64.0 --write-xml US48-base.osm
 	./osmosis/bin/osmosis --read-pbf planet-latest.osm.pbf --bounding-box top=43.0 left=-110.0 bottom=34.0 right=-100.0 --write-xml CO-base.osm
+	./osmosis/bin/osmosis --read-xml US48-base.osm --bounding-box top=40.1 left=-105.4 bottom=39.9 right=-105.1 --write-xml Boulder-base.osm
 
 reformat osm data
 
 	croot
 	./osm-style/filter-osm/clean-symbols.sh US48-base.osm US48-clean.osm
 	./osm-style/filter-osm/filter-osm US48-clean.osm US48.osm US48-db.xml | tee US48-log.txt
+	./osm-style/filter-osm/clean-symbols.sh Boulder-base.osm Boulder-clean.osm
+	./osm-style/filter-osm/filter-osm Boulder-clean.osm Boulder.osm Boulder-db.xml | tee Boulder-log.txt
 
 import osm data
 
