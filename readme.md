@@ -258,9 +258,13 @@ crop planet (e.g.)
 reformat osm data
 
 	croot
-	./osm-style/filter-osm/clean-symbols.sh US48-base.osm US48-clean.osm
+
+	unaccent UTF-8 < US48-base.osm > US48-unaccent.osm
+	./osm-style/filter-osm/clean-symbols.sh US48-unaccent.osm US48-clean.osm
 	./osm-style/filter-osm/filter-osm US48-clean.osm US48.osm US48-db.xml | tee US48-log.txt
-	./osm-style/filter-osm/clean-symbols.sh Boulder-base.osm Boulder-clean.osm
+
+	unaccent UTF-8 < Boulder-base.osm > Boulder-unaccent.osm
+	./osm-style/filter-osm/clean-symbols.sh Boulder-unaccent.osm Boulder-clean.osm
 	./osm-style/filter-osm/filter-osm Boulder-clean.osm Boulder.osm Boulder-db.xml | tee Boulder-log.txt
 
 import osm data
